@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \":*)",
+      "Bash(node -e \":*)",
+      "Bash(where node)",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" --version)",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" --version)",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:asftuning.com)",
+      "WebFetch(domain:www.asftuning.com)",
+      "Bash(curl -sL -o /dev/null -w \"%{http_code} %{url_effective} %{redirect_url}\" \"https://asftuning.com/chip-tuning\")",
+      "Bash(curl -sL --max-time 15 -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://asftuning.com/chip-tuning\")",
+      "Bash(curl -sL --max-time 15 -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://asftuning.com/chip-tuning\")",
+      "Bash(curl -sL --max-time 15 -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://asftuning.com/wp-content/plugins/ctr/public/js/ctr-public.js\")",
+      "Bash(curl -sL --max-time 15 -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://asftuning.com/wp-content/plugins/ctr/public/css/ctr-public.min.css\")",
+      "Bash(curl -sL --max-time 15 -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://asftuning.com/chip-tuning/auto/\")",
+      "Bash(curl -sL --max-time 15 -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://asftuning.com/chip-tuning/\")",
+      "WebFetch(domain:chiptuningreseller.com)",
+      "WebFetch(domain:docs.chiptuningreseller.com)",
+      "Bash(curl -sL --max-time 15 -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://asftuning.com/chip-tuning/cars/\")",
+      "WebFetch(domain:www.teoalida.com)",
+      "WebFetch(domain:mychiptuningfiles.com)",
+      "WebFetch(domain:mod-files.com)",
+      "WebFetch(domain:www.mod-files.com)",
+      "WebFetch(domain:www.br-performance.be)",
+      "WebFetch(domain:tuningbot.com)",
+      "Bash(sed \"s/''//g\")",
+      "Bash(wc -l \"C:\\\\Users\\\\Korisnik\\\\Desktop\\\\hadzalic sajt\\\\js\"/*.js)",
+      "Bash(config)",
+      "Bash(setting \")",
+      "Bash(git init)",
+      "Bash(git add -A)",
+      "Bash(git commit:*)",
+      "Bash(git config user.email \"hadzalic@hadzalic.co\")",
+      "Bash(git config user.name \"Hadzalic Coding\")"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+:root {
+  --blue: #0A84FF;
+  --blue2: #0057c8;
+  --accent: #00d4ff;
+  --black: #02060e;
+  --black2: #040a16;
+  --panel: #0b1222;
+  --panel2: #0f1a30;
+  --border: #162040;
+  --text: #e8eef8;
+  --dim: #6a85aa;
+  --orange: #ff6420;
+  --green: #00d464;
+}
+
+/* Light theme */
+:root[data-theme="light"] {
+  --black: #f0f4f8;
+  --black2: #e8edf2;
+  --panel: #ffffff;
+  --panel2: #f5f7fa;
+  --border: #d0d8e4;
+  --text: #1a2233;
+  --dim: #6a7a8c;
+}

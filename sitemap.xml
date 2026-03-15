@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://hadzalic.co/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dgsgohodv/image/upload/v1772754875/466D130D-4755-4963-8564-7C5253815DFA_tsqtyy.jpg</image:loc>
+      <image:title>Hadzalic Coding — Ažuriranje navigacije</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dgsgohodv/image/upload/v1772751295/IMG_0861_hfx9e9.jpg</image:loc>
+      <image:title>Hadzalic Coding — CarPlay aktivacija</image:title>
+    </image:image>
+  </url>
+
+</urlset>
