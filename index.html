@@ -672,6 +672,9 @@
       <button class="blog-tag-btn" onclick="filterBlog('chiptuning', this)">Chiptuning</button>
       <button class="blog-tag-btn" onclick="filterBlog('carplay', this)">CarPlay</button>
       <button class="blog-tag-btn" onclick="filterBlog('dpf', this)">DPF/EGR</button>
+      <button class="blog-tag-btn" onclick="filterBlog('aktivacija', this)">Aktivacija</button>
+      <button class="blog-tag-btn" onclick="filterBlog('navigacija', this)">Navigacija</button>
+      <button class="blog-tag-btn" onclick="filterBlog('dijagnostika', this)">Dijagnostika</button>
       <button class="blog-tag-btn" onclick="filterBlog('savjeti', this)">Savjeti</button>
       <button class="blog-tag-btn" onclick="filterBlog('novosti', this)">Novosti</button>
     </div>
@@ -3444,8 +3447,10 @@ document.addEventListener('DOMContentLoaded', function() {
               <option value="chiptuning">Chiptuning</option>
               <option value="carplay">CarPlay</option>
               <option value="dpf">DPF/EGR</option>
-              <option value="savjeti">Savjeti</option>
               <option value="aktivacija">Aktivacija</option>
+              <option value="navigacija">Navigacija</option>
+              <option value="dijagnostika">Dijagnostika</option>
+              <option value="savjeti">Savjeti</option>
             </select>
             <div style="margin-bottom:8px;">
               <div id="blogCoverPreview" style="display:none;margin-bottom:6px;"><img id="blogCoverImg" style="width:100%;border-radius:8px;max-height:120px;object-fit:cover;"></div>
@@ -5522,7 +5527,19 @@ var tagEmoji = {
   savjeti: '💡',
   novosti: '📰',
   aktivacija: '🔑',
+  navigacija: '🗺️',
+  dijagnostika: '🔍',
   default: '🔧'
+};
+var tagLabels = {
+  chiptuning: 'Chiptuning',
+  carplay: 'CarPlay',
+  dpf: 'DPF/EGR',
+  savjeti: 'Savjeti',
+  novosti: 'Novosti',
+  aktivacija: 'Aktivacija',
+  navigacija: 'Navigacija',
+  dijagnostika: 'Dijagnostika'
 };
 
 async function loadBlog() {
@@ -5572,7 +5589,7 @@ function renderBlog() {
       ? '<img class="blog-card-img" src="'+p.cover_url+'" alt="'+p.title+'" loading="lazy">'
       : '<div class="blog-card-img-placeholder">'+emoji+'</div>';
     var date = p.created_at ? new Date(p.created_at).toLocaleDateString('sr-Latn', {day:'numeric', month:'long', year:'numeric'}) : '';
-    var tagLabel = (p.tag||'novosti').charAt(0).toUpperCase()+(p.tag||'novosti').slice(1);
+    var tagLabel = tagLabels[p.tag] || (p.tag||'novosti').charAt(0).toUpperCase()+(p.tag||'novosti').slice(1);
     var readTime = Math.max(1, Math.ceil(((p.content||'').replace(/<[^>]*>/g,'').split(/\s+/).length) / 200));
     return '<div class="blog-card" onclick="openBlogPost(\'' + p.id + '\')">'
       + imgHtml
@@ -5600,7 +5617,7 @@ function openBlogPost(id) {
       ? '<img class="blog-modal-cover" src="'+p.cover_url+'" alt="'+p.title+'">'
       : '<div class="blog-modal-cover-placeholder">'+emoji+'</div>';
   }
-  var tagLabel = (p.tag||'novosti').charAt(0).toUpperCase()+(p.tag||'novosti').slice(1);
+  var tagLabel = tagLabels[p.tag] || (p.tag||'novosti').charAt(0).toUpperCase()+(p.tag||'novosti').slice(1);
   var date = p.created_at ? new Date(p.created_at).toLocaleDateString('sr-Latn', {day:'numeric', month:'long', year:'numeric'}) : '';
   document.getElementById('blogModalTag').textContent = tagLabel;
   document.getElementById('blogModalTitle').textContent = p.title;
