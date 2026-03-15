@@ -243,8 +243,8 @@ nav{
 :root[data-theme="light"] .nav-theme .theme-icon-sun{display:none;}
 :root[data-theme="light"] .nav-theme .theme-icon-moon{display:block;}
 :root[data-theme="light"] nav{background:rgba(240,244,248,0.95);border-bottom-color:var(--border);}
-:root[data-theme="light"] .logo-h{color:#1a2233;}
-:root[data-theme="light"] .hamburger span{background:#1a2233;}
+:root[data-theme="light"] .logo-h{color:#0f1722;}
+:root[data-theme="light"] .hamburger span{background:#0f1722;}
 
 
 /* ─── HOME HERO ─── */
@@ -255,12 +255,12 @@ nav{
   position:relative;overflow:hidden;
 }
 .hero-glow-ring{
-  position:absolute;width:900px;height:900px;border-radius:50%;
-  background:radial-gradient(circle,rgba(10,132,255,0.1) 0%,transparent 65%);
-  top:50%;left:50%;transform:translate(-50%,-50%);
-  animation:pulseRing 5s ease-in-out infinite;pointer-events:none;
+  position:absolute;width:1000px;height:1000px;border-radius:50%;
+  background:radial-gradient(circle,rgba(10,132,255,0.06) 0%,rgba(0,212,255,0.02) 35%,transparent 60%);
+  top:45%;left:50%;transform:translate(-50%,-50%);
+  animation:pulseRing 8s ease-in-out infinite;pointer-events:none;
 }
-@keyframes pulseRing{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.7;}50%{transform:translate(-50%,-50%) scale(1.08);opacity:1;}}
+@keyframes pulseRing{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.5;}50%{transform:translate(-50%,-50%) scale(1.05);opacity:0.8;}}
 
 .hero-eyebrow{
   display:inline-flex;align-items:center;gap:8px;
@@ -1012,11 +1012,63 @@ site-footer{display:block;position:relative;z-index:1;background:var(--black2);b
 /* ─── HERO VIDEO BG ─── */
 .hero-video-bg{
   position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(10,132,255,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 70% 60%, rgba(0,212,255,0.03) 0%, transparent 60%),
+    linear-gradient(180deg, #060b16 0%, #0a0f1e 40%, #070c18 100%);
 }
 
 #heroCanvas{
   position:absolute;inset:0;width:100%;height:100%;
-  pointer-events:none;z-index:0;opacity:0.7;
+  pointer-events:none;z-index:0;opacity:0.5;
+}
+
+/* Subtle technical grid overlay */
+.hero-grid-overlay{
+  position:absolute;inset:0;z-index:1;
+  background-image:
+    linear-gradient(rgba(10,132,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10,132,255,0.03) 1px, transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,0,0,0.4) 0%, transparent 70%);
+  -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,0,0,0.4) 0%, transparent 70%);
+}
+
+/* Horizontal light streaks — like highway at night */
+.hero-light-streak{
+  position:absolute;
+  height:1px;
+  z-index:2;
+  border-radius:50%;
+}
+
+.hero-streak-1{
+  top:35%;left:0;right:0;
+  background:linear-gradient(90deg, transparent 0%, rgba(10,132,255,0.12) 20%, rgba(0,212,255,0.08) 50%, rgba(10,132,255,0.12) 80%, transparent 100%);
+  animation:streakGlow 6s ease-in-out infinite;
+}
+
+.hero-streak-2{
+  top:55%;left:10%;right:10%;
+  background:linear-gradient(90deg, transparent 0%, rgba(10,132,255,0.06) 30%, rgba(0,212,255,0.04) 60%, transparent 100%);
+  animation:streakGlow 8s ease-in-out infinite 2s;
+}
+
+.hero-streak-3{
+  top:72%;left:20%;right:5%;
+  background:linear-gradient(90deg, transparent 0%, rgba(10,132,255,0.04) 40%, rgba(0,212,255,0.06) 70%, transparent 100%);
+  animation:streakGlow 7s ease-in-out infinite 4s;
+}
+
+@keyframes streakGlow{
+  0%,100%{opacity:0.3;}
+  50%{opacity:1;}
+}
+
+/* Edge vignette for depth */
+.hero-vignette{
+  position:absolute;inset:0;z-index:3;
+  background:radial-gradient(ellipse 80% 70% at 50% 45%, transparent 40%, rgba(4,8,16,0.7) 100%);
 }
 
 /* ─── LOCATION ─── */
@@ -1093,69 +1145,7 @@ site-footer{display:block;position:relative;z-index:1;background:var(--black2);b
   #home-hero{padding-top:110px;}
 }
 
-/* ─── CAR ANIMATION ─── */
-.car-scene{
-  position:absolute;bottom:18%;left:0;width:100%;
-  pointer-events:none;z-index:1;overflow:hidden;height:60px;
-}
-.car-wrap{
-  position:absolute;bottom:0;
-  animation:carDrive 14s linear infinite;
-  left:-220px;
-}
-.car-svg{width:180px;height:auto;filter:drop-shadow(0 0 8px rgba(10,132,255,0.6));}
-
-/* Headlights beam */
-.car-wrap::before{
-  content:'';
-  position:absolute;
-  right:-5px;top:12px;
-  width:120px;height:22px;
-  background:linear-gradient(90deg,rgba(255,240,180,0.55),transparent);
-  clip-path:polygon(0 30%,100% 0%,100% 100%,0 70%);
-  border-radius:0 8px 8px 0;
-}
-/* Tail lights */
-.car-wrap::after{
-  content:'';
-  position:absolute;
-  left:4px;top:16px;
-  width:18px;height:10px;
-  background:rgba(255,30,30,0.7);
-  border-radius:3px;
-  box-shadow:0 0 10px rgba(255,0,0,0.8),0 0 22px rgba(255,0,0,0.4);
-}
-
-/* Road line */
-.car-scene::before{
-  content:'';
-  position:absolute;
-  bottom:0;left:0;right:0;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(10,132,255,0.15),rgba(10,132,255,0.3),rgba(10,132,255,0.15),transparent);
-}
-
-@keyframes carDrive{
-  0%  { left:-220px; }
-  100%{ left:calc(100% + 40px); }
-}
-
-/* Second car — slower, slightly different timing */
-.car-scene .car-wrap:nth-child(2){
-  animation:carDrive2 22s linear infinite;
-  animation-delay:7s;
-  bottom:5px;
-  opacity:0.45;
-  transform:scaleX(0.75) scaleY(0.75);
-}
-@keyframes carDrive2{
-  0%  { left:-180px; }
-  100%{ left:calc(100% + 40px); }
-}
-
-@media(max-width:768px){
-  .car-scene{bottom:15%;}
-  .car-svg{width:130px;}
-}
+/* Car animations removed — replaced with minimalistic background */
 
 /* ─── PARTNERS BAR ─── */
 .partners-bar{
@@ -2654,3 +2644,247 @@ site-footer{display:block;position:relative;z-index:1;background:var(--black2);b
   color: #fff;
   border-color: var(--blue);
 }
+
+/* ═══════════════════════════════════════════
+   LIGHT MODE OVERRIDES
+   ═══════════════════════════════════════════ */
+
+/* ─── LIGHT MODE: GLOBAL POZADINA ─── */
+:root[data-theme="light"] #page-home,
+:root[data-theme="light"] #page-booking,
+:root[data-theme="light"] #service-page{
+  background:
+    radial-gradient(ellipse 70% 50% at 85% 15%, rgba(10,132,255,0.09) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 45% at 10% 85%, rgba(0,180,255,0.07) 0%, transparent 50%),
+    #f0f4f8;
+}
+
+/* ─── HERO POZADINA ─── */
+:root[data-theme="light"] .hero-video-bg{
+  background:
+    radial-gradient(ellipse 70% 55% at 15% 25%, rgba(10,132,255,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 85% 15%, rgba(0,180,255,0.14) 0%, transparent 50%),
+    radial-gradient(ellipse 55% 45% at 50% 80%, rgba(10,132,255,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 5% 70%, rgba(0,212,255,0.1) 0%, transparent 45%),
+    radial-gradient(ellipse 40% 35% at 90% 65%, rgba(10,100,255,0.08) 0%, transparent 45%),
+    linear-gradient(150deg, #e8eff8 0%, #dce6f2 25%, #e4ecf7 50%, #dfe8f4 75%, #eaf0f8 100%);
+}
+:root[data-theme="light"] #heroCanvas{opacity:0.35;}
+:root[data-theme="light"] .hero-grid-overlay{
+  background-image:
+    linear-gradient(rgba(10,132,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10,132,255,0.06) 1px, transparent 1px);
+  mask-image:radial-gradient(ellipse 75% 65% at 50% 50%, rgba(0,0,0,0.5) 0%, transparent 70%);
+  -webkit-mask-image:radial-gradient(ellipse 75% 65% at 50% 50%, rgba(0,0,0,0.5) 0%, transparent 70%);
+}
+:root[data-theme="light"] .hero-streak-1{
+  height:2px;
+  background:linear-gradient(90deg, transparent 0%, rgba(10,132,255,0.15) 20%, rgba(0,212,255,0.2) 50%, rgba(10,132,255,0.15) 80%, transparent 100%);
+}
+:root[data-theme="light"] .hero-streak-2{
+  height:2px;
+  background:linear-gradient(90deg, transparent 0%, rgba(10,132,255,0.1) 30%, rgba(0,212,255,0.12) 60%, transparent 100%);
+}
+:root[data-theme="light"] .hero-streak-3{
+  height:2px;
+  background:linear-gradient(90deg, transparent 0%, rgba(10,132,255,0.08) 40%, rgba(0,212,255,0.1) 70%, transparent 100%);
+}
+:root[data-theme="light"] .hero-vignette{
+  background:radial-gradient(ellipse 90% 80% at 50% 45%, transparent 50%, rgba(232,239,248,0.4) 100%);
+}
+:root[data-theme="light"] .hero-glow-ring{
+  background:radial-gradient(circle, rgba(10,132,255,0.12) 0%, rgba(0,212,255,0.06) 35%, transparent 60%);
+}
+
+/* ─── HERO TEKST ─── */
+:root[data-theme="light"] .ht-white{color:#0f1722;}
+:root[data-theme="light"] .hero-sub{color:#2a3a4e;}
+:root[data-theme="light"] .hero-eyebrow{
+  background:rgba(10,132,255,0.08);border-color:rgba(10,132,255,0.2);color:#0A84FF;
+}
+:root[data-theme="light"] .hero-divider{
+  background:linear-gradient(90deg,transparent,rgba(10,132,255,0.3),transparent);
+}
+
+/* ─── ACCOUNT IKONICA ─── */
+:root[data-theme="light"] .nav-account{color:#3d4f63;}
+:root[data-theme="light"] .nav-account:hover{color:#0f1722;}
+:root[data-theme="light"] .nav-acc-avatar{
+  border-color:rgba(15,23,34,0.2);background:rgba(15,23,34,0.06);color:#3d4f63;
+}
+:root[data-theme="light"] .nav-account:hover .nav-acc-avatar{
+  background:rgba(10,132,255,0.08);border-color:rgba(10,132,255,0.3);color:#0A84FF;
+}
+
+/* ─── STATS BAR ─── */
+:root[data-theme="light"] .stats-bar{
+  background:rgba(255,255,255,0.7);border-color:#d0d8e4;
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+:root[data-theme="light"] .stat-n{color:#0A84FF;}
+:root[data-theme="light"] .stat-l{color:#3d4f63;}
+:root[data-theme="light"] .stat-item+.stat-item{border-left-color:#d0d8e4;}
+
+/* ─── TOOLS BAR ─── */
+:root[data-theme="light"] .tool-btn{
+  background:#fff;border-color:#d0d8e4;color:#0f1722;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+:root[data-theme="light"] .tool-btn:hover{
+  border-color:var(--blue);background:rgba(10,132,255,0.04);
+}
+
+/* ─── PARTNERS BAR ─── */
+:root[data-theme="light"] .partners-bar{
+  background:rgba(240,244,248,0.8);border-color:#d0d8e4;
+}
+:root[data-theme="light"] .partners-label{color:#3d4f63;}
+:root[data-theme="light"] .partner-badge{border-color:#d0d8e4;background:rgba(255,255,255,0.6);}
+
+/* ─── SERVICE KARTICE ─── */
+:root[data-theme="light"] .svc-btn{
+  background:#fff;border-color:#d0d8e4;
+  box-shadow:0 2px 8px rgba(0,0,0,0.04);
+}
+:root[data-theme="light"] .svc-btn:hover{
+  border-color:var(--blue);box-shadow:0 4px 16px rgba(10,132,255,0.1);
+}
+:root[data-theme="light"] .svc-name{color:#0f1722;}
+:root[data-theme="light"] .svc-short{color:#3d4f63;}
+
+/* ─── TOOL MODAL OVERLAYS (Checker + Calculator) ─── */
+:root[data-theme="light"] .tool-modal-overlay{
+  background:rgba(240,244,248,0.92);
+}
+:root[data-theme="light"] .tool-modal{
+  background:#fff;border-color:#d0d8e4;
+  box-shadow:0 8px 40px rgba(0,0,0,0.1);
+}
+:root[data-theme="light"] .tm-close{color:#3d4f63;}
+:root[data-theme="light"] .tm-close:hover{color:#0f1722;}
+:root[data-theme="light"] .tm-header h2{color:#0f1722;}
+:root[data-theme="light"] .tm-header p{color:#3d4f63;}
+:root[data-theme="light"] .cc-label{color:#3d4f63;}
+:root[data-theme="light"] .cc-select{
+  background:#f5f7fa;border-color:#d0d8e4;color:#0f1722;
+}
+:root[data-theme="light"] .cc-select option{background:#fff;color:#0f1722;}
+:root[data-theme="light"] .cc-result{
+  background:#f5f7fa;border-color:#d0d8e4;
+}
+:root[data-theme="light"] .cc-bar-label{color:#3d4f63;}
+:root[data-theme="light"] .cc-bar-track{background:#e8edf2;}
+:root[data-theme="light"] .cc-car-name{color:#0f1722;}
+:root[data-theme="light"] .cc-gain{color:#0f1722;}
+:root[data-theme="light"] .cc-leg-item{color:#3d4f63;}
+
+/* ─── SERVICE DETAIL PAGE ─── */
+:root[data-theme="light"] .sp-back-btn{
+  background:#fff;border-color:#d0d8e4;color:#0f1722;
+}
+:root[data-theme="light"] .sp-card{
+  background:#fff;border-color:#d0d8e4;
+  box-shadow:0 2px 8px rgba(0,0,0,0.04);
+}
+:root[data-theme="light"] .sp-cta-bar{
+  background:linear-gradient(135deg,rgba(10,132,255,0.06),rgba(0,212,255,0.03));
+  border-color:#d0d8e4;
+}
+:root[data-theme="light"] .sp-cta-title{color:#0f1722;}
+:root[data-theme="light"] .sp-cta-sub{color:#3d4f63;}
+:root[data-theme="light"] .model-chip{
+  background:rgba(10,132,255,0.06);border-color:#d0d8e4;color:#0f1722;
+}
+:root[data-theme="light"] .model-chip:hover{
+  background:rgba(10,132,255,0.12);border-color:var(--blue);
+}
+
+/* ─── BOOKING FORMA ─── */
+:root[data-theme="light"] .booking-section{background:#f5f7fa;border-color:#d0d8e4;}
+:root[data-theme="light"] .bsvc-item{
+  background:#fff;border-color:#d0d8e4;color:#0f1722;
+}
+:root[data-theme="light"] .bsvc-item.checked{
+  border-color:var(--blue);background:rgba(10,132,255,0.06);
+}
+:root[data-theme="light"] .booking-input,
+:root[data-theme="light"] .booking-select,
+:root[data-theme="light"] .booking-textarea{
+  background:#fff;border-color:#d0d8e4;color:#0f1722;
+}
+
+/* ─── MOJE VOZILO WIDGET ─── */
+:root[data-theme="light"] .mv-toggle{
+  background:#fff;border-color:#d0d8e4;color:#0f1722;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+:root[data-theme="light"] .mv-toggle:hover{
+  border-color:var(--blue);box-shadow:0 4px 16px rgba(10,132,255,0.12);
+}
+:root[data-theme="light"] .mv-panel{
+  background:#fff;border-color:#d0d8e4;
+  box-shadow:0 8px 30px rgba(0,0,0,0.1);
+}
+:root[data-theme="light"] .mv-panel-title{color:#0f1722;}
+:root[data-theme="light"] .mv-select,
+:root[data-theme="light"] .mv-input{
+  background:#f5f7fa;border-color:#d0d8e4;color:#0f1722;
+}
+:root[data-theme="light"] .mv-car-name{color:#0f1722;}
+:root[data-theme="light"] .mv-compat-label{color:#3d4f63;}
+:root[data-theme="light"] .mv-change-btn{color:#3d4f63;}
+
+/* ─── FOOTER ─── */
+:root[data-theme="light"] site-footer{
+  background:#e8edf2;border-top-color:#d0d8e4;
+}
+:root[data-theme="light"] .footer-copy{color:#3d4f63;}
+
+/* ─── MOBILE STICKY BAR ─── */
+:root[data-theme="light"] .mobile-sticky-bar{
+  background:rgba(255,255,255,0.95);border-top-color:#d0d8e4;
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+}
+:root[data-theme="light"] .msb-call{
+  border-color:#d0d8e4;color:#0f1722;background:#fff;
+}
+
+/* ─── WHATSAPP FLOAT ─── */
+:root[data-theme="light"] .wa-float{
+  box-shadow:0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* ─── SCROLL TOP ─── */
+:root[data-theme="light"] #scrollTopBtn{
+  box-shadow:0 4px 16px rgba(10,132,255,0.15);
+}
+
+/* ─── TICKER ─── */
+:root[data-theme="light"] .ticker-wrap{
+  background:linear-gradient(90deg,#0A84FF,#0068d6);
+}
+
+/* ─── QR / INFO PAGES ─── */
+:root[data-theme="light"] .qr-inner{background:#fff;border-color:#d0d8e4;}
+:root[data-theme="light"] .info-content{color:#0f1722;}
+
+/* ─── ADMIN OVERLAY (ostaje tamni) ─── */
+
+/* ─── PUSH BANNER ─── */
+:root[data-theme="light"] .push-banner{
+  background:#fff;border-color:#d0d8e4;color:#0f1722;
+  box-shadow:0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* ─── BLOG / RECENZIJE ─── */
+:root[data-theme="light"] .blog-card{
+  background:#fff;border-color:#d0d8e4;
+}
+:root[data-theme="light"] .blog-card:hover{
+  border-color:var(--blue);box-shadow:0 4px 16px rgba(10,132,255,0.08);
+}
+
+/* ─── BREADCRUMB ─── */
+:root[data-theme="light"] .breadcrumb-nav{color:#3d4f63;}
+:root[data-theme="light"] .breadcrumb-nav a{color:#3d4f63;}
+:root[data-theme="light"] .breadcrumb-nav a:hover{color:#0A84FF;}
