@@ -25,6 +25,17 @@ http.createServer((req, res) => {
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
+      // SPA fallback: serve index.html for routes without file extension
+      const ext = path.extname(url).toLowerCase();
+      if (!ext || ext === '') {
+        const indexPath = path.join(__dirname, 'index.html');
+        fs.readFile(indexPath, (err2, indexData) => {
+          if (err2) { res.writeHead(500); res.end('Error'); return; }
+          res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+          res.end(indexData);
+        });
+        return;
+      }
       res.writeHead(404, { 'Content-Type': 'text/plain' });
       res.end('Not found');
       return;

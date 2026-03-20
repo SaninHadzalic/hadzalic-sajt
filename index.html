@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
+<base href="/">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="js/supabase.js"></script>
@@ -239,6 +240,20 @@
       Kodiramo. Aktiviramo. Optimizujemo.
     </div>
   </div>
+  <div class="nav-links" id="navLinks">
+    <a href="/usluge" class="nav-link" data-route="/usluge">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+      Usluge
+    </a>
+    <a href="/blog" class="nav-link" data-route="/blog">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+      Blog
+    </a>
+    <a href="/kontakt" class="nav-link" data-route="/kontakt">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+      Kontakt
+    </a>
+  </div>
   <button class="nav-back" id="navBack">← Nazad</button>
   <div class="nav-right">
     <button class="nav-booking" id="navBooking">
@@ -295,6 +310,12 @@
     <button class="menu-item" data-info="dpf"><span class="mi-icon">🛠️</span><span class="mi-name">DPF / EGR / AdBlue</span><span class="mi-arr">→</span></button>
     <button class="menu-item" data-info="obd"><span class="mi-icon">💻</span><span class="mi-name">OBD Kodiranje</span><span class="mi-arr">→</span></button>
   </div>
+  <div class="slide-menu-label">Stranice</div>
+  <div class="slide-menu-items">
+    <a href="/usluge" class="menu-item" data-route="/usluge"><span class="mi-icon">⚡</span><span class="mi-name">Naše Usluge</span><span class="mi-arr">→</span></a>
+    <a href="/blog" class="menu-item" data-route="/blog"><span class="mi-icon">📰</span><span class="mi-name">Blog</span><span class="mi-arr">→</span></a>
+    <a href="/kontakt" class="menu-item" data-route="/kontakt"><span class="mi-icon">📞</span><span class="mi-name">Kontakt</span><span class="mi-arr">→</span></a>
+  </div>
 
   <div class="slide-menu-footer">
     <a href="tel:+381600779443" class="slide-footer-link">📞 060 077 9443</a>
@@ -348,6 +369,103 @@
         <span class="pb-tag">ECU Maps</span>
       </a>
     </div>
+  </div>
+
+  <!-- QUICK LINKS — navigate to subpages -->
+  <section class="home-quick-links sr">
+    <p class="sec-label">Istražite</p>
+    <div class="quick-links-grid">
+      <a href="/usluge" class="ql-card" data-route="/usluge">
+        <div class="ql-glow ql-glow-blue"></div>
+        <div class="ql-icon-wrap ql-icon-blue">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="ql-body">
+          <div class="ql-name">Naše Usluge</div>
+          <p class="ql-desc">Chiptuning, CarPlay, kodiranje, softverska rješenja i više</p>
+        </div>
+        <div class="ql-footer">
+          <span class="ql-count">10+ usluga</span>
+          <span class="ql-arrow">Pogledaj <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="/blog" class="ql-card" data-route="/blog">
+        <div class="ql-glow ql-glow-purple"></div>
+        <div class="ql-icon-wrap ql-icon-purple">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div class="ql-body">
+          <div class="ql-name">Blog</div>
+          <p class="ql-desc">Savjeti, novosti i trikovi iz svijeta auto kodiranja</p>
+        </div>
+        <div class="ql-footer">
+          <span class="ql-count">Najnoviji članci</span>
+          <span class="ql-arrow">Čitaj <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="/kontakt" class="ql-card" data-route="/kontakt">
+        <div class="ql-glow ql-glow-green"></div>
+        <div class="ql-icon-wrap ql-icon-green">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="ql-body">
+          <div class="ql-name">Kontakt</div>
+          <p class="ql-desc">Lokacija, radno vrijeme i forma za brzi upit</p>
+        </div>
+        <div class="ql-footer">
+          <span class="ql-count">Brz odgovor</span>
+          <span class="ql-arrow">Piši nam <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="#" class="ql-card ql-card-social" data-scroll="socialLinks">
+        <div class="ql-glow ql-glow-pink"></div>
+        <div class="ql-icon-wrap ql-icon-pink">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </div>
+        <div class="ql-body">
+          <div class="ql-name">Društvene Mreže</div>
+          <p class="ql-desc">Zapratite nas na Instagramu, Facebooku i TikToku</p>
+        </div>
+        <div class="ql-footer">
+          <span class="ql-count">3 platforme</span>
+          <span class="ql-arrow">Zaprati <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+<section class="home-section alt qr-section sr">
+  <div class="qr-inner">
+    <div class="qr-text">
+      <div class="sec-tag" style="text-align:left;">Podijelite nas</div>
+      <h2 class="qr-title">Skenirajte QR kod</h2>
+      <p class="qr-desc">Podijelite sajt sa prijateljem ili sačuvajte link za vaše vozilo — jednostavno skenirajte kamerom telefona.</p>
+      <a href="https://hadzalic.co" class="qr-link">🌐 hadzalic.co</a>
+    </div>
+    <div class="qr-box">
+      <div id="qrcode"></div>
+      <p class="qr-caption">hadzalic.co</p>
+    </div>
+  </div>
+</section>
+
+<site-footer>
+    <button class="nav-logo" id="footerLogo">
+      <span class="logo-h">Hadzalic</span><span class="logo-sep"></span><span class="logo-c">Coding</span>
+    </button>
+    <p class="footer-copy">© 2026 Hadzalic Coding 🌐 · Prijepolje, Srbija · Sva prava zadržana.</p>
+  </site-footer>
+
+</div><!-- /page-home -->
+
+
+<!-- ══════════════════════════════════════════
+     USLUGE PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-usluge">
+  <div class="page-header">
+    <h1>Naše Usluge</h1>
+    <p>Chiptuning, CarPlay aktivacija, kodiranje i softverska rješenja za vaše vozilo</p>
   </div>
 
   <!-- SERVICES -->
@@ -429,131 +547,13 @@
         <div class="svc-arrow">Zakaži →</div>
       </button>
 
-    </div>
-  </section>
-
-  <!-- PORTFOLIO / CASE STUDIES -->
-  <section class="home-section sr" id="portfolioSection">
-    <div class="sec-header">
-      <span class="sec-tag">Case Studies</span>
-      <h2 class="sec-h2">Naši Radovi</h2>
-    </div>
-    <div class="portfolio-filters">
-      <button class="active" data-filter="all">Svi</button>
-      <button data-filter="chiptuning">Chiptuning</button>
-      <button data-filter="carplay">CarPlay</button>
-      <button data-filter="dpf">DPF/EGR</button>
-      <button data-filter="navi">Navigacija</button>
-      <button data-filter="aktivacija">Aktivacija</button>
-    </div>
-    <div class="portfolio-grid" id="portfolioGrid"></div>
-  </section>
-
-  <!-- INSTAGRAM -->
-  <section class="home-section alt" id="igSection" style="display:none;">
-    <div class="sec-header">
-      <span class="sec-tag">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        Instagram
-      </span>
-      <h2 class="sec-h2" id="igSectionTitle">Najnovija Objava</h2>
-    </div>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
-
-      <!-- Dark card wrapper -->
-      <div class="ig-card">
-        <!-- IG header bar -->
-        <div class="ig-card-header">
-          <div style="display:flex;align-items:center;gap:10px;">
-            <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#e1306c,#833ab4);display:flex;align-items:center;justify-content:center;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </div>
-            <div>
-              <div style="font-weight:700;font-size:0.85rem;color:#fff;">hadzalic.coding</div>
-              <div style="font-size:0.72rem;color:rgba(255,255,255,0.4);">Prijepolje</div>
-            </div>
-          </div>
-          <a id="igProfileLink" href="https://www.instagram.com/hadzalic.coding/" target="_blank" rel="noopener" class="ig-follow-btn">Prati</a>
-        </div>
-
-        <!-- Embed container with dark overlay trick -->
-        <div class="ig-embed-container">
-          <div id="igEmbedWrap"></div>
-        </div>
-
-        <!-- Dark footer -->
-        <div class="ig-card-footer">
-          <a id="igViewLink" href="https://www.instagram.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#e1306c'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            Pogledaj na Instagramu
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="home-section alt sr">
-    <div class="sec-header">
-      <span class="sec-tag">Imate pitanja?</span>
-      <h2 class="sec-h2">Česta Pitanja</h2>
-    </div>
-    <div class="faq-wrap" id="faqWrap">
-      <button class="faq-btn" data-faq="0">
-        <div class="faq-q">Da li CarPlay aktivacija poništava garanciju vozila? <span class="faq-ic">+</span></div>
-        <div class="faq-a">U većini slučajeva ne, jer se radi o softverskoj promjeni putem OBD priključka, bez fizičkog zadiranja u vozilo. Preporučujemo da nas kontaktirate za vaš konkretan slučaj.</div>
-      </button>
-      <button class="faq-btn" data-faq="1">
-        <div class="faq-q">Koliko traje chiptuning? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Sam proces traje obično 1–2 sata. Prethodno je potrebna dijagnostika i provjera stanja vozila, pa cijeli posjet može trajati 2–3 sata. Dogovaramo termin unaprijed.</div>
-      </button>
-      <button class="faq-btn" data-faq="2">
-        <div class="faq-q">Da li je chiptuning moguć na benzinskim vozilima? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Da, chiptuning je moguć i na benzinskim i na dizel motorima. Turbo motori generalno daju bolje rezultate od atmosferskih.</div>
-      </button>
-      <button class="faq-btn" data-faq="3">
-        <div class="faq-q">Šta ako se pojavi problem nakon kodiranja? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Svaka promjena se može vratiti na fabričke postavke. Uvijek čuvamo originalne podatke vozila i nudimo podršku nakon obavljene usluge.</div>
-      </button>
-      <button class="faq-btn" data-faq="4">
-        <div class="faq-q">Da li radite i za vozila izvan Prijepolja? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Da! Neke usluge mogu biti obavljene online. Za fizičke intervencije — klijenti dolaze kod nas, a dostupni smo i za dogovor na terenu.</div>
-      </button>
-      <button class="faq-btn" data-faq="5">
-        <div class="faq-q">Koliko košta aktivacija skrivenih funkcija? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Cijena zavisi od vozila i broja funkcija koje se aktiviraju. Kontaktirajte nas s modelom i godištem vozila i dobićete konkretan odgovor u kratkom roku.</div>
+      <button class="svc-btn blue" data-svc="faq">
+        <span class="svc-icon">❓</span>
+        <div class="svc-name">Česta Pitanja</div>
+        <p class="svc-short">Odgovori na najčešća pitanja o našim uslugama.</p>
+        <div class="svc-arrow">Pogledaj →</div>
       </button>
 
-      <button class="faq-btn" data-faq="6">
-        <div class="faq-q">Da li je moguće gledati YouTube i video klipove preko CarPlay / Android Auto? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Ne. Apple CarPlay i Android Auto su namijenjeni isključivo za sigurnu vožnju — podržavaju navigaciju, muziku, pozive i poruke. Reprodukcija YouTube-a, Netflix-a ili video klipova nije moguća putem CarPlay / Android Auto sistema iz sigurnosnih razloga.</div>
-      </button>
-
-      <button class="faq-btn" data-faq="7">
-        <div class="faq-q">Da li chiptuning može oštetiti motor? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Ne, ukoliko je vozilo u dobrom mehaničkom stanju i ukoliko se tuning radi profesionalno. Svaki naš chiptuning je prilagođen konkretnom vozilu i motoru. Upravo zbog toga obavezno tražimo prethodnu provjeru vozila — da bi tuning bio bezbijedan i dugotrajan.</div>
-      </button>
-
-      <button class="faq-btn" data-faq="8">
-        <div class="faq-q">Da li mogu koristiti navigaciju na telefonu (Google Maps) bez CarPlay aktivacije? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Možete koristiti telefon odvojeno, ali bez CarPlay aktivacije navigacija sa telefona neće biti prikazana na fabrčkom ekranu vozila. CarPlay aktivacija je upravo to što vam omogućava da vidite Google Maps ili Waze direktno na ekranu auta, umjesto da gledate u telefon.</div>
-      </button>
-
-      <button class="faq-btn" data-faq="9">
-        <div class="faq-q">Da li DPF / EGR softversko rješenje prolazi tehnički pregled? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Ovo zavisi od tipa rješenja i standarda koji se primjenjuju na tehničkom pregledu u vašoj zemlji. Preporučujemo da nas kontaktirate i razgovaramo o konkretnoj situaciji — u nekim slučajevima postoje rješenja koja zadovoljavaju uslove tehničkog pregleda.</div>
-      </button>
-
-      <button class="faq-btn" data-faq="10">
-        <div class="faq-q">Da li CarPlay adapter radi jednako dobro kao softverska aktivacija? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Da, u praksi je iskustvo vrlo slično. Adapter pruža isti CarPlay / Android Auto interfejs na ekranu vozila. Jedina razlika je što se adapter fizički ugrađuje, dok je softverska aktivacija čisto softverska promjena. Za vozila koja ne podržavaju softversku aktivaciju, adapter je odlično i pouzdano rješenje.</div>
-      </button>
-
-      <button class="faq-btn" data-faq="11">
-        <div class="faq-q">Mogu li nakon chiptuninga vratiti vozilo na originalne postavke? <span class="faq-ic">+</span></div>
-        <div class="faq-a">Da, uvijek čuvamo originalni softver vozila prije svake intervencije. Ukoliko ikada poželite da se vratite na fabričke postavke — to je moguće u svakom trenutku.</div>
-      </button>
     </div>
   </section>
 
@@ -598,6 +598,18 @@
 
     </div>
   </section>
+
+</div><!-- /page-usluge -->
+
+
+<!-- ══════════════════════════════════════════
+     KONTAKT PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-kontakt">
+  <div class="page-header">
+    <h1>Kontakt</h1>
+    <p>Stupite u kontakt s nama ili nas posjetite u Prijepolju</p>
+  </div>
 
   <!-- CONTACT -->
   <section class="home-section sr" id="contactSection">
@@ -659,6 +671,68 @@
     </div>
   </section>
 
+  <!-- INTERACTIVE MAP -->
+  <section class="home-section sr" id="locationSection">
+  <div class="sec-header">
+    <span class="sec-tag">Gdje nas naći</span>
+    <h2 class="sec-h2">Lokacija</h2>
+    <p class="sec-desc">Nalazimo se u Prijepolju, Srbija. Kliknite na mapu za navigaciju!</p>
+  </div>
+
+  <!-- Full-width interactive map -->
+  <div class="map-hero">
+    <div class="map-hero-wrap">
+      <iframe
+        src="https://www.google.com/maps?q=43.334221469699685,19.6461902&z=15&output=embed"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="map-hero-overlay">
+      <div class="map-hero-pin">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#0A84FF" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>Hadzalic Coding</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info cards below map -->
+  <div class="map-info-row">
+    <div class="map-info-card">
+      <div class="map-info-icon">&#128205;</div>
+      <div class="map-info-label">Adresa</div>
+      <div class="map-info-val">Prijepolje, Srbija</div>
+    </div>
+    <div class="map-info-card">
+      <div class="map-info-icon">&#128338;</div>
+      <div class="map-info-label">Radno vrijeme</div>
+      <div class="map-info-val">Pon–Pet 09–18h | Sub 09–14h</div>
+    </div>
+    <div class="map-info-card">
+      <div class="map-info-icon">&#128222;</div>
+      <div class="map-info-label">Telefon / WhatsApp</div>
+      <div class="map-info-val"><a href="tel:+381600779443" class="loc-link">060 077 9443</a></div>
+    </div>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=43.334221469699685,19.6461902" target="_blank" class="map-info-card map-info-cta">
+      <div class="map-info-icon">&#128663;</div>
+      <div class="map-info-label">Navigacija</div>
+      <div class="map-info-val" style="color:var(--blue);font-weight:700;">Otvori u Google Maps →</div>
+    </a>
+  </div>
+
+  <div class="loc-status" id="locStatus"></div>
+  </section>
+
+</div><!-- /page-kontakt -->
+
+
+<!-- ══════════════════════════════════════════
+     BLOG PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-blog">
+  <div class="page-header">
+    <h1>Blog</h1>
+    <p>Savjeti, novosti i trikovi iz svijeta auto kodiranja</p>
+  </div>
 
   <!-- BLOG -->
   <section id="blogSection" class="home-section sr">
@@ -703,83 +777,7 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <section class="home-section sr" id="locationSection">
-  <div class="sec-header">
-    <span class="sec-tag">Gdje nas naći</span>
-    <h2 class="sec-h2">Lokacija</h2>
-    <p class="sec-desc">Nalazimo se u Prijepolju, Srbija. Zakažite termin i dođite kod nas!</p>
-  </div>
-  <div class="loc-grid">
-    <div class="loc-info">
-      <div class="loc-card">
-        <div class="loc-card-icon">&#128205;</div>
-        <div class="loc-card-body">
-          <div class="loc-card-title">Adresa</div>
-          <div class="loc-card-text">Prijepolje, Srbija</div>
-        </div>
-      </div>
-      <div class="loc-card">
-        <div class="loc-card-icon">&#128338;</div>
-        <div class="loc-card-body">
-          <div class="loc-card-title">Radno vrijeme</div>
-          <div class="loc-card-text">
-            <div class="loc-hours">
-              <span>Pon — Pet</span><span class="loc-hours-val">09:00 — 18:00</span>
-            </div>
-            <div class="loc-hours">
-              <span>Subota</span><span class="loc-hours-val">09:00 — 14:00</span>
-            </div>
-            <div class="loc-hours">
-              <span>Nedjelja</span><span class="loc-hours-val loc-closed">Zatvoreno</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="loc-card">
-        <div class="loc-card-icon">&#128222;</div>
-        <div class="loc-card-body">
-          <div class="loc-card-title">Telefon / WhatsApp</div>
-          <div class="loc-card-text"><a href="tel:+381600779443" class="loc-link">060 077 9443</a></div>
-        </div>
-      </div>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=43.334221469699685,19.6461902" target="_blank" class="loc-directions-btn">Otvori u Google Maps</a>
-    </div>
-    <div class="loc-map">
-      <div class="map-wrap">
-        <iframe
-          src="https://www.google.com/maps?q=43.334221469699685,19.6461902&z=16&output=embed"
-          width="100%" height="100%" style="border:0;filter:invert(90%) hue-rotate(180deg) saturate(1.2);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-      <div class="loc-status" id="locStatus"></div>
-    </div>
-  </div>
-</section>
-
-<section class="home-section alt qr-section sr">
-  <div class="qr-inner">
-    <div class="qr-text">
-      <div class="sec-tag" style="text-align:left;">Podijelite nas</div>
-      <h2 class="qr-title">Skenirajte QR kod</h2>
-      <p class="qr-desc">Podijelite sajt sa prijateljem ili sačuvajte link za vaše vozilo — jednostavno skenirajte kamerom telefona.</p>
-      <a href="https://hadzalic.co" class="qr-link">🌐 hadzalic.co</a>
-    </div>
-    <div class="qr-box">
-      <div id="qrcode"></div>
-      <p class="qr-caption">hadzalic.co</p>
-    </div>
-  </div>
-</section>
-
-<site-footer>
-    <button class="nav-logo" id="footerLogo">
-      <span class="logo-h">Hadzalic</span><span class="logo-sep"></span><span class="logo-c">Coding</span>
-    </button>
-    <p class="footer-copy">© 2026 Hadzalic Coding 🌐 · Prijepolje, Srbija · Sva prava zadržana.</p>
-  </site-footer>
-
-</div><!-- /page-home -->
+</div><!-- /page-blog -->
 
 <!-- ══════════════════════════════════════════
      SERVICE PAGE (dynamic)
@@ -803,7 +801,7 @@
         <div>
           <div class="sp-card" id="spDescCard">
             <div class="sp-card-title blue" id="spDescTitle">O usluzi</div>
-            <p class="sp-desc" id="spDesc"></p>
+            <div class="sp-desc" id="spDesc"></div>
           </div>
           <div class="sp-card" style="margin-top:20px;" id="spModelsCard">
             <div class="sp-card-title blue" id="spModelsTitle">Podržana vozila</div>
@@ -2152,16 +2150,100 @@ const services = {
     desc: 'Pružamo usluge popravke i zamjene auspuha i ispušnog sistema. Dijagnostikujemo propuštanje, koroziju i oštećenja, te vršimo popravku ili zamjenu auspušnog lonca i srednje cijevi. Napomena: ne radimo zamjenu katalizatora i DPF filtera.',
     benefits: ['💨 Zamjena auspušnog lonca i cijevi','🔍 Dijagnostika propuštanja i oštećenja','🔧 Zavarivanje i popravka oštećenih dijelova','🚗 Sve marke i modeli vozila','💰 Povoljne cijene — originalni i aftermarket dijelovi'],
     models: ['Putnička vozila','SUV i 4x4','Kombiji']
+  },
+  faq: {
+    icon: '❓',
+    title: 'Česta Pitanja',
+    subtitle: 'Odgovori na najčešća pitanja o našim uslugama.',
+    desc: '<div class="faq-wrap" id="faqWrapService"><button class="faq-btn" data-faq="f0"><div class="faq-q">Da li CarPlay aktivacija poništava garanciju vozila? <span class="faq-ic">+</span></div><div class="faq-a">U većini slučajeva ne, jer se radi o softverskoj promjeni putem OBD priključka, bez fizičkog zadiranja u vozilo. Preporučujemo da nas kontaktirate za vaš konkretan slučaj.</div></button><button class="faq-btn" data-faq="f1"><div class="faq-q">Koliko traje chiptuning? <span class="faq-ic">+</span></div><div class="faq-a">Sam proces traje obično 1–2 sata. Prethodno je potrebna dijagnostika i provjera stanja vozila, pa cijeli posjet može trajati 2–3 sata. Dogovaramo termin unaprijed.</div></button><button class="faq-btn" data-faq="f2"><div class="faq-q">Da li je chiptuning moguć na benzinskim vozilima? <span class="faq-ic">+</span></div><div class="faq-a">Da, chiptuning je moguć i na benzinskim i na dizel motorima. Turbo motori generalno daju bolje rezultate od atmosferskih.</div></button><button class="faq-btn" data-faq="f3"><div class="faq-q">Šta ako se pojavi problem nakon kodiranja? <span class="faq-ic">+</span></div><div class="faq-a">Svaka promjena se može vratiti na fabričke postavke. Uvijek čuvamo originalne podatke vozila i nudimo podršku nakon obavljene usluge.</div></button><button class="faq-btn" data-faq="f4"><div class="faq-q">Da li radite i za vozila izvan Prijepolja? <span class="faq-ic">+</span></div><div class="faq-a">Da! Neke usluge mogu biti obavljene online. Za fizičke intervencije — klijenti dolaze kod nas, a dostupni smo i za dogovor na terenu.</div></button><button class="faq-btn" data-faq="f5"><div class="faq-q">Koliko košta aktivacija skrivenih funkcija? <span class="faq-ic">+</span></div><div class="faq-a">Cijena zavisi od vozila i broja funkcija koje se aktiviraju. Kontaktirajte nas s modelom i godištem vozila i dobićete konkretan odgovor u kratkom roku.</div></button><button class="faq-btn" data-faq="f6"><div class="faq-q">Da li je moguće gledati YouTube i video klipove preko CarPlay / Android Auto? <span class="faq-ic">+</span></div><div class="faq-a">Ne. Apple CarPlay i Android Auto su namijenjeni isključivo za sigurnu vožnju — podržavaju navigaciju, muziku, pozive i poruke. Reprodukcija YouTube-a, Netflix-a ili video klipova nije moguća putem CarPlay / Android Auto sistema iz sigurnosnih razloga.</div></button><button class="faq-btn" data-faq="f7"><div class="faq-q">Da li chiptuning može oštetiti motor? <span class="faq-ic">+</span></div><div class="faq-a">Ne, ukoliko je vozilo u dobrom mehaničkom stanju i ukoliko se tuning radi profesionalno. Svaki naš chiptuning je prilagođen konkretnom vozilu i motoru.</div></button><button class="faq-btn" data-faq="f8"><div class="faq-q">Da li mogu koristiti navigaciju na telefonu (Google Maps) bez CarPlay aktivacije? <span class="faq-ic">+</span></div><div class="faq-a">Možete koristiti telefon odvojeno, ali bez CarPlay aktivacije navigacija sa telefona neće biti prikazana na fabričkom ekranu vozila. CarPlay aktivacija vam omogućava da vidite Google Maps ili Waze direktno na ekranu auta.</div></button><button class="faq-btn" data-faq="f9"><div class="faq-q">Da li DPF / EGR softversko rješenje prolazi tehnički pregled? <span class="faq-ic">+</span></div><div class="faq-a">Ovo zavisi od tipa rješenja i standarda koji se primjenjuju na tehničkom pregledu u vašoj zemlji. Preporučujemo da nas kontaktirate i razgovaramo o konkretnoj situaciji.</div></button><button class="faq-btn" data-faq="f10"><div class="faq-q">Da li CarPlay adapter radi jednako dobro kao softverska aktivacija? <span class="faq-ic">+</span></div><div class="faq-a">Da, u praksi je iskustvo vrlo slično. Adapter pruža isti CarPlay / Android Auto interfejs na ekranu vozila. Za vozila koja ne podržavaju softversku aktivaciju, adapter je odlično rješenje.</div></button><button class="faq-btn" data-faq="f11"><div class="faq-q">Mogu li nakon chiptuninga vratiti vozilo na originalne postavke? <span class="faq-ic">+</span></div><div class="faq-a">Da, uvijek čuvamo originalni softver vozila prije svake intervencije. Vraćanje na fabričke postavke je moguće u svakom trenutku.</div></button></div>',
+    benefits: [],
+    models: []
   }
 };
 
-function showHome() {
+function showPage(pageId, skipScroll) {
   document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
-  document.getElementById('page-home').classList.add('active');
-  document.getElementById('navBack').classList.remove('visible');
-  document.getElementById('stickyWaBtn').href = 'https://wa.me/381600779443?text=' + encodeURIComponent('Zdravo, zanima me kodiranje vozila.');
-  window.scrollTo(0, 0);
+  document.getElementById(pageId).classList.add('active');
+  var isSubpage = pageId !== 'page-home';
+  var navBack = document.getElementById('navBack');
+  var navLinks = document.getElementById('navLinks');
+  if (isSubpage && pageId !== 'page-usluge' && pageId !== 'page-blog' && pageId !== 'page-kontakt') {
+    navBack.classList.add('visible');
+  } else {
+    navBack.classList.remove('visible');
+  }
+  if (navLinks) {
+    navLinks.style.display = (pageId === 'page-service' || pageId === 'page-booking' || pageId === 'page-info') ? 'none' : '';
+  }
+  // Update active nav link
+  if (navLinks) {
+    var routeMap = {'page-usluge':'/usluge','page-blog':'/blog','page-kontakt':'/kontakt'};
+    navLinks.querySelectorAll('.nav-link').forEach(function(l) {
+      l.classList.toggle('active', l.getAttribute('data-route') === (routeMap[pageId] || ''));
+    });
+  }
+  if (!skipScroll) window.scrollTo(0, 0);
 }
+
+function showHome(pushState) {
+  showPage('page-home');
+  document.getElementById('stickyWaBtn').href = 'https://wa.me/381600779443?text=' + encodeURIComponent('Zdravo, zanima me kodiranje vozila.');
+  if (pushState !== false) history.pushState({page:'home'}, '', '/');
+}
+
+function navigateTo(route, pushState) {
+  var routePages = {
+    '/': 'page-home',
+    '/usluge': 'page-usluge',
+    '/blog': 'page-blog',
+    '/kontakt': 'page-kontakt'
+  };
+  var pageId = routePages[route];
+  if (!pageId) { showHome(pushState); return; }
+  if (pageId === 'page-home') { showHome(pushState); return; }
+  showPage(pageId);
+  if (pushState !== false) history.pushState({page:route}, '', route);
+}
+
+// Handle browser back/forward
+window.addEventListener('popstate', function(e) {
+  handleRoute(false);
+});
+
+function handleRoute(pushState) {
+  var path = window.location.pathname;
+  // Main pages
+  if (path === '/usluge') { navigateTo('/usluge', pushState); return; }
+  if (path === '/blog') { navigateTo('/blog', pushState); return; }
+  if (path === '/kontakt') { navigateTo('/kontakt', pushState); return; }
+  if (path === '/zakazi') { showBooking && showBooking(); return; }
+  // Service detail: /usluge/{key}
+  var svcMatch = path.match(/^\/usluge\/(.+)$/);
+  if (svcMatch) {
+    navigateTo('/usluge', false);
+    setTimeout(function() { if (typeof showService === 'function') showService(svcMatch[1]); }, 50);
+    return;
+  }
+  // Info detail: /info/{key}
+  var infoMatch = path.match(/^\/info\/(.+)$/);
+  if (infoMatch) {
+    setTimeout(function() { if (typeof showInfoPage === 'function') showInfoPage(infoMatch[1]); }, 50);
+    return;
+  }
+  // Default: home
+  showHome(pushState);
+}
+
+// Route on initial page load
+(function() {
+  var path = window.location.pathname;
+  if (path !== '/' && path !== '/index.html' && path !== '') {
+    // Replace current history entry instead of pushing
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() { handleRoute(false); }, 100);
+    });
+  }
+})();
 
 var _currentServiceKey = null;
 
@@ -2230,6 +2312,7 @@ function showService(key) {
   document.getElementById('spBenefits').innerHTML = s.benefits.map(function(b) {
     return '<div class="benefit-row"><span class="ben-check">✔</span><span class="ben-txt">' + b + '</span></div>';
   }).join('');
+  document.getElementById('spBenCard').style.display = s.benefits.length ? '' : 'none';
 
   document.getElementById('spModels').innerHTML = s.models.map(function(m) {
     if (m.indexOf('──') !== -1) {
@@ -2237,6 +2320,7 @@ function showService(key) {
     }
     return '<span class="model-chip">' + m + '</span>';
   }).join('');
+  document.getElementById('spModelsCard').style.display = s.models.length ? '' : 'none';
 
   var isOrange = key === 'chiptuning';
   var isGreen = key === 'dpf';
@@ -2264,10 +2348,9 @@ function showService(key) {
     ogImg.setAttribute('content', galleryImages[key][0]);
   }
 
-  document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
-  document.getElementById('page-service').classList.add('active');
+  showPage('page-service');
   document.getElementById('navBack').classList.add('visible');
-  window.scrollTo(0, 0);
+  history.pushState({page:'service',key:key}, '', '/usluge/' + key);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -2454,10 +2537,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var waMsg = encodeURIComponent('Zdravo, zanima me više o usluzi: ' + info.title);
     document.getElementById('infoWaBtn').href = 'https://wa.me/381600779443?text=' + waMsg;
 
-    document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
-    document.getElementById('page-info').classList.add('active');
+    showPage('page-info');
     document.getElementById('navBack').classList.add('visible');
-    window.scrollTo(0, 0);
+    history.pushState({page:'info',key:key}, '', '/info/' + key);
   }
 
   document.getElementById('infoBack').addEventListener('click', showHome);
@@ -2492,6 +2574,35 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('spBack').addEventListener('click', showHome);
   document.getElementById('navLogo').addEventListener('click', showHome);
   document.getElementById('footerLogo').addEventListener('click', showHome);
+
+  // Intercept all [data-route] and [data-scroll] link clicks for SPA navigation
+  document.addEventListener('click', function(e) {
+    // Social card (no route, just scroll on usluge page)
+    var socialCard = e.target.closest('.ql-card-social');
+    if (socialCard) {
+      e.preventDefault();
+      closeMenu();
+      navigateTo('/usluge');
+      setTimeout(function() {
+        var el = document.querySelector('#page-usluge .home-section.alt:last-of-type');
+        if (el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      }, 150);
+      return;
+    }
+    var link = e.target.closest('[data-route]');
+    if (!link) return;
+    e.preventDefault();
+    closeMenu();
+    var route = link.getAttribute('data-route');
+    var scrollTarget = link.getAttribute('data-scroll');
+    navigateTo(route);
+    if (scrollTarget) {
+      setTimeout(function() {
+        var el = document.getElementById(scrollTarget);
+        if (el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      }, 150);
+    }
+  });
 
   function goContact() {
     showBooking();
@@ -2529,10 +2640,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ── BOOKING PAGE ──
   function showBooking() {
-    document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
-    document.getElementById('page-booking').classList.add('active');
+    showPage('page-booking');
     document.getElementById('navBack').classList.add('visible');
-    window.scrollTo(0,0);
+    history.pushState({page:'booking'}, '', '/zakazi');
   }
   window.showBooking = showBooking;
   document.getElementById('navBooking').addEventListener('click', showBooking);
@@ -2723,11 +2833,14 @@ document.addEventListener('DOMContentLoaded', function() {
     updateBookingSummary();
   });
 
-  document.getElementById('faqWrap').addEventListener('click', function(e) {
+  document.addEventListener('click', function(e) {
     var btn = e.target.closest('.faq-btn');
     if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
     var isOpen = btn.classList.contains('open');
-    document.querySelectorAll('.faq-btn').forEach(function(b) { b.classList.remove('open'); });
+    var wrap = btn.closest('.faq-wrap');
+    if (wrap) wrap.querySelectorAll('.faq-btn').forEach(function(b) { b.classList.remove('open'); });
     if (!isOpen) btn.classList.add('open');
   });
 
