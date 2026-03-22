@@ -11,7 +11,7 @@
     var ctx = canvas.getContext('2d');
     var particles = [];
     var W, H;
-    var particleCount = window.innerWidth < 768 ? 10 : 22;
+    var particleCount = window.innerWidth < 768 ? 6 : 14;
 
     function resizeCanvas() {
       var hero = document.getElementById('home-hero');
@@ -36,9 +36,16 @@
     // Pre-calculate connection distance squared (avoid sqrt in loop)
     var maxDist = 150;
     var maxDistSq = maxDist * maxDist;
+    var lastFrameTime = 0;
+    var frameInterval = 33; // ~30fps
 
-    function drawParticles() {
+    function drawParticles(timestamp) {
       if (paused || !heroVisible) { animFrameId = null; return; }
+      if (timestamp - lastFrameTime < frameInterval) {
+        animFrameId = requestAnimationFrame(drawParticles);
+        return;
+      }
+      lastFrameTime = timestamp;
       ctx.clearRect(0, 0, W, H);
 
       // Draw subtle connection lines (optimized — skip sqrt)
