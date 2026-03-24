@@ -211,6 +211,7 @@
       <span>🌐 Sajt je LIVE na hadzalic.co</span>
       <span>📱 CarPlay & Android Auto aktivacija — VAG, BMW, Mercedes</span>
       <span>📷 POI Radar upozorenja GRATIS uz svako ažuriranje mapa (VAG grupacija)</span>
+      <span>🏆 Sertifikovani HPTuners & ASFerrari chiptuning specijalisti</span>
       <span>🔥 Chiptuning — custom mape u saradnji sa ASFerrari partnerima</span>
       <span>♾️ Doživotna garancija na softverski rad</span>
       <span>🔌 CarPlay adapteri dostupni za vozila bez hardverske podrške</span>
@@ -462,6 +463,20 @@
           <span class="ql-arrow">Piši nam <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
         </div>
       </a>
+      <a href="/radovi" class="ql-card" data-route="/radovi">
+        <div class="ql-glow ql-glow-orange"></div>
+        <div class="ql-icon-wrap ql-icon-orange">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div class="ql-body">
+          <div class="ql-name">Naši Radovi</div>
+          <p class="ql-desc">Pregled urađenih projekata — chiptuning, kodiranje i aktivacije</p>
+        </div>
+        <div class="ql-footer">
+          <span class="ql-count">Portfolio</span>
+          <span class="ql-arrow">Pogledaj <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
       <a href="#" class="ql-card ql-card-social" data-scroll="socialLinks">
         <div class="ql-glow ql-glow-pink"></div>
         <div class="ql-icon-wrap ql-icon-pink">
@@ -503,6 +518,20 @@
 
 </div><!-- /page-home -->
 
+<!-- RAD DETAIL MODAL (outside page-home so it's always accessible) -->
+<div id="radModal" class="rad-modal" onclick="if(event.target===this)closeRadModal()">
+  <div class="rad-modal-box">
+    <button class="rad-modal-close" onclick="closeRadModal()">✕</button>
+    <div class="rad-modal-hero" id="radModalHero"></div>
+    <div class="rad-modal-body">
+      <div class="rad-modal-tag" id="radModalTag"></div>
+      <h2 class="rad-modal-title" id="radModalTitle"></h2>
+      <div class="rad-modal-meta" id="radModalMeta"></div>
+      <div class="rad-modal-content" id="radModalContent"></div>
+      <div class="rad-modal-gallery" id="radModalGallery"></div>
+    </div>
+  </div>
+</div>
 
 <!-- ══════════════════════════════════════════
      USLUGE PAGE
@@ -646,6 +675,31 @@
 
 </div><!-- /page-usluge -->
 
+
+<!-- ══════════════════════════════════════════
+     RADOVI PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-radovi">
+  <div class="page-header">
+    <h1>Naši Radovi</h1>
+    <p class="page-sub">Pregled urađenih projekata — chiptuning, kodiranje, aktivacije i više</p>
+  </div>
+  <div class="radovi-wrap">
+    <div class="radovi-grid">
+
+      <div class="rad-card" onclick="openRadModal('audi-q7')">
+        <span class="rad-icon">🚗</span>
+        <div class="rad-info">
+          <div class="rad-title">Audi Q7</div>
+          <div class="rad-meta">Kodiranje · Navigacija · CarPlay</div>
+        </div>
+        <span class="rad-count">8 usluga</span>
+        <span class="rad-arrow">→</span>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <!-- ══════════════════════════════════════════
      KONTAKT PAGE
@@ -1935,6 +1989,78 @@ function closeCertModal() {
   document.body.style.overflow = '';
 }
 
+// Radovi modal
+var radoviData = {
+  'audi-q7': {
+    icon: '🚗',
+    title: 'Audi Q7',
+    tag: 'Kodiranje · Navigacija · CarPlay',
+    meta: '8 usluga urađeno',
+    content: '<div class="rm-item"><h3>💿 Najnoviji softver</h3><p>Kompletno ažuriranje MMI sistema na najnoviju verziju softvera — poboljšane performanse, stabilnost i kompatibilnost sa novim funkcijama.</p></div>'
+      + '<div class="rm-item"><h3>🗺️ Najnovije navigacione mape sa upozorenjima za radare</h3><p>Instalirane najnovije HERE navigacione mape sa kompletnim POI radar upozorenjima za Srbiju, Crnu Goru, Bosnu i cijelu Evropu.</p></div>'
+      + '<div class="rm-item"><h3>🏎️ SQ virtuelna tabla</h3><p>Aktiviran sportski SQ dizajn virtuelne table (Virtual Cockpit) — dinamičan prikaz sa sportskim obrtomerom i vizuelnim stilom iz Audi Sport modela.</p></div>'
+      + '<div class="rm-item"><h3>🎬 Video u vožnji</h3><p>Omogućen prikaz video sadržaja na MMI ekranu tokom vožnje — idealno za putnike na dužim putovanjima.</p></div>'
+      + '<div class="rm-item"><h3>🔄 Punjenje kazaljki</h3><p>Aktivirana efektna animacija punjenja kazaljki pri pokretanju vozila — poznata kao "needle sweep" ili "gauge sweep" animacija.</p></div>'
+      + '<div class="rm-item"><h3>💡 Komfor žmigavac — 5 treptaja</h3><p>Podešen komfor žmigavac na 5 treptaja pri kratkom dodiru ručice — optimalan broj za sigurno signaliziranje promjene trake.</p></div>'
+      + '<div class="rm-item"><h3>📱 CarPlay + Wireless</h3><p>Potpuna aktivacija Apple CarPlay sa bežičnom (wireless) funkcijom — bez kablova, automatsko povezivanje čim uđete u vozilo.</p></div>'
+      + '<div class="rm-item"><h3>🔕 Upozorenje za pojas OFF</h3><p>Isključen zvučni signal upozorenja za nepovezan sigurnosni pojas — na zahtjev vlasnika vozila.</p></div>',
+    images: [],
+    videos: [
+      { url: 'video/radovi/audi-q7/Img 1091(1).mp4', label: 'Auto — zadnja strana' },
+      { url: 'video/radovi/audi-q7/Img 1092.mp4', label: 'Auto — prednja strana' },
+      { url: 'video/radovi/audi-q7/Img 1093.mp4', label: 'SQ tabla' },
+      { url: 'video/radovi/audi-q7/Img 1094.mp4', label: 'Najnovije mape' },
+      { url: 'video/radovi/audi-q7/Img 1095(1).mp4', label: 'CarPlay' },
+      { url: 'video/radovi/audi-q7/Img 1095.mp4', label: 'Video u vožnji' },
+      { url: 'video/radovi/audi-q7/Img 1101.mp4', label: 'Punjenje kazaljki' }
+    ]
+  }
+};
+
+function openRadModal(key) {
+  var r = radoviData[key];
+  if (!r) return;
+  document.getElementById('radModalHero').textContent = r.icon;
+  document.getElementById('radModalTag').textContent = r.tag;
+  document.getElementById('radModalTitle').textContent = r.title;
+  document.getElementById('radModalMeta').textContent = r.meta;
+  document.getElementById('radModalContent').innerHTML = r.content;
+  var gallery = document.getElementById('radModalGallery');
+  var hasMedia = (r.images && r.images.length) || (r.videos && r.videos.length);
+  if (hasMedia) {
+    var html = '';
+    if (r.videos && r.videos.length) {
+      html += '<div class="rm-section-label">Video snimci</div>';
+      html += '<div class="rm-video-grid">';
+      html += r.videos.map(function(v) {
+        return '<video src="' + v.url + '" playsinline controls preload="metadata"></video>';
+      }).join('');
+      html += '</div>';
+    }
+    if (r.images && r.images.length) {
+      html += '<div class="rm-section-label">Fotografije</div>';
+      html += '<div class="rm-img-grid">';
+      html += r.images.map(function(url, i) {
+        return '<img src="' + url + '" alt="' + r.title + '" loading="lazy" onclick="event.stopPropagation();openLightbox(radoviData[\'' + key + '\'].images,' + i + ')">';
+      }).join('');
+      html += '</div>';
+    }
+    gallery.innerHTML = html;
+    gallery.style.display = '';
+  } else {
+    gallery.innerHTML = '';
+    gallery.style.display = 'none';
+  }
+  document.getElementById('radModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeRadModal() {
+  document.getElementById('radModal').classList.remove('open');
+  document.body.style.overflow = '';
+  // Pause all videos when closing
+  document.querySelectorAll('#radModalGallery video').forEach(function(v) { v.pause(); });
+}
+
 var lbIndex = 0;
 var lbImgs = [];
 
@@ -2232,7 +2358,7 @@ function showPage(pageId, skipScroll) {
   }
   // Update active nav link
   if (navLinks) {
-    var routeMap = {'page-usluge':'/usluge','page-blog':'/blog','page-kontakt':'/kontakt'};
+    var routeMap = {'page-usluge':'/usluge','page-blog':'/blog','page-kontakt':'/kontakt','page-radovi':'/radovi'};
     navLinks.querySelectorAll('.nav-link').forEach(function(l) {
       l.classList.toggle('active', l.getAttribute('data-route') === (routeMap[pageId] || ''));
     });
@@ -2251,7 +2377,8 @@ function navigateTo(route, pushState) {
     '/': 'page-home',
     '/usluge': 'page-usluge',
     '/blog': 'page-blog',
-    '/kontakt': 'page-kontakt'
+    '/kontakt': 'page-kontakt',
+    '/radovi': 'page-radovi'
   };
   var pageId = routePages[route];
   if (!pageId) { showHome(pushState); return; }
@@ -2270,7 +2397,24 @@ function handleRoute(pushState) {
   // Main pages
   if (path === '/usluge') { navigateTo('/usluge', pushState); return; }
   if (path === '/blog') { navigateTo('/blog', pushState); return; }
+  if (path === '/radovi') { navigateTo('/radovi', pushState); return; }
   if (path === '/kontakt') { navigateTo('/kontakt', pushState); return; }
+  // Blog post detail: /blog/{slug}
+  var blogMatch = path.match(/^\/blog\/(.+)$/);
+  if (blogMatch) {
+    navigateTo('/blog', false);
+    var blogSlug = decodeURIComponent(blogMatch[1]);
+    var attempts = 0;
+    function tryOpenBlogPost() {
+      var post = _blogPosts.find(function(p) {
+        return p.slug === blogSlug || p.title.replace(/\s+/g, '-').toLowerCase() === blogSlug;
+      });
+      if (post) { openBlogPost(post.id); }
+      else if (attempts < 20) { attempts++; setTimeout(tryOpenBlogPost, 300); }
+    }
+    setTimeout(tryOpenBlogPost, 300);
+    return;
+  }
   if (path === '/zakazi') { showBooking && showBooking(); return; }
   // Service detail: /usluge/{key}
   var svcMatch = path.match(/^\/usluge\/(.+)$/);
@@ -4752,12 +4896,47 @@ window.copyAuthRefCode = function() {
   });
 };
 
+// === AUTH RATE LIMITING (progressive cooldown) ===
+var _authAttempts = {};
+function checkAuthRate(action) {
+  var key = 'authRate_' + action;
+  var data = JSON.parse(localStorage.getItem(key) || '{"attempts":0,"lockedUntil":0}');
+  var now = Date.now();
+  // Reset if lock expired
+  if (data.lockedUntil && now > data.lockedUntil) {
+    data.attempts = 0; data.lockedUntil = 0;
+    localStorage.setItem(key, JSON.stringify(data));
+  }
+  if (data.lockedUntil && now < data.lockedUntil) {
+    var sec = Math.ceil((data.lockedUntil - now) / 1000);
+    return { allowed: false, remaining: sec, attempts: data.attempts };
+  }
+  return { allowed: true, remaining: 0, attempts: data.attempts };
+}
+function recordAuthAttempt(action, success) {
+  var key = 'authRate_' + action;
+  var data = JSON.parse(localStorage.getItem(key) || '{"attempts":0,"lockedUntil":0}');
+  if (success) { data.attempts = 0; data.lockedUntil = 0; }
+  else {
+    data.attempts++;
+    // Progressive: 3 fails → 30s, 5 → 60s, 8 → 3min, 12+ → 10min
+    if (data.attempts >= 12) data.lockedUntil = Date.now() + 600000;
+    else if (data.attempts >= 8) data.lockedUntil = Date.now() + 180000;
+    else if (data.attempts >= 5) data.lockedUntil = Date.now() + 60000;
+    else if (data.attempts >= 3) data.lockedUntil = Date.now() + 30000;
+  }
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
 async function doLogin() {
   var email = document.getElementById('loginEmail').value.trim();
   var pass = document.getElementById('loginPass').value;
   var msg = document.getElementById('loginMsg');
   var btn = document.getElementById('loginBtn');
   if (!email || !pass) { msg.className='auth-msg error'; msg.textContent='Unesi email i lozinku.'; return; }
+  // Rate limit check
+  var rl = checkAuthRate('login');
+  if (!rl.allowed) { msg.className='auth-msg error'; msg.textContent='Previse pokusaja. Sacekaj ' + rl.remaining + 's.'; return; }
   btn.disabled = true;
   btn.textContent = 'Prijava...';
   msg.textContent = '';
@@ -4765,11 +4944,17 @@ async function doLogin() {
   if (!auth) { msg.className='auth-msg error'; msg.textContent='Greska konekcije.'; btn.disabled=false; btn.textContent='Prijavi se'; return; }
   var result = await auth.signInWithPassword({ email: email, password: pass });
   if (result.error) {
+    recordAuthAttempt('login', false);
+    var rl2 = checkAuthRate('login');
     msg.className = 'auth-msg error';
-    msg.textContent = result.error.message.includes('Invalid') ? 'Pogresna email adresa ili lozinka.' : result.error.message;
+    var errText = result.error.message.includes('Invalid') ? 'Pogresna email adresa ili lozinka.' : result.error.message;
+    if (!rl2.allowed) errText += ' Sacekaj ' + rl2.remaining + 's.';
+    else if (rl2.attempts >= 2) errText += ' (pokusaj ' + rl2.attempts + ')';
+    msg.textContent = errText;
     btn.disabled = false;
     btn.textContent = 'Prijavi se';
   } else {
+    recordAuthAttempt('login', true);
     msg.className = 'auth-msg success';
     msg.textContent = 'Uspjesna prijava!';
     setTimeout(function() {
@@ -4798,6 +4983,9 @@ async function doRegister() {
   if (!name || !email || !pass) { msg.className='auth-msg error'; msg.textContent='Popuni obavezna polja.'; return; }
   if (pass.length < 6) { msg.className='auth-msg error'; msg.textContent='Lozinka mora imati min. 6 znakova.'; return; }
   if (pass !== pass2) { msg.className='auth-msg error'; msg.textContent='Lozinke se ne podudaraju.'; return; }
+  // Rate limit check
+  var rl = checkAuthRate('register');
+  if (!rl.allowed) { msg.className='auth-msg error'; msg.textContent='Previse pokusaja. Sacekaj ' + rl.remaining + 's.'; return; }
 
   btn.disabled = true;
   btn.textContent = 'Kreiranje...';
@@ -4816,9 +5004,14 @@ async function doRegister() {
   });
 
   if (result.error) {
+    recordAuthAttempt('register', false);
+    var rl2 = checkAuthRate('register');
     msg.className = 'auth-msg error';
-    msg.textContent = result.error.message.includes('already') ? 'Email vec postoji. Pokusaj se prijaviti.' : result.error.message;
+    var errText = result.error.message.includes('already') ? 'Email vec postoji. Pokusaj se prijaviti.' : result.error.message;
+    if (!rl2.allowed) errText += ' Sacekaj ' + rl2.remaining + 's.';
+    msg.textContent = errText;
   } else {
+    recordAuthAttempt('register', true);
     msg.className = 'auth-msg success';
     msg.textContent = 'Nalog kreiran! Provjeri email za potvrdu.';
   }
@@ -5794,7 +5987,7 @@ function openBlogPost(id) {
   // Add share buttons
   var shareWrap = document.getElementById('blogShareBtns');
   if (shareWrap) {
-    var url = window.location.origin + '/#blog/' + encodeURIComponent(p.title.replace(/\s+/g, '-').toLowerCase());
+    var url = window.location.origin + '/blog/' + (p.slug || p.title.replace(/\s+/g, '-').toLowerCase());
     shareWrap.innerHTML = '<button onclick="event.stopPropagation();window.open(\'https://wa.me/?text='+encodeURIComponent(p.title+' '+url)+'\',\'_blank\')">WhatsApp</button>'
       + '<button onclick="event.stopPropagation();window.open(\'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url)+'\',\'_blank\')">Facebook</button>'
       + '<button onclick="event.stopPropagation();navigator.clipboard.writeText(\''+url+'\');this.textContent=\'Kopirano!\'">Kopiraj link</button>';
@@ -5804,6 +5997,9 @@ function openBlogPost(id) {
   document.getElementById('blogModalMeta').textContent = date + ' · ' + readTime + ' min';
   var modal = document.getElementById('blogModal');
   if (modal) { modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+  // Update URL to blog post
+  var postUrl = '/blog/' + (p.slug || p.title.replace(/\s+/g, '-').toLowerCase());
+  history.pushState({blogPost: id}, '', postUrl);
   loadBlogComments(id);
 }
 
@@ -5900,6 +6096,10 @@ function closeBlogModal() {
   if (modal) modal.style.display = 'none';
   document.body.style.overflow = '';
   _currentPostId = null;
+  // Restore URL to /blog
+  if (window.location.pathname.startsWith('/blog/')) {
+    history.pushState({}, '', '/blog');
+  }
 }
 
 // Load on page ready
