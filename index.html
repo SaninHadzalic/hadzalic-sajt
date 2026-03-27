@@ -91,7 +91,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700;800&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/variables.css">
 <link rel="stylesheet" href="css/style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <!-- ═══ SCHEMA MARKUP — FAQ ═══ -->
@@ -357,6 +356,7 @@
   <div class="tools-bar">
     <button class="tool-btn" id="openChecker"><span class="tb-icon">⚡</span> Provjeri snagu svog auta</button>
     <button class="tool-btn" id="openCalc"><span class="tb-icon">🔍</span> Koje usluge su moguće za moje auto</button>
+    <a href="/usluge/chiptuning" class="tool-btn" data-route="/usluge/chiptuning" data-scroll="fuelCalcWrap"><span class="tb-icon">⛽</span> Izračunaj uštedu goriva</a>
   </div>
   </section>
 
@@ -494,26 +494,94 @@
     </div>
   </section>
 
-<section class="home-section alt qr-section sr">
-  <div class="qr-inner">
-    <div class="qr-text">
-      <div class="sec-tag" style="text-align:left;">Podijelite nas</div>
-      <h2 class="qr-title">Skenirajte QR kod</h2>
-      <p class="qr-desc">Podijelite sajt sa prijateljem ili sačuvajte link za vaše vozilo — jednostavno skenirajte kamerom telefona.</p>
-      <a href="https://hadzalic.co" class="qr-link">🌐 hadzalic.co</a>
+<section class="home-section alt cta-banner sr">
+  <div class="cta-banner-inner">
+    <div class="cta-banner-text">
+      <h2 class="cta-banner-title">Spremni za upgrade?</h2>
+      <p class="cta-banner-desc">Zakažite termin ili nam pišite — odgovaramo u roku od 2 sata. Besplatna dijagnostika i konsultacija za vaše vozilo.</p>
     </div>
-    <div class="qr-box">
-      <div id="qrcode"></div>
-      <p class="qr-caption">hadzalic.co</p>
+    <div class="cta-banner-actions">
+      <a href="/kontakt" class="cta-banner-btn cta-banner-primary" data-route="/kontakt">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Zakaži termin
+      </a>
+      <a href="https://wa.me/381600779443" class="cta-banner-btn cta-banner-secondary" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .612.612l4.458-1.495A11.948 11.948 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.347 0-4.518-.801-6.24-2.144l-.436-.348-2.648.888.888-2.648-.348-.436A9.935 9.935 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Piši na WhatsApp
+      </a>
     </div>
   </div>
 </section>
 
 <site-footer>
-    <button class="nav-logo" id="footerLogo">
-      <span class="logo-h">Hadzalic</span><span class="logo-sep"></span><span class="logo-c">Coding</span>
-    </button>
-    <p class="footer-copy">© 2026 Hadzalic Coding 🌐 · Prijepolje, Srbija · Sva prava zadržana.</p>
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-col footer-brand-col">
+        <button class="nav-logo" id="footerLogo">
+          <span class="logo-h">Hadzalic</span><span class="logo-sep"></span><span class="logo-c">Coding</span>
+        </button>
+        <p class="footer-tagline">Profesionalni automotive coding &amp; chiptuning. Vaš pouzdan partner za kodiranje, aktivaciju funkcija i optimizaciju vozila.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/hadzalic.coding/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/381600779443" target="_blank" rel="noopener" class="footer-social" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .612.612l4.458-1.495A11.948 11.948 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.347 0-4.518-.801-6.24-2.144l-.436-.348-2.648.888.888-2.648-.348-.436A9.935 9.935 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/hadzalic.coding" target="_blank" rel="noopener" class="footer-social" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigacija -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navigacija</h4>
+        <a href="/" class="footer-nav-link" data-route="/">Početna</a>
+        <a href="/usluge" class="footer-nav-link" data-route="/usluge">Usluge</a>
+        <a href="/blog" class="footer-nav-link" data-route="/blog">Blog</a>
+        <a href="/radovi" class="footer-nav-link" data-route="/radovi">Naši Radovi</a>
+        <a href="/kontakt" class="footer-nav-link" data-route="/kontakt">Kontakt</a>
+      </div>
+
+      <!-- Usluge -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Usluge</h4>
+        <a href="/usluge/chiptuning" class="footer-nav-link" data-route="/usluge/chiptuning">Chiptuning</a>
+        <a href="/usluge/aktivacija" class="footer-nav-link" data-route="/usluge/aktivacija">Kodiranje funkcija</a>
+        <a href="/usluge/carplay" class="footer-nav-link" data-route="/usluge/carplay">CarPlay aktivacija</a>
+        <a href="/usluge/dpf" class="footer-nav-link" data-route="/usluge/dpf">Softverska rješenja</a>
+        <a href="/usluge/errors" class="footer-nav-link" data-route="/usluge/errors">Dijagnostika</a>
+      </div>
+
+      <!-- Kontakt -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Kontakt</h4>
+        <a href="tel:+381600779443" class="footer-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +381 60 077 9443
+        </a>
+        <a href="https://wa.me/381600779443" target="_blank" rel="noopener" class="footer-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .612.612l4.458-1.495A11.948 11.948 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.347 0-4.518-.801-6.24-2.144l-.436-.348-2.648.888.888-2.648-.348-.436A9.935 9.935 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp
+        </a>
+        <a href="viber://chat?number=381600779443" class="footer-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#7360f2"><path d="M11.4 0C9.473.028 5.333.344 3.02 2.467 1.302 4.187.6 6.7.52 9.867c-.08 3.167-.18 9.093 5.56 10.667h.003l-.003 2.453s-.04.987.62 1.187c.777.24 1.233-.5 1.973-1.3.407-.44.967-1.087 1.387-1.58 3.82.32 6.76-.413 7.093-.52.773-.253 5.147-.813 5.86-6.627.733-5.987-.36-9.773-2.36-11.473 0 0-1.64-1.893-7.253-1.933 0 0-.16-.027-.453-.013zM11.52 1.6h.36c4.667.033 5.98 1.433 5.98 1.433 1.667 1.42 2.58 4.733 1.933 9.987-.587 4.84-4.04 5.2-4.687 5.413-.28.087-2.84.707-6.12.52 0 0-2.427 2.92-3.187 3.687-.12.12-.26.173-.353.147-.133-.04-.167-.187-.167-.413l.02-4.027c-4.78-1.313-4.507-6.233-4.44-8.893.067-2.66.64-4.8 2.08-6.22C4.8 1.92 8.547 1.627 11.52 1.6z"/><path d="M12.147 5.32c-.227 0-.227.347 0 .36.973.04 1.84.413 2.493 1.053.66.647 1.027 1.513 1.08 2.467 0 .227.36.213.347 0-.053-1.067-.467-2.04-1.2-2.747-.72-.7-1.693-1.093-2.72-1.133zm.133 1.36c-.22-.013-.233.333 0 .347.613.053 1.187.347 1.573.8.38.46.533 1 .467 1.573-.027.22.32.267.347.04.08-.693-.1-1.36-.56-1.907-.453-.533-1.12-.867-1.827-.853zm.06 1.333c-.22 0-.253.327-.033.36.667.107 1.04.687 1.013 1.12-.013.227.34.253.353.027.047-.613-.427-1.387-1.333-1.507zm-2.56.387s.293-.013.453.307l.587 1.36c.1.247.053.527-.14.7l-.407.367a.385.385 0 0 0-.12.4c.28.853.947 1.84 1.713 2.453.56.447 1.36.907 2.04 1.167.16.06.347.02.467-.113l.36-.44c.173-.213.447-.273.687-.16l1.373.653c.22.113.34.367.293.6-.12.64-.627 1.273-1.28 1.44-.92.24-2.133.093-4.28-1.387-1.64-1.14-2.78-2.773-3.34-3.84-.54-1.04-1.013-2.853-.133-3.907.24-.28.553-.467.9-.553.107-.027.187-.04.267-.04z"/></svg>
+          Viber
+        </a>
+        <div class="footer-contact-item footer-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff3b5c" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Prijepolje, Srbija</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Powered by Limtech Solutions</p>
+      <p class="footer-since">SINCE 2022</p>
+    </div>
   </site-footer>
 
 </div><!-- /page-home -->
@@ -2616,15 +2684,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Particle animation moved to js/animations.js
 
-  // QR Code
-  if (typeof QRCode !== 'undefined') {
-    new QRCode(document.getElementById('qrcode'), {
-      text: 'https://hadzalic.co',
-      width: 160, height: 160,
-      colorDark: '#0A84FF', colorLight: '#ffffff',
-      correctLevel: QRCode.CorrectLevel.H
-    });
-  }
 
 
   // Hamburger menu
@@ -2794,12 +2853,14 @@ document.addEventListener('DOMContentLoaded', function() {
     closeMenu();
     var route = link.getAttribute('data-route');
     var scrollTarget = link.getAttribute('data-scroll');
-    navigateTo(route);
+    history.pushState({page:route}, '', route);
+    handleRoute(false);
     if (scrollTarget) {
+      var delay = route.indexOf('/') !== route.lastIndexOf('/') ? 500 : 150;
       setTimeout(function() {
         var el = document.getElementById(scrollTarget);
         if (el) el.scrollIntoView({behavior:'smooth',block:'start'});
-      }, 150);
+      }, delay);
     }
   });
 
@@ -6396,9 +6457,9 @@ document.addEventListener('click', function(e) {
 <!-- MOJE VOZILO WIDGET -->
 <div id="myVehicleWidget" class="mv-widget">
   <button class="mv-toggle" id="mvToggle">
-    <span class="mv-icon">🚗</span>
+    <span class="mv-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M3.5 17l1.5-5.5L7 7h10l2 4.5L20.5 17"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/></svg></span>
     <span class="mv-label" id="mvLabel">Moje vozilo</span>
-    <span class="mv-chevron" id="mvChevron">▼</span>
+    <span class="mv-chevron" id="mvChevron"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
   </button>
   <div class="mv-panel" id="mvPanel" style="display:none;">
     <div id="mvForm">
