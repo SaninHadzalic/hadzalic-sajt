@@ -189,6 +189,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-BHX1BJDK8W');
+  gtag('config', 'AW-18050085750');
 </script>
 </head>
 <body>
@@ -6473,6 +6474,14 @@ document.addEventListener('click', function(e) {
   draw();
   window.addEventListener('resize', function(){ resize(); });
 })();
+
+// ── GOOGLE ADS CONVERSION TRACKING ──
+document.addEventListener('click', function(e){
+  var link = e.target.closest('a[href*="wa.me"], a[href*="tel:"], .cta-banner-btn, a[data-route="/kontakt"]');
+  if (link && typeof gtag === 'function') {
+    gtag('event', 'conversion_event_contact', {});
+  }
+});
 </script>
 
 <script>
