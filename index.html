@@ -2177,6 +2177,178 @@ var aktivacijaCatIcons = {
 };
 
 
+var services = {
+  carplay: {
+    icon: '📱',
+    title: 'CarPlay & Android Auto',
+    subtitle: 'Aktivacija pametne integracije telefona na ekranu vozila — brzo, softverski, bez fizičkih izmjena.',
+    desc: 'Mnoga savremena vozila dolaze sa hardverom koji podržava Apple CarPlay i Android Auto, ali ova funkcija nije aktivirana iz fabrike. Mi je aktiviramo putem softvera — bez ikakvog fizičkog zahvata. Nakon aktivacije možete koristiti Google Maps, Waze, Spotify, pozive i poruke direktno sa ekrana u autu.',
+    benefits: [
+      'Puna integracija iPhone-a ili Android telefona sa ekranom vozila',
+      'Korišćenje Google Maps, Waze i Apple Maps na ekranu auta',
+      'Glasovne komande putem Siri / Google Asistenta',
+      'Muzika, pozivi i poruke bez diranja telefona',
+      'Bežični CarPlay/Android Auto (tamo gdje hardver podržava)',
+      'Sigurnija vožnja — telefon ostaje u džepu'
+    ],
+    models: [
+      '── VW Grupa ──',
+      'VW Golf 7 / Golf 8','VW Passat B8','VW Tiguan (2017+)','VW Touareg (2019+)','VW Polo (2018+)','VW T-Roc / T-Cross',
+      '── Škoda ──',
+      'Škoda Octavia 3 / 4','Škoda Superb 3','Škoda Kodiaq','Škoda Karoq','Škoda Fabia (2022+)',
+      '── SEAT / Cupra ──',
+      'SEAT Leon (2017+)','SEAT Ateca','Cupra Formentor',
+      '── Audi ──',
+      'Audi A3 (8V/8Y)','Audi A4 (B9)','Audi A5 (F5)','Audi A6 (C8)','Audi Q3 / Q5 / Q7','Audi A1 (GB)',
+      '── BMW ──',
+      'BMW 1 serija (F40)','BMW 3 serija (G20)','BMW 5 serija (G30)','BMW X1 / X3 / X5 (2018+)',
+      '── Mercedes-Benz ──',
+      'Mercedes A klasa (W177)','Mercedes B klasa (W247)','Mercedes C klasa (W205/W206)','Mercedes E klasa (W213)','Mercedes GLC / GLE',
+      '── Ostalo ──',
+      'Opel Insignia B','Ford Focus 3/4','Ford Fiesta (2018+)'
+    ]
+  },
+  aktivacija: {
+    icon: '⚡',
+    title: 'Aktivacija Funkcija',
+    subtitle: 'Aktivacija skrivenih i fabrički zaključanih funkcija — VAG Grupacija, BMW i Mercedes.',
+    desc: `Proizvođači vozila fabrički onemogućuju stotine funkcija u nižim verzijama opreme, ali hardver za njih fizički postoji u autu. Sve aktivacije se rade softverski, direktno putem OBD priključka — bez demontaže.<br><br>
+<div class="akt-brand-tabs">
+  <button class="akt-tab active" data-brand="VAG" onclick="renderAktivacija('VAG')">VAG Grupacija</button>
+  <button class="akt-tab" data-brand="BMW" onclick="renderAktivacija('BMW')">BMW</button>
+  <button class="akt-tab" data-brand="Mercedes" onclick="renderAktivacija('Mercedes')">Mercedes</button>
+</div>
+<div id="aktContainer"></div>`,
+    models: ['VW', 'Audi', 'Škoda', 'SEAT', 'Cupra', 'Porsche', 'BMW', 'Mini', 'Mercedes-Benz', 'Smart'],
+    benefits: [
+      '✅ Softverska aktivacija — bez demontaže',
+      '✅ Važi za VAG grupaciju, BMW i Mercedes',
+      '✅ Doživotna garancija na softverski rad',
+      '✅ Brza usluga — 30min do 2h',
+    ],
+    modelsTitle: 'Podržana vozila',
+    benTitle: 'Šta dobijate',
+    hasAktivacija: true
+  },
+  navi: {
+    icon: '🗺️',
+    title: 'Ažuriranje Navigacije',
+    subtitle: 'Najnovije mape sa svim putevima, radarima i tačkama interesa — za VAG, BMW, Mercedes i ostale marke.',
+    desc: 'Zastarjele mape mogu biti problem na dnevnoj bazi — nedostaju novi putevi, kružni tokovi, radarski detektori. Mi ažuriramo navigacione mape na najnoviju dostupnu verziju direktno putem OBD priključka ili SD kartice, zavisno od modela. Uz ažuriranje mapa za VAG grupaciju dodajemo i besplatno POI Radar upozorenja.',
+    models: ['VW', 'Audi', 'Škoda', 'Mercedes', 'BMW', 'Porsche', 'SEAT'],
+    benefits: ['Mape 2025/26 — najnovija verzija', 'POI Radar upozorenja GRATIS uz VAG', 'Svi novi putevi i kružni tokovi', 'Tačke interesa ažurirane', 'Dostupno za sve marke sa fabričkom navi'],
+    warranty: true
+  },
+  errors: {
+    icon: '⚙️',
+    title: 'Brisanje Grešaka',
+    subtitle: 'Softverska dijagnostika i brisanje aktivnih i pasivnih grešaka na svim sistemima vozila.',
+    desc: 'Lampica motora, ABS, airbag ili neka druga greška na tabli? Putem OBD dijagnostičkog uređaja čitamo sve greške na svim sistemima vozila — motoru, mjenjaču, ABS-u, airbagu, klimi i svemu ostalom. Nakon dijagnoze brišemo greške i savjetujemo vas o daljem postupku.',
+    models: ['VW', 'Audi', 'Škoda', 'Mercedes', 'BMW', 'Porsche', 'SEAT', 'Ostale marke'],
+    benefits: ['Čitanje svih sistema vozila', 'Brisanje aktivnih i pasivnih grešaka', 'Detaljni izvještaj o greškama', 'Savjet o daljem postupku', 'Doživotna garancija na softverski rad'],
+    warranty: true
+  },
+  remote: {
+    icon: '🌐',
+    title: 'Online / Udaljeno',
+    subtitle: 'Neke usluge možemo obaviti potpuno online — bez dolaska kod nas.',
+    desc: 'Za određene usluge kao što su chiptuning fajlovi, konzultacije i provjera kompatibilnosti, možemo sarađivati potpuno online. Pošaljite nam upit putem WhatsApp-a sa godištem, modelom i uslugom koju tražite — dogovorićemo se o načinu realizacije.',
+    models: ['Sve marke'],
+    benefits: ['Chiptuning fajlovi online', 'Konzultacije i provjera kompatibilnosti', 'Brza WhatsApp komunikacija', 'Bez dolaska — sve iz udobnosti doma'],
+    warranty: false
+  },
+  chiptuning: {
+    icon: '🔥',
+    title: 'Chiptuning — Optimizacija ECU',
+    subtitle: 'Više snage, bolji moment, manja potrošnja — sve softverski, prilagođeno vašem vozilu.',
+    desc: 'Chiptuning (remapiranje ECU) je proces u kom se softver upravljačke jedinice motora prilagođava kako bi vozilo dalo više snage, boljeg momenta i optimalne potrošnje goriva. Koristimo isključivo profesionalnu Flex opremu — standard koji koriste svjetski top timeri. Svaka mapa je CUSTOM — očitavamo podatke vašeg vozila i šaljemo ih našim partnerima u ASFerrari koji izrađuju mapu specifično za vaš automobil, a mi je vraćamo i upisujemo. Svaki tuning je individualan. Prije chiptuninga OBAVEZNO nas kontaktirajte radi procjene vozila.<br><br><a href="https://asftuning.com/chip-tuning" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:8px;padding:10px 18px;background:linear-gradient(135deg,rgba(255,100,32,0.15),rgba(255,100,32,0.05));border:1px solid rgba(255,100,32,0.4);border-radius:8px;color:#ff7040;text-decoration:none;font-weight:600;font-size:0.9rem;transition:all 0.2s;">🔥 Provjeri šta možeš izvući iz svog auta → ASFerrari Power Catalog</a>',
+    benefits: [
+      '🚀 Povećanje snage i obrtnog momenta motora',
+      '⛽ Optimizacija potrošnje goriva pri normalnoj vožnji',
+      '🏎️ Bolja odzivnost gasa i fluidnost prebacivanja brzina',
+      '📉 Uklanjanje fabričkih ograničenja (ograničivač brzine i momenta)',
+      '🔧 Faza 1 — samo softver, bez fizičkih izmjena',
+      '🔩 Faza 2 — u kombinaciji sa mehaničkim doradama',
+      '🛠️ Profesionalna Flex oprema — industrijski standard za chiptuning',
+      '🎯 Custom mapa — izrađena specifično za VAŠE vozilo, ne generička',
+      '🤝 Partnerstvo sa ASFerrari — svjetski poznati stručnjaci za ECU mape',
+      '♾️ Doživotna garancija na upisanu softversku mapu — mehanički kvarovi nisu pokriveni garancijom.',
+      '⚠️ Rizik uvijek postoji — vozilo mora biti u ispravnom mehaničkom stanju',
+      '🚛 Dostupno za putnička vozila, kamione, autobuse i radne mašine'
+    ],
+    models: ['Sva putnička vozila (benzin / dizel)','Laka dostavna vozila','Teretni kamioni (Mercedes, MAN, Volvo, Scania, DAF, Iveco)','Autobusi i minibusi','Traktori i radne mašine','BMW / Mercedes-AMG / Audi S & RS','VW GTI / R / Golf TDI','Škoda RS modeli','Praktično sva vozila sa ECU upravljanjem']
+  },
+  dpf: {
+    icon: '🛠️',
+    title: 'Softverska Rješenja — DPF, EGR, AdBlue',
+    subtitle: 'Rješavamo probleme sa DPF, EGR i AdBlue sistemima softverski — bez skupih zamjena.',
+    desc: 'DPF, EGR i AdBlue sistemi su česti uzrok problema na modernim dizel vozilima. U puno slučajeva problem se može riješiti softverski, bez zamjene skupih fizičkih komponenti. Koristimo profesionalnu Flex opremu i custom softverska rješenja u partnerstvu sa ASFerrari — svako rješenje je prilagođeno konkretnom vozilu, ne generičko. Na naš rad i softversko rješenje dajemo doživotnu garanciju.',
+    benefits: [
+      '🔵 DPF (Filter čađi) — softversko rješenje začepljenja i grešaka filtera',
+      '🔴 EGR (Recirkulacija izduvnih gasova) — deaktivacija ili rješenje EGR ventila',
+      '🟡 AdBlue / SCR sistem — rješenje grešaka i problema sa AdBlue sistemom',
+      '✅ Uklanjanje grešaka sa instrument table',
+      '🛠️ Profesionalna Flex oprema — precizno i sigurno očitavanje ECU podataka',
+      '🎯 Custom rješenje — prilagođeno vašem vozilu u saradnji sa ASFerrari',
+      '♾️ Doživotna garancija na upisanu softversku mapu — mehanički kvarovi nisu pokriveni garancijom.',
+      '💰 Znatno jeftinije od fizičke zamjene komponenti',
+      '⚡ Brza dijagnostika i procjena mogućnosti rješenja',
+      '🚛 Dostupno i za teretna vozila i autobuse',
+      '⚠️ Napomena: rizik uvijek postoji — stanje vozila mora biti provjereno'
+    ],
+    models: ['VW / Škoda / Seat / Audi (TDI motori)','BMW (d motori)','Mercedes-Benz (CDI motori)','Opel / Vauxhall (CDTI)','Ford (TDCi)','Renault / Dacia (dCi)','Peugeot / Citroën (HDi)','Fiat / Alfa Romeo (JTD/Multijet)','Toyota / Lexus (D-4D)','Kamioni: Mercedes, MAN, Scania, Volvo, DAF, Iveco']
+  },
+  adapter: {
+    icon: '🔌',
+    title: 'CarPlay & Android Auto Adapteri',
+    subtitle: 'Prodajemo adaptere za vozila gdje fabrički hardver ne podržava CarPlay aktivaciju.',
+    desc: 'Nisu sva vozila kompatibilna sa softverskom aktivacijom CarPlay-a — nekima nedostaje potreban hardver. Za takve slučajeve nudimo CarPlay i Android Auto adaptere koji se jednostavno ugrađuju i pružaju isti korisniški doživljaj kao i originalna aktivacija.',
+    benefits: [
+      '✅ Rješenje za vozila bez originalnog CarPlay hardvera',
+      '📱 Puna podrška za Apple CarPlay i Android Auto',
+      '🔌 Jednostavna ugradnja — spaja se na fabrički ekran',
+      '📶 Bežična (wireless) i žična verzija dostupne',
+      '🖥️ Zadržava originalni izgled ekrana vozila',
+      '🎵 Google Maps, Waze, Spotify, pozivi, poruke',
+      '🔧 Ugrađujemo na licu mjesta — dolazite kod nas',
+      '📦 Moguća dostava adaptera poštom uz uputstvo'
+    ],
+    models: [
+      '── Kompatibilna vozila (primjeri) ──',
+      'VW Golf 6 i stariji modeli','VW Passat B7 i stariji','Škoda Octavia 2 i stariji',
+      'Audi A3 8P / A4 B8 i stariji','BMW F serija (sa NBT sistemom)',
+      'Mercedes sa NTG 4.x sistemom','Opel sa Navi 900 / IntelliLink sistemom',
+      'Ford sa SYNC 2 sistemom','Renault / Dacia modeli',
+      '── Napomena ──',
+      'Kontaktirajte nas sa modelom i godištem vozila','Provjeravamo kompatibilnost prije kupovine','Dostupno i za ugradnju i za slanje poštom'
+    ]
+  },
+  vulkanizer: {
+    icon: '🔩',
+    title: 'Vulkanizer',
+    subtitle: 'Profesionalna montaža, balansiranje i zamjena guma za putnička i kamionska vozila.',
+    desc: 'Nudimo kompletnu vulkanizersku uslugu za putnička i kamionska vozila — montaža i demontaža guma, balansiranje, provjera i dopuna pritiska, popravka probušenih guma, sezonska zamjena (ljetne/zimske), kao i montiranje, zamjena i narezivanje kamionskih guma.',
+    benefits: ['🔩 Montaža i demontaža guma svih dimenzija','⚖️ Kompjutersko balansiranje točkova','🔧 Popravka probušenih guma','🚛 Montiranje, zamjena i narezivanje kamionskih guma','❄️ Sezonska zamjena ljetnih/zimskih guma','📦 Skladištenje guma po sezoni','⚡ Brza usluga — bez dugog čekanja'],
+    models: ['Putnička vozila','SUV i 4x4','Kombiji','Kamioni']
+  },
+  auspuh: {
+    icon: '💨',
+    title: 'Auspuh Servis',
+    subtitle: 'Popravka i zamjena auspušnog lonca i cijevi — brzo i po pristupačnim cijenama.',
+    desc: 'Pružamo usluge popravke i zamjene auspuha i ispušnog sistema. Dijagnostikujemo propuštanje, koroziju i oštećenja, te vršimo popravku ili zamjenu auspušnog lonca i srednje cijevi. Napomena: ne radimo zamjenu katalizatora i DPF filtera.',
+    benefits: ['💨 Zamjena auspušnog lonca i cijevi','🔍 Dijagnostika propuštanja i oštećenja','🔧 Zavarivanje i popravka oštećenih dijelova','🚗 Sve marke i modeli vozila','💰 Povoljne cijene — originalni i aftermarket dijelovi'],
+    models: ['Putnička vozila','SUV i 4x4','Kombiji']
+  },
+  faq: {
+    icon: '❓',
+    title: 'Česta Pitanja',
+    subtitle: 'Odgovori na najčešća pitanja o našim uslugama.',
+    desc: '<div class="faq-wrap" id="faqWrapService"><button class="faq-btn" data-faq="f0"><div class="faq-q">Da li CarPlay aktivacija poništava garanciju vozila? <span class="faq-ic">+</span></div><div class="faq-a">U većini slučajeva ne, jer se radi o softverskoj promjeni putem OBD priključka, bez fizičkog zadiranja u vozilo. Preporučujemo da nas kontaktirate za vaš konkretan slučaj.</div></button><button class="faq-btn" data-faq="f1"><div class="faq-q">Koliko traje chiptuning? <span class="faq-ic">+</span></div><div class="faq-a">Sam proces traje obično 1–2 sata. Prethodno je potrebna dijagnostika i provjera stanja vozila, pa cijeli posjet može trajati 2–3 sata. Dogovaramo termin unaprijed.</div></button><button class="faq-btn" data-faq="f2"><div class="faq-q">Da li je chiptuning moguć na benzinskim vozilima? <span class="faq-ic">+</span></div><div class="faq-a">Da, chiptuning je moguć i na benzinskim i na dizel motorima. Turbo motori generalno daju bolje rezultate od atmosferskih.</div></button><button class="faq-btn" data-faq="f3"><div class="faq-q">Šta ako se pojavi problem nakon kodiranja? <span class="faq-ic">+</span></div><div class="faq-a">Svaka promjena se može vratiti na fabričke postavke. Uvijek čuvamo originalne podatke vozila i nudimo podršku nakon obavljene usluge.</div></button><button class="faq-btn" data-faq="f4"><div class="faq-q">Da li radite i za vozila izvan Prijepolja? <span class="faq-ic">+</span></div><div class="faq-a">Da! Neke usluge mogu biti obavljene online. Za fizičke intervencije — klijenti dolaze kod nas, a dostupni smo i za dogovor na terenu.</div></button><button class="faq-btn" data-faq="f5"><div class="faq-q">Koliko košta aktivacija skrivenih funkcija? <span class="faq-ic">+</span></div><div class="faq-a">Cijena zavisi od vozila i broja funkcija koje se aktiviraju. Kontaktirajte nas s modelom i godištem vozila i dobićete konkretan odgovor u kratkom roku.</div></button><button class="faq-btn" data-faq="f6"><div class="faq-q">Da li je moguće gledati YouTube i video klipove preko CarPlay / Android Auto? <span class="faq-ic">+</span></div><div class="faq-a">Ne. Apple CarPlay i Android Auto su namijenjeni isključivo za sigurnu vožnju — podržavaju navigaciju, muziku, pozive i poruke. Reprodukcija YouTube-a, Netflix-a ili video klipova nije moguća putem CarPlay / Android Auto sistema iz sigurnosnih razloga.</div></button><button class="faq-btn" data-faq="f7"><div class="faq-q">Da li chiptuning može oštetiti motor? <span class="faq-ic">+</span></div><div class="faq-a">Ne, ukoliko je vozilo u dobrom mehaničkom stanju i ukoliko se tuning radi profesionalno. Svaki naš chiptuning je prilagođen konkretnom vozilu i motoru.</div></button><button class="faq-btn" data-faq="f8"><div class="faq-q">Da li mogu koristiti navigaciju na telefonu (Google Maps) bez CarPlay aktivacije? <span class="faq-ic">+</span></div><div class="faq-a">Možete koristiti telefon odvojeno, ali bez CarPlay aktivacije navigacija sa telefona neće biti prikazana na fabričkom ekranu vozila. CarPlay aktivacija vam omogućava da vidite Google Maps ili Waze direktno na ekranu auta.</div></button><button class="faq-btn" data-faq="f9"><div class="faq-q">Da li DPF / EGR softversko rješenje prolazi tehnički pregled? <span class="faq-ic">+</span></div><div class="faq-a">Ovo zavisi od tipa rješenja i standarda koji se primjenjuju na tehničkom pregledu u vašoj zemlji. Preporučujemo da nas kontaktirate i razgovaramo o konkretnoj situaciji.</div></button><button class="faq-btn" data-faq="f10"><div class="faq-q">Da li CarPlay adapter radi jednako dobro kao softverska aktivacija? <span class="faq-ic">+</span></div><div class="faq-a">Da, u praksi je iskustvo vrlo slično. Adapter pruža isti CarPlay / Android Auto interfejs na ekranu vozila. Za vozila koja ne podržavaju softversku aktivaciju, adapter je odlično rješenje.</div></button><button class="faq-btn" data-faq="f11"><div class="faq-q">Mogu li nakon chiptuninga vratiti vozilo na originalne postavke? <span class="faq-ic">+</span></div><div class="faq-a">Da, uvijek čuvamo originalni softver vozila prije svake intervencije. Vraćanje na fabričke postavke je moguće u svakom trenutku.</div></button></div>',
+    benefits: [],
+    models: []
+  }
+};
+
 localStorage.removeItem("lang");
 var _activeServices = services;
 window._t = function(key) { var lang = document.documentElement.getAttribute('data-lang') || 'sr'; return (TRANSLATIONS[lang] || {})[key] || (TRANSLATIONS.sr || {})[key] || key; };
@@ -2824,8 +2996,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }).join('');
     document.getElementById('infoContent').innerHTML = html;
 
-    var waPrefix = lang === 'en' ? 'Hello, I would like to know more about: ' : 'Zdravo, zanima me više o usluzi: ';
-    var waMsg = encodeURIComponent(waPrefix + info.title);
+    var waMsg = encodeURIComponent('Zdravo, zanima me više o usluzi: ' + info.title);
     document.getElementById('infoWaBtn').href = 'https://wa.me/381600779443?text=' + waMsg;
 
     showPage('page-info');
@@ -5041,10 +5212,9 @@ async function doLogin() {
     recordAuthAttempt('login', false);
     var rl2 = checkAuthRate('login');
     msg.className = 'auth-msg error';
-    var lang = document.documentElement.getAttribute('data-lang') || 'sr';
-    var errText = result.error.message.includes('Invalid') ? (lang === 'en' ? 'Incorrect email or password.' : 'Pogresna email adresa ili lozinka.') : result.error.message;
+    var errText = result.error.message.includes('Invalid') ? 'Pogresna email adresa ili lozinka.' : result.error.message;
     if (!rl2.allowed) errText += ' ' + _t('authTooMany') + rl2.remaining + 's.';
-    else if (rl2.attempts >= 2) errText += ' (' + (lang === 'en' ? 'attempt' : 'pokusaj') + ' ' + rl2.attempts + ')';
+    else if (rl2.attempts >= 2) errText += ' (pokusaj ' + rl2.attempts + ')';
     msg.textContent = errText;
     btn.disabled = false;
     btn.textContent = _t('authLoginBtn');
