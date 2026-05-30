@@ -2,6 +2,8 @@
 (function() {
   'use strict';
 
+  function _t(key) { return window._t ? window._t(key) : key; }
+
   // === 1. DARK/LIGHT MODE TOGGLE ===
   function initThemeToggle() {
     var saved = localStorage.getItem('theme');
@@ -27,16 +29,23 @@
     var btn = document.createElement('button');
     btn.id = 'scrollTopBtn';
     btn.innerHTML = '&uarr;';
-    btn.title = 'Na vrh';
+    btn.title = _t('bcHome');
     document.body.appendChild(btn);
 
+    var scrollTicking = false;
     window.addEventListener('scroll', function() {
-      if (window.scrollY > 300) {
-        btn.classList.add('visible');
-      } else {
-        btn.classList.remove('visible');
+      if (!scrollTicking) {
+        requestAnimationFrame(function() {
+          if (window.scrollY > 300) {
+            btn.classList.add('visible');
+          } else {
+            btn.classList.remove('visible');
+          }
+          scrollTicking = false;
+        });
+        scrollTicking = true;
       }
-    });
+    }, { passive: true });
 
     btn.addEventListener('click', function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -45,15 +54,15 @@
 
   // === 3. BREADCRUMB NAVIGATION ===
   function updateBreadcrumb(pageId, label) {
-    var crumbs = [{ text: 'Pocetna', action: 'showHome' }];
+    var crumbs = [{ text: _t('bcHome'), action: 'showHome' }];
     if (pageId === 'service') {
-      crumbs.push({ text: 'Usluge', action: null });
+      crumbs.push({ text: _t('bcServices'), action: null });
       crumbs.push({ text: label, action: null });
     } else if (pageId === 'info') {
       crumbs.push({ text: 'Info', action: null });
       crumbs.push({ text: label, action: null });
     } else if (pageId === 'booking') {
-      crumbs.push({ text: 'Rezervacija', action: null });
+      crumbs.push({ text: _t('bcBooking'), action: null });
     }
 
     var containers = document.querySelectorAll('.breadcrumb');
@@ -103,7 +112,7 @@
     if (origShowBooking) {
       window.showBooking = function() {
         origShowBooking();
-        updateBreadcrumb('booking', 'Rezervacija');
+        updateBreadcrumb('booking', _t('bcBooking'));
       };
     }
 

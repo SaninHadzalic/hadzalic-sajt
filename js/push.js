@@ -2,6 +2,8 @@
 (function() {
   'use strict';
 
+  function _t(key) { return window._t ? window._t(key) : key; }
+
   var PUSH_BANNER_DELAY = 15000; // Show banner after 15 seconds
 
   function initPush() {
@@ -23,10 +25,10 @@
       banner = document.createElement('div');
       banner.id = 'pushBanner';
       banner.className = 'push-banner';
-      banner.innerHTML = '<p>Zelite li primati obaviještenja o akcijama i novostima?</p>'
+      banner.innerHTML = '<p data-i18n="pushText">' + _t('pushText') + '</p>'
         + '<div class="push-banner-actions">'
-        + '<button class="pb-allow" onclick="allowPush()">Dozvoli</button>'
-        + '<button class="pb-dismiss" onclick="dismissPush()">Ne hvala</button>'
+        + '<button class="pb-allow" onclick="allowPush()" data-i18n="pushAllow">' + _t('pushAllow') + '</button>'
+        + '<button class="pb-dismiss" onclick="dismissPush()" data-i18n="pushDismiss">' + _t('pushDismiss') + '</button>'
         + '</div>';
       document.body.appendChild(banner);
     }

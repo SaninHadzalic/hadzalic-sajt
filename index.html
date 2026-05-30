@@ -88,7 +88,8 @@
 <link rel="preconnect" href="https://res.cloudinary.com">
 <link rel="icon" type="image/jpeg" href="https://res.cloudinary.com/dgsgohodv/image/upload/w_64,h_64,c_fill/v1772801234/Hadzalic_Coding-01_gfzvxw.jpg">
 <link rel="apple-touch-icon" href="https://res.cloudinary.com/dgsgohodv/image/upload/w_200,h_200,c_fill/v1772801234/Hadzalic_Coding-01_gfzvxw.jpg">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700;800&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Exo+2:wght@400;600;700;800&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Exo+2:wght@400;600;700;800&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="css/variables.css">
 <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -205,18 +206,18 @@
 <!-- NAV -->
 <!-- TICKER -->
 <div class="ticker-wrap">
-  <div class="ticker-label">NOVO</div>
+  <div class="ticker-label" data-i18n="tickerLabel">NOVO</div>
   <div class="ticker-track">
     <div class="ticker-inner" id="tickerInner">
-      <span>🌐 Sajt je LIVE na hadzalic.co</span>
-      <span>📱 CarPlay & Android Auto aktivacija — VAG, BMW, Mercedes</span>
-      <span>📷 POI Radar upozorenja GRATIS uz svako ažuriranje mapa (VAG grupacija)</span>
-      <span>🏆 Sertifikovani HPTuners & ASFerrari chiptuning specijalisti</span>
-      <span>🔥 Chiptuning — custom mape u saradnji sa ASFerrari partnerima</span>
-      <span>♾️ Doživotna garancija na softverski rad</span>
-      <span>🔌 CarPlay adapteri dostupni za vozila bez hardverske podrške</span>
-      <span id="tickerStatusSpan">💬 Brz odgovor na WhatsApp — 060 077 9443</span>
-      <span>🗺️ Prijepolje, Srbija — dolazite kod nas ili pišite online</span>
+      <span data-i18n="tick1">🌐 Sajt je LIVE na hadzalic.co</span>
+      <span data-i18n="tick2">📱 CarPlay & Android Auto aktivacija — VAG, BMW, Mercedes</span>
+      <span data-i18n="tick3">📷 POI Radar upozorenja GRATIS uz svako ažuriranje mapa (VAG grupacija)</span>
+      <span data-i18n="tick4">🏆 Sertifikovani HPTuners & ASFerrari chiptuning specijalisti</span>
+      <span data-i18n="tick5">🔥 Chiptuning — custom mape u saradnji sa ASFerrari partnerima</span>
+      <span data-i18n="tick6">♾️ Doživotna garancija na softverski rad</span>
+      <span data-i18n="tick7">🔌 CarPlay adapteri dostupni za vozila bez hardverske podrške</span>
+      <span id="tickerStatusSpan" data-i18n="tick8">💬 Brz odgovor na WhatsApp — 060 077 9443</span>
+      <span data-i18n="tick9">🗺️ Prijepolje, Srbija — dolazite kod nas ili pišite online</span>
     </div>
   </div>
 </div>
@@ -238,28 +239,28 @@
     </button>
     <div class="nav-tagline">
       <span class="nav-tag-dot"></span>
-      Kodiramo. Aktiviramo. Optimizujemo.
+      <span data-i18n="navTagline">Kodiramo. Aktiviramo. Optimizujemo.</span>
     </div>
   </div>
   <div class="nav-links" id="navLinks">
     <a href="/usluge" class="nav-link" data-route="/usluge">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-      Usluge
+      <span data-i18n="navUsluge">Usluge</span>
     </a>
     <a href="/blog" class="nav-link" data-route="/blog">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-      Blog
+      <span data-i18n="navBlog">Blog</span>
     </a>
     <a href="/kontakt" class="nav-link" data-route="/kontakt">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-      Kontakt
+      <span data-i18n="navKontakt">Kontakt</span>
     </a>
   </div>
   <button class="nav-back" id="navBack">← Nazad</button>
   <div class="nav-right">
     <button class="nav-booking" id="navBooking">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      <span>Zakaži</span>
+      <span data-i18n="navZakazi">Zakaži</span>
     </button>
     <button class="nav-theme" id="themeToggle" title="Promijeni temu">
       <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -287,41 +288,41 @@
   <div style="padding:14px 20px 4px;">
     <button class="menu-item" id="menuBooking" style="background:linear-gradient(135deg,rgba(37,211,102,0.1),rgba(10,132,255,0.05));border:1px solid rgba(37,211,102,0.25);border-radius:6px;width:100%;justify-content:center;gap:10px;padding:14px;margin-bottom:4px;">
       <span class="mi-icon">📅</span>
-      <span class="mi-name" style="flex:none;font-size:0.92rem;color:#00d464;">Zakaži Termin</span>
+      <span class="mi-name" data-i18n="menuBooking" style="flex:none;font-size:0.92rem;color:#00d464;">Zakaži Termin</span>
     </button>
   </div>
-  <div class="slide-menu-label">Usluge</div>
+  <div class="slide-menu-label" data-i18n="menuLabelSvc">Usluge</div>
   <div class="slide-menu-items">
-    <button class="menu-item" data-svc="carplay"><span class="mi-icon">📱</span><span class="mi-name">CarPlay &amp; Android Auto</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-svc="aktivacija"><span class="mi-icon">⚡</span><span class="mi-name">Aktivacija Funkcija</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-svc="navi"><span class="mi-icon">🗺️</span><span class="mi-name">Ažuriranje Navigacije</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-svc="errors"><span class="mi-icon">⚙️</span><span class="mi-name">Brisanje Grešaka</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-svc="obd"><span class="mi-icon">💻</span><span class="mi-name">OBD Kodiranje</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-svc="remote"><span class="mi-icon">🌐</span><span class="mi-name">Online / Udaljeno</span><span class="mi-arr">→</span></button>
-    <button class="menu-item menu-item-hot" data-svc="chiptuning"><span class="mi-icon">🔥</span><span class="mi-name">Chiptuning</span><span class="mi-badge">POPULARNO</span></button>
-    <button class="menu-item menu-item-green" data-svc="dpf"><span class="mi-icon">🛠️</span><span class="mi-name">Softverska Rješenja (DPF, EGR, AdBlue)</span><span class="mi-arr">→</span></button>
-    <button class="menu-item menu-item-teal" data-svc="adapter"><span class="mi-icon">🔌</span><span class="mi-name">CarPlay Adapteri</span><span class="mi-badge mi-badge-green">NA STANJU</span></button>
+    <button class="menu-item" data-svc="carplay"><span class="mi-icon">📱</span><span class="mi-name" data-i18n="menuSvcCarplay">CarPlay &amp; Android Auto</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-svc="aktivacija"><span class="mi-icon">⚡</span><span class="mi-name" data-i18n="menuSvcAktivacija">Aktivacija Funkcija</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-svc="navi"><span class="mi-icon">🗺️</span><span class="mi-name" data-i18n="menuSvcNavi">Ažuriranje Navigacije</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-svc="errors"><span class="mi-icon">⚙️</span><span class="mi-name" data-i18n="menuSvcErrors">Brisanje Grešaka</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-svc="obd"><span class="mi-icon">💻</span><span class="mi-name" data-i18n="menuSvcObd">OBD Kodiranje</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-svc="remote"><span class="mi-icon">🌐</span><span class="mi-name" data-i18n="menuSvcRemote">Online / Udaljeno</span><span class="mi-arr">→</span></button>
+    <button class="menu-item menu-item-hot" data-svc="chiptuning"><span class="mi-icon">🔥</span><span class="mi-name" data-i18n="menuSvcChip">Chiptuning</span><span class="mi-badge" data-i18n="menuBadgePopular">POPULARNO</span></button>
+    <button class="menu-item menu-item-green" data-svc="dpf"><span class="mi-icon">🛠️</span><span class="mi-name" data-i18n="menuSvcDpf">Softverska Rješenja (DPF, EGR, AdBlue)</span><span class="mi-arr">→</span></button>
+    <button class="menu-item menu-item-teal" data-svc="adapter"><span class="mi-icon">🔌</span><span class="mi-name" data-i18n="menuSvcAdapter">CarPlay Adapteri</span><span class="mi-badge mi-badge-green" data-i18n="menuBadgeStock">NA STANJU</span></button>
   </div>
-  <div class="slide-menu-label">Korisne informacije</div>
+  <div class="slide-menu-label" data-i18n="menuLabelInfo">Korisne informacije</div>
   <div class="slide-menu-items">
-    <button class="menu-item" data-info="carplay"><span class="mi-icon">📱</span><span class="mi-name">CarPlay &amp; Android Auto</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-info="hidden"><span class="mi-icon">🔓</span><span class="mi-name">Skrivene Funkcije</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-info="chiptuning"><span class="mi-icon">🔥</span><span class="mi-name">Chiptuning</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-info="navi"><span class="mi-icon">🗺️</span><span class="mi-name">Ažuriranje Navigacije</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-info="dpf"><span class="mi-icon">🛠️</span><span class="mi-name">DPF / EGR / AdBlue</span><span class="mi-arr">→</span></button>
-    <button class="menu-item" data-info="obd"><span class="mi-icon">💻</span><span class="mi-name">OBD Kodiranje</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-info="carplay"><span class="mi-icon">📱</span><span class="mi-name" data-i18n="menuInfoCarplay">CarPlay &amp; Android Auto</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-info="hidden"><span class="mi-icon">🔓</span><span class="mi-name" data-i18n="menuInfoHidden">Skrivene Funkcije</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-info="chiptuning"><span class="mi-icon">🔥</span><span class="mi-name" data-i18n="menuInfoChip">Chiptuning</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-info="navi"><span class="mi-icon">🗺️</span><span class="mi-name" data-i18n="menuInfoNavi">Ažuriranje Navigacije</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-info="dpf"><span class="mi-icon">🛠️</span><span class="mi-name" data-i18n="menuInfoDpf">DPF / EGR / AdBlue</span><span class="mi-arr">→</span></button>
+    <button class="menu-item" data-info="obd"><span class="mi-icon">💻</span><span class="mi-name" data-i18n="menuInfoObd">OBD Kodiranje</span><span class="mi-arr">→</span></button>
   </div>
-  <div class="slide-menu-label">Stranice</div>
+  <div class="slide-menu-label" data-i18n="menuLabelPages">Stranice</div>
   <div class="slide-menu-items">
-    <a href="/usluge" class="menu-item" data-route="/usluge"><span class="mi-icon">⚡</span><span class="mi-name">Naše Usluge</span><span class="mi-arr">→</span></a>
-    <a href="/blog" class="menu-item" data-route="/blog"><span class="mi-icon">📰</span><span class="mi-name">Blog</span><span class="mi-arr">→</span></a>
-    <a href="/kontakt" class="menu-item" data-route="/kontakt"><span class="mi-icon">📞</span><span class="mi-name">Kontakt</span><span class="mi-arr">→</span></a>
+    <a href="/usluge" class="menu-item" data-route="/usluge"><span class="mi-icon">⚡</span><span class="mi-name" data-i18n="menuPageUsluge">Naše Usluge</span><span class="mi-arr">→</span></a>
+    <a href="/blog" class="menu-item" data-route="/blog"><span class="mi-icon">📰</span><span class="mi-name" data-i18n="menuPageBlog">Blog</span><span class="mi-arr">→</span></a>
+    <a href="/kontakt" class="menu-item" data-route="/kontakt"><span class="mi-icon">📞</span><span class="mi-name" data-i18n="menuPageKontakt">Kontakt</span><span class="mi-arr">→</span></a>
   </div>
 
   <div class="slide-menu-footer">
-    <a href="tel:+381600779443" class="slide-footer-link">📞 060 077 9443</a>
-    <a href="https://wa.me/381600779443" class="slide-footer-link green">💬 WhatsApp</a>
-    <a href="https://www.instagram.com/hadzalic.coding" target="_blank" class="slide-footer-link insta">📸 @hadzalic.coding</a>
+    <a href="tel:+381600779443" class="slide-footer-link" data-i18n="menuFooterPhone">📞 060 077 9443</a>
+    <a href="https://wa.me/381600779443" class="slide-footer-link green" data-i18n="menuFooterWa">💬 WhatsApp</a>
+    <a href="https://www.instagram.com/hadzalic.coding" target="_blank" class="slide-footer-link insta" data-i18n="menuFooterInsta">📸 @hadzalic.coding</a>
   </div>
 </div>
 
@@ -341,29 +342,30 @@
     <div class="hero-vignette"></div>
   </div>
     <div class="hero-glow-ring"></div>
-    <div class="hero-eyebrow"><span class="hero-dot"></span>Prijepolje, Srbija</div>
+    <div class="hero-eyebrow"><span class="hero-dot"></span><span data-i18n="eyebrow">Prijepolje, Srbija</span></div>
     <h1 class="hero-title">
       <span class="ht-white"><span class="hl" style="--i:0">H</span><span class="hl" style="--i:1">A</span><span class="hl" style="--i:2">D</span><span class="hl" style="--i:3">Z</span><span class="hl" style="--i:4">A</span><span class="hl" style="--i:5">L</span><span class="hl" style="--i:6">I</span><span class="hl" style="--i:7">C</span></span>
       <span class="ht-blue"><span class="hl" style="--i:8">C</span><span class="hl" style="--i:9">O</span><span class="hl" style="--i:10">D</span><span class="hl" style="--i:11">I</span><span class="hl" style="--i:12">N</span><span class="hl" style="--i:13">G</span></span>
     </h1>
-    <p class="hero-sub">Profesionalno kodiranje i optimizacija vozila — aktivacija skrivenih funkcija, CarPlay, chiptuning, softverska rješenja, vulkanizer servis i auspuh servis.</p>
+    <p class="hero-sub" data-i18n="heroSub">Otključaj puni potencijal svog vozila — chiptuning, kodiranje i CarPlay za sve marke.</p>
     <div class="hero-divider"></div>
+    <div class="hero-car-label">HADZALIC<span>CHIPTUNING</span></div>
     <div class="stats-bar">
-      <div class="stat-item"><div class="stat-n" data-count="200" data-suffix="+">0</div><div class="stat-l">Zadovoljnih klijenata</div></div>
-      <div class="stat-item"><div class="stat-n" data-count="50" data-suffix="+">0</div><div class="stat-l">Podržanih modela</div></div>
-      <div class="stat-item"><div class="stat-n" data-count="2" data-suffix="h">0</div><div class="stat-l">Brz odgovor</div></div>
-      <div class="stat-item"><div class="stat-n" data-count="100" data-suffix="%">0</div><div class="stat-l">Garancija kvaliteta</div></div>
+      <div class="stat-item"><div class="stat-n" data-count="200" data-suffix="+">0</div><div class="stat-l" data-i18n="stat1">Zadovoljnih klijenata</div></div>
+      <div class="stat-item"><div class="stat-n" data-count="50" data-suffix="+">0</div><div class="stat-l" data-i18n="stat2">Podržanih modela</div></div>
+      <div class="stat-item"><div class="stat-n" data-count="2" data-suffix="h">0</div><div class="stat-l" data-i18n="stat3">Brz odgovor</div></div>
+      <div class="stat-item"><div class="stat-n" data-count="100" data-suffix="%">0</div><div class="stat-l" data-i18n="stat4">Garancija kvaliteta</div></div>
     </div>
   <div class="tools-bar">
-    <button class="tool-btn" id="openChecker"><span class="tb-icon">⚡</span> Provjeri snagu svog auta</button>
-    <button class="tool-btn" id="openCalc"><span class="tb-icon">🔍</span> Koje usluge su moguće za moje auto</button>
-    <a href="/usluge/chiptuning" class="tool-btn" data-route="/usluge/chiptuning" data-scroll="fuelCalcWrap"><span class="tb-icon">⛽</span> Izračunaj uštedu goriva</a>
+    <button class="tool-btn" id="openChecker"><span class="tb-icon">⚡</span> <span data-i18n="tool1">Provjeri snagu svog auta</span></button>
+    <button class="tool-btn" id="openCalc"><span class="tb-icon">🔍</span> <span data-i18n="tool2">Koje usluge su moguće za moje auto</span></button>
+    <a href="/usluge/chiptuning" class="tool-btn" data-route="/usluge/chiptuning" data-scroll="fuelCalcWrap"><span class="tb-icon">⛽</span> <span data-i18n="tool3">Izračunaj uštedu goriva</span></a>
   </div>
   </section>
 
   <!-- PARTNERS -->
   <div class="partners-bar sr">
-    <div class="partners-label">Radimo uz podršku</div>
+    <div class="partners-label" data-i18n="partnersLabel">Radimo uz podršku</div>
     <div class="partners-list">
       <a class="partner-badge partner-asf" href="https://asftuning.com/" target="_blank" style="text-decoration:none;">
         <span class="pb-dot"></span>
@@ -420,7 +422,7 @@
 
   <!-- QUICK LINKS — navigate to subpages -->
   <section class="home-quick-links sr">
-    <p class="sec-label">Istražite</p>
+    <p class="sec-label" data-i18n="qlLabel">Istražite</p>
     <div class="quick-links-grid">
       <a href="/usluge" class="ql-card ql-accent-blue" data-route="/usluge" style="--ql-hue:210;--ql-color:#0A84FF;--ql-delay:0s">
         <span class="ql-index">01</span>
@@ -428,10 +430,10 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         </div>
         <div class="ql-body">
-          <div class="ql-name">Naše Usluge</div>
-          <p class="ql-desc">Chiptuning, CarPlay, kodiranje, softverska rješenja i više</p>
+          <div class="ql-name" data-i18n="ql1Name">Naše Usluge</div>
+          <p class="ql-desc" data-i18n="ql1Desc">Chiptuning, CarPlay, kodiranje, softverska rješenja i više</p>
         </div>
-        <span class="ql-arrow">Pogledaj <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        <span class="ql-arrow"><span data-i18n="ql1Arrow">Pogledaj</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </a>
       <a href="/blog" class="ql-card ql-accent-purple" data-route="/blog" style="--ql-hue:270;--ql-color:#a050ff;--ql-delay:0.06s">
         <span class="ql-index">02</span>
@@ -439,10 +441,10 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </div>
         <div class="ql-body">
-          <div class="ql-name">Blog</div>
-          <p class="ql-desc">Savjeti, novosti i trikovi iz svijeta auto kodiranja</p>
+          <div class="ql-name" data-i18n="ql2Name">Blog</div>
+          <p class="ql-desc" data-i18n="ql2Desc">Savjeti, novosti i trikovi iz svijeta auto kodiranja</p>
         </div>
-        <span class="ql-arrow">Čitaj <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        <span class="ql-arrow"><span data-i18n="ql2Arrow">Čitaj</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </a>
       <a href="/kontakt" class="ql-card ql-accent-green" data-route="/kontakt" style="--ql-hue:145;--ql-color:#25d366;--ql-delay:0.12s">
         <span class="ql-index">03</span>
@@ -450,10 +452,10 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </div>
         <div class="ql-body">
-          <div class="ql-name">Kontakt</div>
-          <p class="ql-desc">Lokacija, radno vrijeme i forma za brzi upit</p>
+          <div class="ql-name" data-i18n="ql3Name">Kontakt</div>
+          <p class="ql-desc" data-i18n="ql3Desc">Lokacija, radno vrijeme i forma za brzi upit</p>
         </div>
-        <span class="ql-arrow">Piši nam <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        <span class="ql-arrow"><span data-i18n="ql3Arrow">Piši nam</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </a>
       <a href="/radovi" class="ql-card ql-accent-orange" data-route="/radovi" style="--ql-hue:30;--ql-color:#ff9500;--ql-delay:0.18s">
         <span class="ql-index">04</span>
@@ -461,10 +463,10 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
         </div>
         <div class="ql-body">
-          <div class="ql-name">Naši Radovi</div>
-          <p class="ql-desc">Pregled urađenih projekata — chiptuning, kodiranje i aktivacije</p>
+          <div class="ql-name" data-i18n="ql4Name">Naši Radovi</div>
+          <p class="ql-desc" data-i18n="ql4Desc">Pregled urađenih projekata — chiptuning, kodiranje i aktivacije</p>
         </div>
-        <span class="ql-arrow">Pogledaj <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        <span class="ql-arrow"><span data-i18n="ql4Arrow">Pogledaj</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </a>
       <a href="#" class="ql-card ql-card-social ql-accent-pink" data-scroll="socialLinks" style="--ql-hue:335;--ql-color:#e1306c;--ql-delay:0.24s">
         <span class="ql-index">05</span>
@@ -472,10 +474,10 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
         </div>
         <div class="ql-body">
-          <div class="ql-name">Društvene Mreže</div>
-          <p class="ql-desc">Zapratite nas na Instagramu, Facebooku i TikToku</p>
+          <div class="ql-name" data-i18n="ql5Name">Društvene Mreže</div>
+          <p class="ql-desc" data-i18n="ql5Desc">Zapratite nas na Instagramu, Facebooku i TikToku</p>
         </div>
-        <span class="ql-arrow">Zaprati <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        <span class="ql-arrow"><span data-i18n="ql5Arrow">Zaprati</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </a>
     </div>
   </section>
@@ -483,17 +485,17 @@
 <section class="home-section alt cta-banner sr">
   <div class="cta-banner-inner">
     <div class="cta-banner-text">
-      <h2 class="cta-banner-title">Spremni za upgrade?</h2>
-      <p class="cta-banner-desc">Zakažite termin ili nam pišite — odgovaramo u roku od 2 sata. Besplatna dijagnostika i konsultacija za vaše vozilo.</p>
+      <h2 class="cta-banner-title" data-i18n="ctaTitle">Spremni za upgrade?</h2>
+      <p class="cta-banner-desc" data-i18n="ctaDesc">Zakažite termin ili nam pišite — odgovaramo u roku od 2 sata. Besplatna dijagnostika i konsultacija za vaše vozilo.</p>
     </div>
     <div class="cta-banner-actions">
       <a href="/kontakt" class="cta-banner-btn cta-banner-primary" data-route="/kontakt">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Zakaži termin
+        <span data-i18n="ctaBtn1">Zakaži termin</span>
       </a>
       <a href="https://wa.me/381600779443" class="cta-banner-btn cta-banner-secondary" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .612.612l4.458-1.495A11.948 11.948 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.347 0-4.518-.801-6.24-2.144l-.436-.348-2.648.888.888-2.648-.348-.436A9.935 9.935 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-        Piši na WhatsApp
+        <span data-i18n="ctaBtn2">Piši na WhatsApp</span>
       </a>
     </div>
   </div>
@@ -506,7 +508,7 @@
         <button class="nav-logo" id="footerLogo">
           <span class="logo-h">Hadzalic</span><span class="logo-sep"></span><span class="logo-c">Coding</span>
         </button>
-        <p class="footer-tagline">Profesionalni automotive coding &amp; chiptuning. Vaš pouzdan partner za kodiranje, aktivaciju funkcija i optimizaciju vozila.</p>
+        <p class="footer-tagline" data-i18n="footerTagline">Profesionalni automotive coding &amp; chiptuning. Vaš pouzdan partner za kodiranje, aktivaciju funkcija i optimizaciju vozila.</p>
         <div class="footer-socials">
           <a href="https://www.instagram.com/hadzalic.coding/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -522,27 +524,27 @@
 
       <!-- Navigacija -->
       <div class="footer-col">
-        <h4 class="footer-col-title">Navigacija</h4>
-        <a href="/" class="footer-nav-link" data-route="/">Početna</a>
-        <a href="/usluge" class="footer-nav-link" data-route="/usluge">Usluge</a>
-        <a href="/blog" class="footer-nav-link" data-route="/blog">Blog</a>
-        <a href="/radovi" class="footer-nav-link" data-route="/radovi">Naši Radovi</a>
-        <a href="/kontakt" class="footer-nav-link" data-route="/kontakt">Kontakt</a>
+        <h4 class="footer-col-title" data-i18n="footerNav">Navigacija</h4>
+        <a href="/" class="footer-nav-link" data-route="/"><span data-i18n="footerHome">Početna</span></a>
+        <a href="/usluge" class="footer-nav-link" data-route="/usluge"><span data-i18n="navUsluge">Usluge</span></a>
+        <a href="/blog" class="footer-nav-link" data-route="/blog"><span data-i18n="navBlog">Blog</span></a>
+        <a href="/radovi" class="footer-nav-link" data-route="/radovi"><span data-i18n="footerRadovi">Naši Radovi</span></a>
+        <a href="/kontakt" class="footer-nav-link" data-route="/kontakt"><span data-i18n="navKontakt">Kontakt</span></a>
       </div>
 
       <!-- Usluge -->
       <div class="footer-col">
-        <h4 class="footer-col-title">Usluge</h4>
-        <a href="/usluge/chiptuning" class="footer-nav-link" data-route="/usluge/chiptuning">Chiptuning</a>
-        <a href="/usluge/aktivacija" class="footer-nav-link" data-route="/usluge/aktivacija">Kodiranje funkcija</a>
-        <a href="/usluge/carplay" class="footer-nav-link" data-route="/usluge/carplay">CarPlay aktivacija</a>
-        <a href="/usluge/dpf" class="footer-nav-link" data-route="/usluge/dpf">Softverska rješenja</a>
-        <a href="/usluge/errors" class="footer-nav-link" data-route="/usluge/errors">Dijagnostika</a>
+        <h4 class="footer-col-title" data-i18n="navUsluge">Usluge</h4>
+        <a href="/usluge/chiptuning" class="footer-nav-link" data-route="/usluge/chiptuning"><span data-i18n="fSvc1">Chiptuning</span></a>
+        <a href="/usluge/aktivacija" class="footer-nav-link" data-route="/usluge/aktivacija"><span data-i18n="fSvc2">Kodiranje funkcija</span></a>
+        <a href="/usluge/carplay" class="footer-nav-link" data-route="/usluge/carplay"><span data-i18n="fSvc3">CarPlay aktivacija</span></a>
+        <a href="/usluge/dpf" class="footer-nav-link" data-route="/usluge/dpf"><span data-i18n="fSvc4">Softverska rješenja</span></a>
+        <a href="/usluge/errors" class="footer-nav-link" data-route="/usluge/errors"><span data-i18n="fSvc5">Dijagnostika</span></a>
       </div>
 
       <!-- Kontakt -->
       <div class="footer-col">
-        <h4 class="footer-col-title">Kontakt</h4>
+        <h4 class="footer-col-title" data-i18n="navKontakt">Kontakt</h4>
         <a href="tel:+381600779443" class="footer-contact-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           +381 60 077 9443
@@ -557,7 +559,7 @@
         </a>
         <div class="footer-contact-item footer-address">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff3b5c" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Prijepolje, Srbija</span>
+          <span data-i18n="footerAddress">Prijepolje, Srbija</span>
         </div>
       </div>
     </div>
@@ -768,58 +770,58 @@
   <section class="home-section sr" id="contactSection">
     <div class="sec-header">
       <span class="sec-tag">Stupite u kontakt</span>
-      <h2 class="sec-h2">Kontaktirajte Nas</h2>
-      <p class="sec-desc">Imate pitanje ili ste spremni za booking? Pišite nam!</p>
+      <h2 class="sec-h2" data-i18n="contactH2">Kontaktirajte Nas</h2>
+      <p class="sec-desc" data-i18n="contactDesc">Imate pitanje ili ste spremni za booking? Pišite nam!</p>
     </div>
     <div class="contact-grid">
       <div>
-        <h3 class="cinfo-title">Hadzalic Coding 🌐</h3>
-        <p class="cinfo-desc">Stručni servis kodiranja vozila u Prijepolju. Kontaktirajte nas putem telefona, e-maila ili društvenih mreža.</p>
+        <h3 class="cinfo-title" data-i18n="contactInfoTitle">Hadzalic Coding 🌐</h3>
+        <p class="cinfo-desc" data-i18n="contactInfoDesc">Stručni servis kodiranja vozila u Prijepolju. Kontaktirajte nas putem telefona, e-maila ili društvenih mreža.</p>
         <div class="cinfo-item">
           <div class="cinfo-icon">📍</div>
-          <div class="cinfo-txt"><strong>Lokacija</strong>Prijepolje, Srbija</div>
+          <div class="cinfo-txt"><strong data-i18n="contactLblLoc">Lokacija</strong><span data-i18n="contactValLoc">Prijepolje, Srbija</span></div>
         </div>
         <div class="cinfo-item">
           <div class="cinfo-icon">📞</div>
-          <div class="cinfo-txt"><strong>Telefon / WhatsApp</strong><a href="tel:+381600779443">060 077 9443</a></div>
+          <div class="cinfo-txt"><strong data-i18n="contactLblPhone">Telefon / WhatsApp</strong><a href="tel:+381600779443">060 077 9443</a></div>
         </div>
         <div class="cinfo-item">
           <div class="cinfo-icon">✉️</div>
-          <div class="cinfo-txt"><strong>Email</strong><a href="/cdn-cgi/l/email-protection#f39b929789929f9a90dd909c9796b3949e929a9fdd909c9e"><span class="__cf_email__" data-cfemail="5b333a3f213a3732387538343f3e1b3c363a323775383436">[email&#160;protected]</span></a></div>
+          <div class="cinfo-txt"><strong data-i18n="contactLblEmail">Email</strong><a href="/cdn-cgi/l/email-protection#f39b929789929f9a90dd909c9796b3949e929a9fdd909c9e"><span class="__cf_email__" data-cfemail="5b333a3f213a3732387538343f3e1b3c363a323775383436">[email&#160;protected]</span></a></div>
         </div>
         <div class="cinfo-item">
           <div class="cinfo-icon">📸</div>
-          <div class="cinfo-txt"><strong>Instagram</strong><a href="https://www.instagram.com/hadzalic.coding" target="_blank">@hadzalic.coding</a></div>
+          <div class="cinfo-txt"><strong data-i18n="contactLblInsta">Instagram</strong><a href="https://www.instagram.com/hadzalic.coding" target="_blank">@hadzalic.coding</a></div>
         </div>
       </div>
       <div class="cform">
-        <div class="cform-title">Pošaljite Upit</div>
-        <div class="fg"><label>Ime i Prezime</label><input id="cName" type="text" placeholder="Vaše ime..."></div>
-        <div class="fg"><label>Telefon / WhatsApp</label><input id="cPhone" type="text" placeholder="+381..."></div>
-        <div class="fg"><label>Email adresa <span style="color:#ff453a;">*</span></label><input id="cEmail" type="email" placeholder="vaš@email.com"></div>
+        <div class="cform-title" data-i18n="contactFormTitle">Pošaljite Upit</div>
+        <div class="fg"><label data-i18n="contactLblName">Ime i Prezime</label><input id="cName" type="text" placeholder="Vaše ime..." data-i18n-ph="contactPhName"></div>
+        <div class="fg"><label data-i18n="contactLblTel">Telefon / WhatsApp</label><input id="cPhone" type="text" placeholder="+381..." data-i18n-ph="contactPhTel"></div>
+        <div class="fg"><label data-i18n="contactLblEmail">Email adresa <span style="color:#ff453a;">*</span></label><input id="cEmail" type="email" placeholder="vaš@email.com" data-i18n-ph="contactPhEmail"></div>
         <div class="fg">
-          <label>Usluga</label>
+          <label data-i18n="contactLblService">Usluga</label>
           <select id="cService">
-            <option>CarPlay / Android Auto</option>
-            <option>CarPlay Adapter (kupovina)</option>
-            <option>Skrivene Funkcije</option>
-            <option>Ažuriranje Navigacije</option>
-            <option>Brisanje Grešaka</option>
-            <option>OBD Kodiranje</option>
-            <option>Chiptuning</option>
-            <option>DPF / EGR / AdBlue</option>
-            <option>Vulkanizer</option>
-            <option>Auspuh Servis</option>
-            <option>Ostalo</option>
+            <option data-i18n="contactOpt1">CarPlay / Android Auto</option>
+            <option data-i18n="contactOpt2">CarPlay Adapter (kupovina)</option>
+            <option data-i18n="contactOpt3">Skrivene Funkcije</option>
+            <option data-i18n="contactOpt4">Ažuriranje Navigacije</option>
+            <option data-i18n="contactOpt5">Brisanje Grešaka</option>
+            <option data-i18n="contactOpt6">OBD Kodiranje</option>
+            <option data-i18n="contactOpt7">Chiptuning</option>
+            <option data-i18n="contactOpt8">DPF / EGR / AdBlue</option>
+            <option data-i18n="contactOpt9">Vulkanizer</option>
+            <option data-i18n="contactOpt10">Auspuh Servis</option>
+            <option data-i18n="contactOpt11">Ostalo</option>
           </select>
         </div>
-        <div class="fg"><label>Poruka</label><textarea id="cMessage" placeholder="Opišite vozilo i šta vas zanima..."></textarea></div>
+        <div class="fg"><label data-i18n="contactLblMsg">Poruka</label><textarea id="cMessage" placeholder="Opišite vozilo i šta vas zanima..." data-i18n-ph="contactPhMsg"></textarea></div>
         <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;margin-bottom:16px;padding:12px;background:rgba(10,132,255,0.04);border:1px solid rgba(10,132,255,0.15);border-radius:8px;">
           <input type="checkbox" id="cNewsletter" style="width:16px;height:16px;margin-top:2px;accent-color:var(--blue);flex-shrink:0;">
-          <span style="font-size:0.82rem;color:var(--dim);line-height:1.5;">Prihvatam primanje promotivnih emailova od Hadzalic Coding 🌐</span>
+          <span style="font-size:0.82rem;color:var(--dim);line-height:1.5;" data-i18n="contactNewsletter">Prihvatam primanje promotivnih emailova od Hadzalic Coding 🌐</span>
         </label>
         <p id="cStatus" style="display:none;padding:10px;border-radius:8px;font-size:0.85rem;margin-bottom:10px;text-align:center;"></p>
-        <button id="cSubmitBtn" class="btn-submit">Pošalji Upit →</button>
+        <button id="cSubmitBtn" class="btn-submit" data-i18n="contactSubmit">Pošalji Upit →</button>
       </div>
     </div>
   </section>
@@ -827,9 +829,9 @@
   <!-- INTERACTIVE MAP -->
   <section class="home-section sr" id="locationSection">
   <div class="sec-header">
-    <span class="sec-tag">Gdje nas naći</span>
-    <h2 class="sec-h2">Lokacija</h2>
-    <p class="sec-desc">Nalazimo se u Prijepolju, Srbija. Kliknite na mapu za navigaciju!</p>
+    <span class="sec-tag" data-i18n="mapTag">Gdje nas naći</span>
+    <h2 class="sec-h2" data-i18n="mapH2">Lokacija</h2>
+    <p class="sec-desc" data-i18n="mapDesc">Nalazimo se u Prijepolju, Srbija. Kliknite na mapu za navigaciju!</p>
   </div>
 
   <!-- Full-width interactive map -->
@@ -852,23 +854,23 @@
   <div class="map-info-row">
     <div class="map-info-card">
       <div class="map-info-icon">&#128205;</div>
-      <div class="map-info-label">Adresa</div>
-      <div class="map-info-val">Prijepolje, Srbija</div>
+      <div class="map-info-label" data-i18n="mapLblAddr">Adresa</div>
+      <div class="map-info-val" data-i18n="mapValAddr">Prijepolje, Srbija</div>
     </div>
     <div class="map-info-card">
       <div class="map-info-icon">&#128338;</div>
-      <div class="map-info-label">Radno vrijeme</div>
-      <div class="map-info-val">Pon–Pet 09–18h | Sub 09–14h</div>
+      <div class="map-info-label" data-i18n="mapLblHours">Radno vrijeme</div>
+      <div class="map-info-val" data-i18n="mapValHours">Pon–Pet 09–18h | Sub 09–14h</div>
     </div>
     <div class="map-info-card">
       <div class="map-info-icon">&#128222;</div>
-      <div class="map-info-label">Telefon / WhatsApp</div>
+      <div class="map-info-label" data-i18n="mapLblPhone">Telefon / WhatsApp</div>
       <div class="map-info-val"><a href="tel:+381600779443" class="loc-link">060 077 9443</a></div>
     </div>
     <a href="https://www.google.com/maps/dir/?api=1&destination=43.334221469699685,19.6461902" target="_blank" class="map-info-card map-info-cta">
       <div class="map-info-icon">&#128663;</div>
-      <div class="map-info-label">Navigacija</div>
-      <div class="map-info-val" style="color:var(--blue);font-weight:700;">Otvori u Google Maps →</div>
+      <div class="map-info-label" data-i18n="mapLblNav">Navigacija</div>
+      <div class="map-info-val" style="color:var(--blue);font-weight:700;" data-i18n="mapValNav">Otvori u Google Maps →</div>
     </a>
   </div>
 
@@ -884,31 +886,33 @@
 <div class="page" id="page-blog">
   <div class="page-header">
     <h1>Blog</h1>
-    <p>Savjeti, novosti i trikovi iz svijeta auto kodiranja</p>
+    <p data-i18n="blogPageDesc">Savjeti, novosti i trikovi iz svijeta auto kodiranja</p>
   </div>
 
   <!-- BLOG -->
   <section id="blogSection" class="home-section sr">
-    <div class="blog-section-title">Kodiramo Blog</div>
-    <div class="blog-section-sub">Savjeti, novosti i trikovi iz svijeta auto kodiranja</div>
+    <div class="blog-section-title" data-i18n="blogTitle">Kodiramo Blog</div>
+    <div class="blog-section-sub" data-i18n="blogSub">Savjeti, novosti i trikovi iz svijeta auto kodiranja</div>
     <div class="blog-search-wrap">
-      <input type="text" id="blogSearchInput" placeholder="Pretraži blog..." oninput="searchBlog(this.value)">
+      <input type="text" id="blogSearchInput" placeholder="Pretraži blog..." data-i18n-ph="blogSearchPh" oninput="searchBlog(this.value)">
     </div>
     <div class="blog-tags" id="blogTagsBar">
-      <button class="blog-tag-btn active" onclick="filterBlog('sve', this)">Sve</button>
+      <button class="blog-tag-btn active" onclick="filterBlog('sve', this)" data-i18n="blogTagAll">Sve</button>
       <button class="blog-tag-btn" onclick="filterBlog('chiptuning', this)">Chiptuning</button>
       <button class="blog-tag-btn" onclick="filterBlog('carplay', this)">CarPlay</button>
       <button class="blog-tag-btn" onclick="filterBlog('dpf', this)">DPF/EGR</button>
-      <button class="blog-tag-btn" onclick="filterBlog('aktivacija', this)">Aktivacija</button>
-      <button class="blog-tag-btn" onclick="filterBlog('navigacija', this)">Navigacija</button>
-      <button class="blog-tag-btn" onclick="filterBlog('dijagnostika', this)">Dijagnostika</button>
-      <button class="blog-tag-btn" onclick="filterBlog('savjeti', this)">Savjeti</button>
-      <button class="blog-tag-btn" onclick="filterBlog('novosti', this)">Novosti</button>
+      <button class="blog-tag-btn" onclick="filterBlog('aktivacija', this)" data-i18n="blogTagAkt">Aktivacija</button>
+      <button class="blog-tag-btn" onclick="filterBlog('navigacija', this)" data-i18n="blogTagNav">Navigacija</button>
+      <button class="blog-tag-btn" onclick="filterBlog('dijagnostika', this)" data-i18n="blogTagDiag">Dijagnostika</button>
+      <button class="blog-tag-btn" onclick="filterBlog('savjeti', this)" data-i18n="blogTagTips">Savjeti</button>
+      <button class="blog-tag-btn" onclick="filterBlog('novosti', this)" data-i18n="blogTagNews">Novosti</button>
     </div>
-    <div class="blog-grid" id="blogGrid">
-      <div class="blog-empty">Učitavanje...</div>
+    <div id="soro-blog" data-url="https://hadzalic.co/blog"></div>
+    <div class="blog-grid" id="blogGrid" style="display:none;">
+      <div class="blog-empty" data-i18n="blogLoading">Učitavanje...</div>
     </div>
   </section>
+  <script src="https://app.trysoro.com/api/embed/161f5f10-3352-447d-99bf-17e7427cb34a" defer></script>
 
   <!-- BLOG MODAL -->
   <div id="blogModal" onclick="if(event.target===this)closeBlogModal()">
@@ -922,7 +926,7 @@
         <div class="blog-modal-content" id="blogModalContent"></div>
         <div class="blog-share-btns" id="blogShareBtns"></div>
         <div class="blog-comments">
-          <div class="blog-comments-title">Komentari</div>
+          <div class="blog-comments-title" data-i18n="blogComments">Komentari</div>
           <div id="blogCommentsList"></div>
           <div id="blogCommentForm"></div>
         </div>
@@ -938,7 +942,7 @@
 <div class="page" id="page-service">
   <div id="service-page">
     <div class="sp-hero" id="spHero">
-      <div class="sp-back-wrap"><button class="sp-back" id="spBack">← Sve usluge</button></div>
+      <div class="sp-back-wrap"><button class="sp-back" id="spBack" data-i18n="spBack">← Sve usluge</button></div>
       <div style="max-width:1100px;margin:0 auto;padding:0 0;">
         <span class="sp-icon" id="spIcon"></span>
         <h1 class="sp-title" id="spTitle"></h1>
@@ -953,24 +957,24 @@
       <div class="sp-grid">
         <div>
           <div class="sp-card" id="spDescCard">
-            <div class="sp-card-title blue" id="spDescTitle">O usluzi</div>
+            <div class="sp-card-title blue" id="spDescTitle" data-i18n="spAbout">O usluzi</div>
             <div class="sp-desc" id="spDesc"></div>
           </div>
           <div class="sp-card" style="margin-top:20px;" id="spModelsCard">
-            <div class="sp-card-title blue" id="spModelsTitle">Podržana vozila</div>
+            <div class="sp-card-title blue" id="spModelsTitle" data-i18n="spModels">Podržana vozila</div>
             <div class="models-wrap" id="spModels"></div>
           </div>
         </div>
         <div>
           <div class="sp-card" id="spBenCard">
-            <div class="sp-card-title blue" id="spBenTitle">Šta dobijate</div>
+            <div class="sp-card-title blue" id="spBenTitle" data-i18n="spBenefits">Šta dobijate</div>
             <div id="spBenefits"></div>
           </div>
         </div>
       </div>
       <!-- Gallery (shown only for carplay) -->
       <div id="spGallery" style="display:none;max-width:1100px;margin:0 auto;padding:0 0 40px;">
-        <div class="sp-card-title blue" style="margin-bottom:16px;font-size:1rem;letter-spacing:1px;">📸 Naši radovi</div>
+        <div class="sp-card-title blue" style="margin-bottom:16px;font-size:1rem;letter-spacing:1px;" data-i18n="spGallery">📸 Naši radovi</div>
         <div id="spGalleryTrack" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;"></div>
         <!-- Lightbox -->
         <div id="spLightbox" style="display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,0.95);align-items:center;justify-content:center;flex-direction:column;">
@@ -1027,8 +1031,8 @@
       <div class="booking-hero-inner">
         <button class="sp-back" id="bookingBack">← Nazad</button>
         <span style="font-size:2.5rem;display:block;margin-bottom:12px;">📅</span>
-        <h1 class="sp-title">Zakaži Termin</h1>
-        <p class="sp-subtitle">Odaberi vozilo, označi usluge koje te zanimaju i pošalji nam upit — odgovaramo brzo na WhatsApp.</p>
+        <h1 class="sp-title" data-i18n="bookTitle">Zakaži Termin</h1>
+        <p class="sp-subtitle" data-i18n="bookSub">Odaberi vozilo, označi usluge koje te zanimaju i pošalji nam upit — odgovaramo brzo na WhatsApp.</p>
       </div>
     </div>
 
@@ -1039,15 +1043,15 @@
         <div class="bstep-header">
           <div class="bstep-num">1</div>
           <div>
-            <div class="bstep-title">Odaberi vozilo</div>
-            <div class="bstep-sub">Marka → Model → Godište → Motor</div>
+            <div class="bstep-title" data-i18n="bookStep1">Odaberi vozilo</div>
+            <div class="bstep-sub" data-i18n="bookStep1Sub">Marka → Model → Godište → Motor</div>
           </div>
         </div>
         <div class="booking-selects">
           <div class="bsel-group">
-            <label class="bsel-label">Marka</label>
+            <label class="bsel-label" data-i18n="bookBrand">Marka</label>
             <select class="bsel" id="bBrand">
-              <option value="">— Odaberi marku —</option>
+              <option value="" data-i18n="bookBrandPh">— Odaberi marku —</option>
               <option>Volkswagen</option>
               <option>Škoda</option>
               <option>Audi</option>
@@ -1069,17 +1073,17 @@
               <option>Honda</option>
               <option>Mazda</option>
               <option>Volvo</option>
-              <option>Ostalo</option>
+              <option data-i18n="bookOther">Ostalo</option>
             </select>
           </div>
           <div class="bsel-group">
-            <label class="bsel-label">Model</label>
-            <input class="bsel" id="bModel" type="text" placeholder="npr. Golf, Octavia, A4...">
+            <label class="bsel-label" data-i18n="bookModel">Model</label>
+            <input class="bsel" id="bModel" type="text" placeholder="npr. Golf, Octavia, A4..." data-i18n-ph="bookModelPh">
           </div>
           <div class="bsel-group">
-            <label class="bsel-label">Godište</label>
+            <label class="bsel-label" data-i18n="bookYear">Godište</label>
             <select class="bsel" id="bYear">
-              <option value="">— Godište —</option>
+              <option value="" data-i18n="bookYearPh">— Godište —</option>
               <option>2025</option><option>2024</option><option>2023</option>
               <option>2022</option><option>2021</option><option>2020</option>
               <option>2019</option><option>2018</option><option>2017</option>
@@ -1090,16 +1094,16 @@
             </select>
           </div>
           <div class="bsel-group">
-            <label class="bsel-label">Motor</label>
-            <input class="bsel" id="bEngine" type="text" placeholder="npr. 2.0 TDI, 1.5 TSI...">
+            <label class="bsel-label" data-i18n="bookEngine">Motor</label>
+            <input class="bsel" id="bEngine" type="text" placeholder="npr. 2.0 TDI, 1.5 TSI..." data-i18n-ph="bookEnginePh">
           </div>
         </div>
         <div class="bstep-vehicle-preview" id="bVehiclePreview" style="display:none;">
           <span class="bvp-icon">🚗</span>
           <span class="bvp-text" id="bVehicleText"></span>
-          <button class="bvp-change" id="bVehicleChange">Izmijeni</button>
+          <button class="bvp-change" id="bVehicleChange" data-i18n="bookChange">Izmijeni</button>
         </div>
-        <button class="btn-bstep" id="bStep1Next">Potvrdi vozilo →</button>
+        <button class="btn-bstep" id="bStep1Next" data-i18n="bookConfirmVehicle">Potvrdi vozilo →</button>
       </div>
 
       <!-- STEP 2 — SERVICES -->
@@ -1107,8 +1111,8 @@
         <div class="bstep-header">
           <div class="bstep-num">2</div>
           <div>
-            <div class="bstep-title">Odaberi usluge</div>
-            <div class="bstep-sub">Označi sve što te zanima</div>
+            <div class="bstep-title" data-i18n="bookStep2">Odaberi usluge</div>
+            <div class="bstep-sub" data-i18n="bookStep2Sub">Označi sve što te zanima</div>
           </div>
         </div>
         <div class="booking-services" id="bServicesGrid">
@@ -1120,22 +1124,22 @@
           <label class="bsvc-item" data-svc="aktivacija">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">🔓</span>
-            <span class="bsvc-name">Skrivene Funkcije</span>
+            <span class="bsvc-name" data-i18n="bsvcHidden">Skrivene Funkcije</span>
           </label>
           <label class="bsvc-item" data-svc="navi">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">🗺️</span>
-            <span class="bsvc-name">Ažuriranje Navigacije</span>
+            <span class="bsvc-name" data-i18n="bsvcNavi">Ažuriranje Navigacije</span>
           </label>
           <label class="bsvc-item" data-svc="errors">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">⚙️</span>
-            <span class="bsvc-name">Brisanje Grešaka</span>
+            <span class="bsvc-name" data-i18n="bsvcErrors">Brisanje Grešaka</span>
           </label>
           <label class="bsvc-item" data-svc="obd">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">💻</span>
-            <span class="bsvc-name">OBD Kodiranje</span>
+            <span class="bsvc-name" data-i18n="bsvcObd">OBD Kodiranje</span>
           </label>
           <label class="bsvc-item" data-svc="chiptuning">
             <input type="checkbox" class="bsvc-check">
@@ -1145,22 +1149,22 @@
           <label class="bsvc-item" data-svc="dpf">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">🛠️</span>
-            <span class="bsvc-name">DPF Softversko rješenje</span>
+            <span class="bsvc-name" data-i18n="bsvcDpf">DPF Softversko rješenje</span>
           </label>
           <label class="bsvc-item" data-svc="egr">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">🔧</span>
-            <span class="bsvc-name">EGR Softversko rješenje</span>
+            <span class="bsvc-name" data-i18n="bsvcEgr">EGR Softversko rješenje</span>
           </label>
           <label class="bsvc-item" data-svc="adblue">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">💧</span>
-            <span class="bsvc-name">AdBlue Softversko rješenje</span>
+            <span class="bsvc-name" data-i18n="bsvcAdblue">AdBlue Softversko rješenje</span>
           </label>
           <label class="bsvc-item" data-svc="kat">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">♻️</span>
-            <span class="bsvc-name">Katalizator Softversko rješenje</span>
+            <span class="bsvc-name" data-i18n="bsvcKat">Katalizator Softversko rješenje</span>
           </label>
           <label class="bsvc-item" data-svc="nox">
             <input type="checkbox" class="bsvc-check">
@@ -1170,12 +1174,12 @@
           <label class="bsvc-item" data-svc="lambda">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">🔬</span>
-            <span class="bsvc-name">LAMBDA Softversko rješenje</span>
+            <span class="bsvc-name" data-i18n="bsvcLambda">LAMBDA Softversko rješenje</span>
           </label>
           <label class="bsvc-item" data-svc="pops">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">💥</span>
-            <span class="bsvc-name">Pops & Bangs</span>
+            <span class="bsvc-name">Pops &amp; Bangs</span>
           </label>
           <label class="bsvc-item" data-svc="hardcut">
             <input type="checkbox" class="bsvc-check">
@@ -1190,7 +1194,7 @@
           <label class="bsvc-item" data-svc="immobilizer">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">🔑</span>
-            <span class="bsvc-name">Immobilizator Off</span>
+            <span class="bsvc-name" data-i18n="bsvcImmo">Immobilizator Off</span>
           </label>
           <label class="bsvc-item" data-svc="startstop">
             <input type="checkbox" class="bsvc-check">
@@ -1205,12 +1209,12 @@
           <label class="bsvc-item" data-svc="dtc">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">🗑️</span>
-            <span class="bsvc-name">DTC Brisanje</span>
+            <span class="bsvc-name" data-i18n="bsvcDtc">DTC Brisanje</span>
           </label>
           <label class="bsvc-item" data-svc="kloniranje">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">📋</span>
-            <span class="bsvc-name">Kloniranje ECU</span>
+            <span class="bsvc-name" data-i18n="bsvcClone">Kloniranje ECU</span>
           </label>
           <label class="bsvc-item" data-svc="adapter">
             <input type="checkbox" class="bsvc-check">
@@ -1220,18 +1224,18 @@
           <label class="bsvc-item" data-svc="remote">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">🌐</span>
-            <span class="bsvc-name">Online / Udaljeno</span>
+            <span class="bsvc-name" data-i18n="bsvcRemote">Online / Udaljeno</span>
           </label>
           <label class="bsvc-item bsvc-video-hidden" data-svc="video" style="display:none;">
             <input type="checkbox" class="bsvc-check">
             <span class="bsvc-icon">🎬</span>
-            <span class="bsvc-name">Video u vožnji</span>
+            <span class="bsvc-name" data-i18n="bsvcVideo">Video u vožnji</span>
           </label>
         </div>
         <div id="bCarplayNotice" style="display:none;margin-top:12px;padding:10px 14px;background:rgba(255,60,60,0.07);border:1px solid rgba(255,60,60,0.2);border-radius:6px;font-size:0.82rem;color:#ff8080;">
-          ⚠️ CarPlay &amp; Android Auto nije dostupan softverski za vozila starija od 2015.
+          <span data-i18n="bookCarplayNotice">⚠️ CarPlay &amp; Android Auto nije dostupan softverski za vozila starija od 2015.</span>
         </div>
-        <button class="btn-bstep" id="bStep2Next">Nastavi →</button>
+        <button class="btn-bstep" id="bStep2Next" data-i18n="bookContinue">Nastavi →</button>
       </div>
 
       <!-- STEP 3 — NOTE + CONFIRM -->
@@ -1239,22 +1243,22 @@
         <div class="bstep-header">
           <div class="bstep-num">3</div>
           <div>
-            <div class="bstep-title">Kontakt i napomena</div>
-            <div class="bstep-sub">Unesite email i dodajte napomenu</div>
+            <div class="bstep-title" data-i18n="bookStep3">Kontakt i napomena</div>
+            <div class="bstep-sub" data-i18n="bookStep3Sub">Unesite email i dodajte napomenu</div>
           </div>
         </div>
-                <textarea class="bsel" id="bNote" rows="3" placeholder="npr. Imam active greške na tabli, zanima me i cijena za chiptuning Stage 1..." style="width:100%;resize:vertical;margin-bottom:20px;"></textarea>
+                <textarea class="bsel" id="bNote" rows="3" placeholder="npr. Imam active greške na tabli, zanima me i cijena za chiptuning Stage 1..." data-i18n-ph="bookNotePh" style="width:100%;resize:vertical;margin-bottom:20px;"></textarea>
 
         <!-- SUMMARY -->
         <div class="booking-summary" id="bSummary">
-          <div class="bsum-title">Pregled upita</div>
-          <div class="bsum-row"><span class="bsum-l">🚗 Vozilo:</span><span class="bsum-v" id="bSumVehicle">—</span></div>
-          <div class="bsum-row"><span class="bsum-l">🔧 Usluge:</span><span class="bsum-v" id="bSumServices">—</span></div>
+          <div class="bsum-title" data-i18n="bookSummary">Pregled upita</div>
+          <div class="bsum-row"><span class="bsum-l" data-i18n="bookSumVehicle">🚗 Vozilo:</span><span class="bsum-v" id="bSumVehicle">—</span></div>
+          <div class="bsum-row"><span class="bsum-l" data-i18n="bookSumServices">🔧 Usluge:</span><span class="bsum-v" id="bSumServices">—</span></div>
         </div>
 
         <a href="#" id="bReserveBtn" class="btn-reserve" target="_blank">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Rezerviši termin na WhatsApp
+          <span data-i18n="bookReserve">Rezerviši termin na WhatsApp</span>
         </a>
         <p class="breserve-note">Email upit stiže direktno na <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f890999c829994919bd69b979c9db89f95999194d69b9795">[email&#160;protected]</a> 📧</p>
       </div>
@@ -1299,23 +1303,23 @@
   <div class="tool-modal">
     <button class="tm-close" id="checkerClose">✕</button>
     <div class="tm-header">
-      <h2>⚡ Provjeri snagu svog auta</h2>
-      <p>Odaberi svoje vozilo i pogledaj koliko KS i Nm možeš dobiti sa Stage 1 chiptuningom.</p>
+      <h2 data-i18n="ccTitle">⚡ Provjeri snagu svog auta</h2>
+      <p data-i18n="ccDesc">Odaberi svoje vozilo i pogledaj koliko KS i Nm možeš dobiti sa Stage 1 chiptuningom.</p>
     </div>
     <div class="tm-body">
       <div id="chipCalc">
         <div class="cc-selects">
           <div class="cc-field">
-            <label class="cc-label">Marka</label>
-            <select id="ccMark" class="cc-select"><option value="">— Odaberi marku —</option></select>
+            <label class="cc-label" data-i18n="ccLblBrand">Marka</label>
+            <select id="ccMark" class="cc-select"><option value="" data-i18n="ccPhBrand">— Odaberi marku —</option></select>
           </div>
           <div class="cc-field">
-            <label class="cc-label">Model</label>
-            <select id="ccModel" class="cc-select" disabled><option value="">— Odaberi model —</option></select>
+            <label class="cc-label" data-i18n="ccLblModel">Model</label>
+            <select id="ccModel" class="cc-select" disabled><option value="" data-i18n="ccPhModel">— Odaberi model —</option></select>
           </div>
           <div class="cc-field">
-            <label class="cc-label">Motor</label>
-            <select id="ccEngine" class="cc-select" disabled><option value="">— Odaberi motor —</option></select>
+            <label class="cc-label" data-i18n="ccLblEngine">Motor</label>
+            <select id="ccEngine" class="cc-select" disabled><option value="" data-i18n="ccPhEngine">— Odaberi motor —</option></select>
           </div>
         </div>
         <div id="ccResult" class="cc-result" style="display:none;">
@@ -1325,7 +1329,7 @@
           </div>
           <div class="cc-bars">
             <div class="cc-bar-group">
-              <div class="cc-bar-label">Snaga (KS)</div>
+              <div class="cc-bar-label" data-i18n="ccPower">Snaga (KS)</div>
               <div class="cc-bar-track">
                 <div class="cc-bar cc-bar-orig" id="ccBarOrigKS"><span id="ccOrigKS"></span></div>
                 <div class="cc-bar cc-bar-stage" id="ccBarStageKS"><span id="ccStageKS"></span></div>
@@ -1333,7 +1337,7 @@
               <div class="cc-gain" id="ccGainKS"></div>
             </div>
             <div class="cc-bar-group">
-              <div class="cc-bar-label">Obrtni moment (Nm)</div>
+              <div class="cc-bar-label" data-i18n="ccTorque">Obrtni moment (Nm)</div>
               <div class="cc-bar-track">
                 <div class="cc-bar cc-bar-orig" id="ccBarOrigNm"><span id="ccOrigNm"></span></div>
                 <div class="cc-bar cc-bar-stage" id="ccBarStageNm"><span id="ccStageNm"></span></div>
@@ -1342,11 +1346,11 @@
             </div>
           </div>
           <div class="cc-legend">
-            <span class="cc-leg-item"><span class="cc-leg-dot cc-leg-orig"></span> Originalno</span>
-            <span class="cc-leg-item"><span class="cc-leg-dot cc-leg-stage"></span> Stage 1</span>
+            <span class="cc-leg-item"><span class="cc-leg-dot cc-leg-orig"></span> <span data-i18n="ccOriginal">Originalno</span></span>
+            <span class="cc-leg-item"><span class="cc-leg-dot cc-leg-stage"></span> <span data-i18n="ccStage1">Stage 1</span></span>
           </div>
           <div class="cc-cta">
-            <a href="https://wa.me/381600779443" target="_blank" class="cc-cta-btn">Zakaži chiptuning</a>
+            <a href="https://wa.me/381600779443" target="_blank" class="cc-cta-btn" data-i18n="ccCta">Zakaži chiptuning</a>
           </div>
         </div>
       </div>
@@ -1900,8 +1904,8 @@
   });
 
   selMark.addEventListener('change',function(){
-    selModel.innerHTML='<option value="">— Odaberi model —</option>';
-    selEngine.innerHTML='<option value="">— Odaberi motor —</option>';
+    selModel.innerHTML='<option value="">' + _t('ccPhModel') + '</option>';
+    selEngine.innerHTML='<option value="">' + _t('ccPhEngine') + '</option>';
     selModel.disabled=true;selEngine.disabled=true;result.style.display='none';
     var mark=this.value;
     if(!mark||!DB[mark])return;
@@ -1912,7 +1916,7 @@
   });
 
   selModel.addEventListener('change',function(){
-    selEngine.innerHTML='<option value="">— Odaberi motor —</option>';
+    selEngine.innerHTML='<option value="">' + _t('ccPhEngine') + '</option>';
     selEngine.disabled=true;result.style.display='none';
     var mark=selMark.value,model=this.value;
     if(!mark||!model||!DB[mark][model])return;
@@ -2017,9 +2021,9 @@
 <div class="mobile-sticky-bar">
   <a href="#" id="stickyWaBtn" class="msb-wa" target="_blank">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    WhatsApp upit
+    <span data-i18n="msbWa">WhatsApp upit</span>
   </a>
-  <button class="msb-call" id="stickyBookingBtn">📅 Zakaži termin</button>
+  <button class="msb-call" id="stickyBookingBtn" data-i18n="msbBook">📅 Zakaži termin</button>
 </div>
 
 <!-- WHATSAPP FLOAT -->
@@ -2171,230 +2175,11 @@ var aktivacijaCatIcons = {
   "Bezbednost / Komfor": "🛡️",
   "Motor / Performanse": "⚡"
 };
-</script>
-<script>
 
-function renderAktivacija(brand) {
-  var container = document.getElementById('aktContainer');
-  if (!container) return;
-  var brands = ['VAG', 'BMW', 'Mercedes'];
-  // Update tabs
-  document.querySelectorAll('.akt-tab').forEach(function(t) {
-    t.classList.toggle('active', t.getAttribute('data-brand') === brand);
-  });
-  // Render categories
-  var data = aktivacijaData[brand];
-  var html = '<div class="akt-grid">';
-  var catDescMap = {
-    'Multimedija / Infotainment': 'Poboljšanja za infotainment sistem i startup animacije',
-    'Virtuelne Table / Prikazi': 'Specijalizovane table i dodatne informacije na instrument tabli',
-    'Osvjetljenje': 'Napredne funkcije osvjetljenja vozila',
-    'Bezbednost / Komfor': 'Asistencije, bezbednosne funkcije i komfor opcije',
-    'Motor / Performanse': 'Optimizacija rada motora, performansi i vazdušnog vešanja'
-  };
-  for (var cat in data) {
-    var icon = aktivacijaCatIcons[cat] || '⚙️';
-    var tags = data[cat].map(function(t) { return '<span class="akt-tag">' + t + '</span>'; }).join('');
-    html += '<div class="akt-cat-card">';
-    html += '<div class="akt-cat-title">' + icon + ' ' + cat + '</div>';
-    html += '<div class="akt-cat-desc">' + (catDescMap[cat] || '') + '</div>';
-    html += '<div class="akt-tags">' + tags + '</div>';
-    html += '</div>';
-  }
-  html += '</div>';
-  container.innerHTML = html;
-}
-</script>
-</script>
-<script>
-var obdSelected = [];
-function obdConfirm() {
-  var checks = document.querySelectorAll('#obdModal .obd-check:checked');
-  obdSelected = Array.from(checks).map(function(ch) { return ch.value; });
-  document.getElementById('obdModal').style.display = 'none';
-  document.body.style.overflow = '';
-  var sumEl = document.getElementById('bSumServices');
-  if (sumEl && obdSelected.length > 0) {
-    var cur = sumEl.textContent || '';
-    if (cur.indexOf('OBD') !== -1) {
-      // already has OBD, update note
-    }
-  }
-  if (typeof updateBookingSummary === 'function') updateBookingSummary();
-}
-</script>
-<script>
-const services = {
-  carplay: {
-    icon: '📱',
-    title: 'CarPlay & Android Auto',
-    subtitle: 'Aktivacija pametne integracije telefona na ekranu vozila — brzo, softverski, bez fizičkih izmjena.',
-    desc: 'Mnoga savremena vozila dolaze sa hardverom koji podržava Apple CarPlay i Android Auto, ali ova funkcija nije aktivirana iz fabrike. Mi je aktiviramo putem softvera — bez ikakvog fizičkog zahvata. Nakon aktivacije možete koristiti Google Maps, Waze, Spotify, pozive i poruke direktno sa ekrana u autu.',
-    benefits: [
-      'Puna integracija iPhone-a ili Android telefona sa ekranom vozila',
-      'Korišćenje Google Maps, Waze i Apple Maps na ekranu auta',
-      'Glasovne komande putem Siri / Google Asistenta',
-      'Muzika, pozivi i poruke bez diranja telefona',
-      'Bežični CarPlay/Android Auto (tamo gdje hardver podržava)',
-      'Sigurnija vožnja — telefon ostaje u džepu'
-    ],
-    models: [
-      '── VW Grupa ──',
-      'VW Golf 7 / Golf 8','VW Passat B8','VW Tiguan (2017+)','VW Touareg (2019+)','VW Polo (2018+)','VW T-Roc / T-Cross',
-      '── Škoda ──',
-      'Škoda Octavia 3 / 4','Škoda Superb 3','Škoda Kodiaq','Škoda Karoq','Škoda Fabia (2022+)',
-      '── SEAT / Cupra ──',
-      'SEAT Leon (2017+)','SEAT Ateca','Cupra Formentor',
-      '── Audi ──',
-      'Audi A3 (8V/8Y)','Audi A4 (B9)','Audi A5 (F5)','Audi A6 (C8)','Audi Q3 / Q5 / Q7','Audi A1 (GB)',
-      '── BMW ──',
-      'BMW 1 serija (F40)','BMW 3 serija (G20)','BMW 5 serija (G30)','BMW X1 / X3 / X5 (2018+)',
-      '── Mercedes-Benz ──',
-      'Mercedes A klasa (W177)','Mercedes B klasa (W247)','Mercedes C klasa (W205/W206)','Mercedes E klasa (W213)','Mercedes GLC / GLE',
-      '── Ostalo ──',
-      'Opel Insignia B','Ford Focus 3/4','Ford Fiesta (2018+)'
-    ]
-  },
-  aktivacija: {
-    icon: '⚡',
-    title: 'Aktivacija Funkcija',
-    subtitle: 'Aktivacija skrivenih i fabrički zaključanih funkcija — VAG Grupacija, BMW i Mercedes.',
-    desc: `Proizvođači vozila fabrički onemogućuju stotine funkcija u nižim verzijama opreme, ali hardver za njih fizički postoji u autu. Sve aktivacije se rade softverski, direktno putem OBD priključka — bez demontaže.<br><br>
-<div class="akt-brand-tabs">
-  <button class="akt-tab active" data-brand="VAG" onclick="renderAktivacija('VAG')">VAG Grupacija</button>
-  <button class="akt-tab" data-brand="BMW" onclick="renderAktivacija('BMW')">BMW</button>
-  <button class="akt-tab" data-brand="Mercedes" onclick="renderAktivacija('Mercedes')">Mercedes</button>
-</div>
-<div id="aktContainer"></div>`,
-    models: ['VW', 'Audi', 'Škoda', 'SEAT', 'Cupra', 'Porsche', 'BMW', 'Mini', 'Mercedes-Benz', 'Smart'],
-    benefits: [
-      '✅ Softverska aktivacija — bez demontaže',
-      '✅ Važi za VAG grupaciju, BMW i Mercedes',
-      '✅ Doživotna garancija na softverski rad',
-      '✅ Brza usluga — 30min do 2h',
-    ],
-    modelsTitle: 'Podržana vozila',
-    benTitle: 'Šta dobijate',
-    hasAktivacija: true
-  },
-  navi: {
-    icon: '🗺️',
-    title: 'Ažuriranje Navigacije',
-    subtitle: 'Najnovije mape sa svim putevima, radarima i tačkama interesa — za VAG, BMW, Mercedes i ostale marke.',
-    desc: 'Zastarjele mape mogu biti problem na dnevnoj bazi — nedostaju novi putevi, kružni tokovi, radarski detektori. Mi ažuriramo navigacione mape na najnoviju dostupnu verziju direktno putem OBD priključka ili SD kartice, zavisno od modela. Uz ažuriranje mapa za VAG grupaciju dodajemo i besplatno POI Radar upozorenja.',
-    models: ['VW', 'Audi', 'Škoda', 'Mercedes', 'BMW', 'Porsche', 'SEAT'],
-    benefits: ['Mape 2025/26 — najnovija verzija', 'POI Radar upozorenja GRATIS uz VAG', 'Svi novi putevi i kružni tokovi', 'Tačke interesa ažurirane', 'Dostupno za sve marke sa fabričkom navi'],
-    warranty: true
-  },
-  errors: {
-    icon: '⚙️',
-    title: 'Brisanje Grešaka',
-    subtitle: 'Softverska dijagnostika i brisanje aktivnih i pasivnih grešaka na svim sistemima vozila.',
-    desc: 'Lampica motora, ABS, airbag ili neka druga greška na tabli? Putem OBD dijagnostičkog uređaja čitamo sve greške na svim sistemima vozila — motoru, mjenjaču, ABS-u, airbagu, klimi i svemu ostalom. Nakon dijagnoze brišemo greške i savjetujemo vas o daljem postupku.',
-    models: ['VW', 'Audi', 'Škoda', 'Mercedes', 'BMW', 'Porsche', 'SEAT', 'Ostale marke'],
-    benefits: ['Čitanje svih sistema vozila', 'Brisanje aktivnih i pasivnih grešaka', 'Detaljni izvještaj o greškama', 'Savjet o daljem postupku', 'Doživotna garancija na softverski rad'],
-    warranty: true
-  },
-  remote: {
-    icon: '🌐',
-    title: 'Online / Udaljeno',
-    subtitle: 'Neke usluge možemo obaviti potpuno online — bez dolaska kod nas.',
-    desc: 'Za određene usluge kao što su chiptuning fajlovi, konzultacije i provjera kompatibilnosti, možemo sarađivati potpuno online. Pošaljite nam upit putem WhatsApp-a sa godištem, modelom i uslugom koju tražite — dogovorićemo se o načinu realizacije.',
-    models: ['Sve marke'],
-    benefits: ['Chiptuning fajlovi online', 'Konzultacije i provjera kompatibilnosti', 'Brza WhatsApp komunikacija', 'Bez dolaska — sve iz udobnosti doma'],
-    warranty: false
-  },
-  chiptuning: {
-    icon: '🔥',
-    title: 'Chiptuning — Optimizacija ECU',
-    subtitle: 'Više snage, bolji moment, manja potrošnja — sve softverski, prilagođeno vašem vozilu.',
-    desc: 'Chiptuning (remapiranje ECU) je proces u kom se softver upravljačke jedinice motora prilagođava kako bi vozilo dalo više snage, boljeg momenta i optimalne potrošnje goriva. Koristimo isključivo profesionalnu Flex opremu — standard koji koriste svjetski top timeri. Svaka mapa je CUSTOM — očitavamo podatke vašeg vozila i šaljemo ih našim partnerima u ASFerrari koji izrađuju mapu specifično za vaš automobil, a mi je vraćamo i upisujemo. Svaki tuning je individualan. Prije chiptuninga OBAVEZNO nas kontaktirajte radi procjene vozila.<br><br><a href="https://asftuning.com/chip-tuning" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:8px;padding:10px 18px;background:linear-gradient(135deg,rgba(255,100,32,0.15),rgba(255,100,32,0.05));border:1px solid rgba(255,100,32,0.4);border-radius:8px;color:#ff7040;text-decoration:none;font-weight:600;font-size:0.9rem;transition:all 0.2s;">🔥 Provjeri šta možeš izvući iz svog auta → ASFerrari Power Catalog</a>',
-    benefits: [
-      '🚀 Povećanje snage i obrtnog momenta motora',
-      '⛽ Optimizacija potrošnje goriva pri normalnoj vožnji',
-      '🏎️ Bolja odzivnost gasa i fluidnost prebacivanja brzina',
-      '📉 Uklanjanje fabričkih ograničenja (ograničivač brzine i momenta)',
-      '🔧 Faza 1 — samo softver, bez fizičkih izmjena',
-      '🔩 Faza 2 — u kombinaciji sa mehaničkim doradama',
-      '🛠️ Profesionalna Flex oprema — industrijski standard za chiptuning',
-      '🎯 Custom mapa — izrađena specifično za VAŠE vozilo, ne generička',
-      '🤝 Partnerstvo sa ASFerrari — svjetski poznati stručnjaci za ECU mape',
-      '♾️ Doživotna garancija na upisanu softversku mapu — mehanički kvarovi nisu pokriveni garancijom.',
-      '⚠️ Rizik uvijek postoji — vozilo mora biti u ispravnom mehaničkom stanju',
-      '🚛 Dostupno za putnička vozila, kamione, autobuse i radne mašine'
-    ],
-    models: ['Sva putnička vozila (benzin / dizel)','Laka dostavna vozila','Teretni kamioni (Mercedes, MAN, Volvo, Scania, DAF, Iveco)','Autobusi i minibusi','Traktori i radne mašine','BMW / Mercedes-AMG / Audi S & RS','VW GTI / R / Golf TDI','Škoda RS modeli','Praktično sva vozila sa ECU upravljanjem']
-  },
-  dpf: {
-    icon: '🛠️',
-    title: 'Softverska Rješenja — DPF, EGR, AdBlue',
-    subtitle: 'Rješavamo probleme sa DPF, EGR i AdBlue sistemima softverski — bez skupih zamjena.',
-    desc: 'DPF, EGR i AdBlue sistemi su česti uzrok problema na modernim dizel vozilima. U puno slučajeva problem se može riješiti softverski, bez zamjene skupih fizičkih komponenti. Koristimo profesionalnu Flex opremu i custom softverska rješenja u partnerstvu sa ASFerrari — svako rješenje je prilagođeno konkretnom vozilu, ne generičko. Na naš rad i softversko rješenje dajemo doživotnu garanciju.',
-    benefits: [
-      '🔵 DPF (Filter čađi) — softversko rješenje začepljenja i grešaka filtera',
-      '🔴 EGR (Recirkulacija izduvnih gasova) — deaktivacija ili rješenje EGR ventila',
-      '🟡 AdBlue / SCR sistem — rješenje grešaka i problema sa AdBlue sistemom',
-      '✅ Uklanjanje grešaka sa instrument table',
-      '🛠️ Profesionalna Flex oprema — precizno i sigurno očitavanje ECU podataka',
-      '🎯 Custom rješenje — prilagođeno vašem vozilu u saradnji sa ASFerrari',
-      '♾️ Doživotna garancija na upisanu softversku mapu — mehanički kvarovi nisu pokriveni garancijom.',
-      '💰 Znatno jeftinije od fizičke zamjene komponenti',
-      '⚡ Brza dijagnostika i procjena mogućnosti rješenja',
-      '🚛 Dostupno i za teretna vozila i autobuse',
-      '⚠️ Napomena: rizik uvijek postoji — stanje vozila mora biti provjereno'
-    ],
-    models: ['VW / Škoda / Seat / Audi (TDI motori)','BMW (d motori)','Mercedes-Benz (CDI motori)','Opel / Vauxhall (CDTI)','Ford (TDCi)','Renault / Dacia (dCi)','Peugeot / Citroën (HDi)','Fiat / Alfa Romeo (JTD/Multijet)','Toyota / Lexus (D-4D)','Kamioni: Mercedes, MAN, Scania, Volvo, DAF, Iveco']
-  },
-  adapter: {
-    icon: '🔌',
-    title: 'CarPlay & Android Auto Adapteri',
-    subtitle: 'Prodajemo adaptere za vozila gdje fabrički hardver ne podržava CarPlay aktivaciju.',
-    desc: 'Nisu sva vozila kompatibilna sa softverskom aktivacijom CarPlay-a — nekima nedostaje potreban hardver. Za takve slučajeve nudimo CarPlay i Android Auto adaptere koji se jednostavno ugrađuju i pružaju isti korisniški doživljaj kao i originalna aktivacija.',
-    benefits: [
-      '✅ Rješenje za vozila bez originalnog CarPlay hardvera',
-      '📱 Puna podrška za Apple CarPlay i Android Auto',
-      '🔌 Jednostavna ugradnja — spaja se na fabrički ekran',
-      '📶 Bežična (wireless) i žična verzija dostupne',
-      '🖥️ Zadržava originalni izgled ekrana vozila',
-      '🎵 Google Maps, Waze, Spotify, pozivi, poruke',
-      '🔧 Ugrađujemo na licu mjesta — dolazite kod nas',
-      '📦 Moguća dostava adaptera poštom uz uputstvo'
-    ],
-    models: [
-      '── Kompatibilna vozila (primjeri) ──',
-      'VW Golf 6 i stariji modeli','VW Passat B7 i stariji','Škoda Octavia 2 i stariji',
-      'Audi A3 8P / A4 B8 i stariji','BMW F serija (sa NBT sistemom)',
-      'Mercedes sa NTG 4.x sistemom','Opel sa Navi 900 / IntelliLink sistemom',
-      'Ford sa SYNC 2 sistemom','Renault / Dacia modeli',
-      '── Napomena ──',
-      'Kontaktirajte nas sa modelom i godištem vozila','Provjeravamo kompatibilnost prije kupovine','Dostupno i za ugradnju i za slanje poštom'
-    ]
-  },
-  vulkanizer: {
-    icon: '🔩',
-    title: 'Vulkanizer',
-    subtitle: 'Profesionalna montaža, balansiranje i zamjena guma za putnička i kamionska vozila.',
-    desc: 'Nudimo kompletnu vulkanizersku uslugu za putnička i kamionska vozila — montaža i demontaža guma, balansiranje, provjera i dopuna pritiska, popravka probušenih guma, sezonska zamjena (ljetne/zimske), kao i montiranje, zamjena i narezivanje kamionskih guma.',
-    benefits: ['🔩 Montaža i demontaža guma svih dimenzija','⚖️ Kompjutersko balansiranje točkova','🔧 Popravka probušenih guma','🚛 Montiranje, zamjena i narezivanje kamionskih guma','❄️ Sezonska zamjena ljetnih/zimskih guma','📦 Skladištenje guma po sezoni','⚡ Brza usluga — bez dugog čekanja'],
-    models: ['Putnička vozila','SUV i 4x4','Kombiji','Kamioni']
-  },
-  auspuh: {
-    icon: '💨',
-    title: 'Auspuh Servis',
-    subtitle: 'Popravka i zamjena auspušnog lonca i cijevi — brzo i po pristupačnim cijenama.',
-    desc: 'Pružamo usluge popravke i zamjene auspuha i ispušnog sistema. Dijagnostikujemo propuštanje, koroziju i oštećenja, te vršimo popravku ili zamjenu auspušnog lonca i srednje cijevi. Napomena: ne radimo zamjenu katalizatora i DPF filtera.',
-    benefits: ['💨 Zamjena auspušnog lonca i cijevi','🔍 Dijagnostika propuštanja i oštećenja','🔧 Zavarivanje i popravka oštećenih dijelova','🚗 Sve marke i modeli vozila','💰 Povoljne cijene — originalni i aftermarket dijelovi'],
-    models: ['Putnička vozila','SUV i 4x4','Kombiji']
-  },
-  faq: {
-    icon: '❓',
-    title: 'Česta Pitanja',
-    subtitle: 'Odgovori na najčešća pitanja o našim uslugama.',
-    desc: '<div class="faq-wrap" id="faqWrapService"><button class="faq-btn" data-faq="f0"><div class="faq-q">Da li CarPlay aktivacija poništava garanciju vozila? <span class="faq-ic">+</span></div><div class="faq-a">U većini slučajeva ne, jer se radi o softverskoj promjeni putem OBD priključka, bez fizičkog zadiranja u vozilo. Preporučujemo da nas kontaktirate za vaš konkretan slučaj.</div></button><button class="faq-btn" data-faq="f1"><div class="faq-q">Koliko traje chiptuning? <span class="faq-ic">+</span></div><div class="faq-a">Sam proces traje obično 1–2 sata. Prethodno je potrebna dijagnostika i provjera stanja vozila, pa cijeli posjet može trajati 2–3 sata. Dogovaramo termin unaprijed.</div></button><button class="faq-btn" data-faq="f2"><div class="faq-q">Da li je chiptuning moguć na benzinskim vozilima? <span class="faq-ic">+</span></div><div class="faq-a">Da, chiptuning je moguć i na benzinskim i na dizel motorima. Turbo motori generalno daju bolje rezultate od atmosferskih.</div></button><button class="faq-btn" data-faq="f3"><div class="faq-q">Šta ako se pojavi problem nakon kodiranja? <span class="faq-ic">+</span></div><div class="faq-a">Svaka promjena se može vratiti na fabričke postavke. Uvijek čuvamo originalne podatke vozila i nudimo podršku nakon obavljene usluge.</div></button><button class="faq-btn" data-faq="f4"><div class="faq-q">Da li radite i za vozila izvan Prijepolja? <span class="faq-ic">+</span></div><div class="faq-a">Da! Neke usluge mogu biti obavljene online. Za fizičke intervencije — klijenti dolaze kod nas, a dostupni smo i za dogovor na terenu.</div></button><button class="faq-btn" data-faq="f5"><div class="faq-q">Koliko košta aktivacija skrivenih funkcija? <span class="faq-ic">+</span></div><div class="faq-a">Cijena zavisi od vozila i broja funkcija koje se aktiviraju. Kontaktirajte nas s modelom i godištem vozila i dobićete konkretan odgovor u kratkom roku.</div></button><button class="faq-btn" data-faq="f6"><div class="faq-q">Da li je moguće gledati YouTube i video klipove preko CarPlay / Android Auto? <span class="faq-ic">+</span></div><div class="faq-a">Ne. Apple CarPlay i Android Auto su namijenjeni isključivo za sigurnu vožnju — podržavaju navigaciju, muziku, pozive i poruke. Reprodukcija YouTube-a, Netflix-a ili video klipova nije moguća putem CarPlay / Android Auto sistema iz sigurnosnih razloga.</div></button><button class="faq-btn" data-faq="f7"><div class="faq-q">Da li chiptuning može oštetiti motor? <span class="faq-ic">+</span></div><div class="faq-a">Ne, ukoliko je vozilo u dobrom mehaničkom stanju i ukoliko se tuning radi profesionalno. Svaki naš chiptuning je prilagođen konkretnom vozilu i motoru.</div></button><button class="faq-btn" data-faq="f8"><div class="faq-q">Da li mogu koristiti navigaciju na telefonu (Google Maps) bez CarPlay aktivacije? <span class="faq-ic">+</span></div><div class="faq-a">Možete koristiti telefon odvojeno, ali bez CarPlay aktivacije navigacija sa telefona neće biti prikazana na fabričkom ekranu vozila. CarPlay aktivacija vam omogućava da vidite Google Maps ili Waze direktno na ekranu auta.</div></button><button class="faq-btn" data-faq="f9"><div class="faq-q">Da li DPF / EGR softversko rješenje prolazi tehnički pregled? <span class="faq-ic">+</span></div><div class="faq-a">Ovo zavisi od tipa rješenja i standarda koji se primjenjuju na tehničkom pregledu u vašoj zemlji. Preporučujemo da nas kontaktirate i razgovaramo o konkretnoj situaciji.</div></button><button class="faq-btn" data-faq="f10"><div class="faq-q">Da li CarPlay adapter radi jednako dobro kao softverska aktivacija? <span class="faq-ic">+</span></div><div class="faq-a">Da, u praksi je iskustvo vrlo slično. Adapter pruža isti CarPlay / Android Auto interfejs na ekranu vozila. Za vozila koja ne podržavaju softversku aktivaciju, adapter je odlično rješenje.</div></button><button class="faq-btn" data-faq="f11"><div class="faq-q">Mogu li nakon chiptuninga vratiti vozilo na originalne postavke? <span class="faq-ic">+</span></div><div class="faq-a">Da, uvijek čuvamo originalni softver vozila prije svake intervencije. Vraćanje na fabričke postavke je moguće u svakom trenutku.</div></button></div>',
-    benefits: [],
-    models: []
-  }
-};
+
+localStorage.removeItem("lang");
+var _activeServices = services;
+window._t = function(key) { var lang = document.documentElement.getAttribute('data-lang') || 'sr'; return (TRANSLATIONS[lang] || {})[key] || (TRANSLATIONS.sr || {})[key] || key; };
 
 function showPage(pageId, skipScroll) {
   document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
@@ -2448,6 +2233,7 @@ window.addEventListener('popstate', function(e) {
 
 function handleRoute(pushState) {
   var path = window.location.pathname;
+  if (path === '/admin') { showHome(false); setTimeout(function(){ if(typeof openAdmin==='function') openAdmin(); }, 300); return; }
   // Main pages
   if (path === '/usluge') { navigateTo('/usluge', pushState); return; }
   if (path === '/blog') { navigateTo('/blog', pushState); return; }
@@ -2487,6 +2273,265 @@ function handleRoute(pushState) {
   showHome(pushState);
 }
 
+// ─── TRANSLATION SYSTEM ───
+var TRANSLATIONS = {
+  sr: {
+    // Nav
+    navTagline: "Kodiramo. Aktiviramo. Optimizujemo.",
+    navUsluge: "Usluge", navBlog: "Blog", navKontakt: "Kontakt", navZakazi: "Zakaži",
+    eyebrow: "Prijepolje, Srbija",
+    // Hero
+    heroSub: "Otključaj puni potencijal svog vozila — chiptuning, kodiranje i CarPlay za sve marke.",
+    stat1: "Zadovoljnih klijenata", stat2: "Podržanih modela", stat3: "Brz odgovor", stat4: "Garancija kvaliteta",
+    tool1: "Provjeri snagu svog auta", tool2: "Koje usluge su moguće za moje auto", tool3: "Izračunaj uštedu goriva",
+    partnersLabel: "Radimo uz podršku",
+    // Quick links
+    qlLabel: "Istražite",
+    ql1Name: "Naše Usluge", ql1Desc: "Chiptuning, CarPlay, kodiranje, softverska rješenja i više", ql1Arrow: "Pogledaj",
+    ql2Name: "Blog", ql2Desc: "Savjeti, novosti i trikovi iz svijeta auto kodiranja", ql2Arrow: "Čitaj",
+    ql3Name: "Kontakt", ql3Desc: "Lokacija, radno vrijeme i forma za brzi upit", ql3Arrow: "Piši nam",
+    ql4Name: "Naši Radovi", ql4Desc: "Pregled urađenih projekata — chiptuning, kodiranje i aktivacije", ql4Arrow: "Pogledaj",
+    ql5Name: "Društvene Mreže", ql5Desc: "Zapratite nas na Instagramu, Facebooku i TikToku", ql5Arrow: "Zaprati",
+    // CTA
+    ctaTitle: "Spremni za upgrade?",
+    ctaDesc: "Zakažite termin ili nam pišite — odgovaramo u roku od 2 sata. Besplatna dijagnostika i konsultacija za vaše vozilo.",
+    ctaBtn1: "Zakaži termin", ctaBtn2: "Piši na WhatsApp",
+    // Footer
+    footerTagline: "Profesionalni automotive coding & chiptuning. Vaš pouzdan partner za kodiranje, aktivaciju funkcija i optimizaciju vozila.",
+    footerNav: "Navigacija", footerHome: "Početna", footerRadovi: "Naši Radovi",
+    fSvc1: "Chiptuning", fSvc2: "Kodiranje funkcija", fSvc3: "CarPlay aktivacija", fSvc4: "Softverska rješenja", fSvc5: "Dijagnostika",
+    footerAddress: "Prijepolje, Srbija",
+    // Ticker
+    tickerLabel: "NOVO",
+    tick1: "🌐 Sajt je LIVE na hadzalic.co",
+    tick2: "📱 CarPlay & Android Auto aktivacija — VAG, BMW, Mercedes",
+    tick3: "📷 POI Radar upozorenja GRATIS uz svako ažuriranje mapa (VAG grupacija)",
+    tick4: "🏆 Sertifikovani HPTuners & ASFerrari chiptuning specijalisti",
+    tick5: "🔥 Chiptuning — custom mape u saradnji sa ASFerrari partnerima",
+    tick6: "♾️ Doživotna garancija na softverski rad",
+    tick7: "🔌 CarPlay adapteri dostupni za vozila bez hardverske podrške",
+    tick8: "💬 Brz odgovor na WhatsApp — 060 077 9443",
+    tick9: "🗺️ Prijepolje, Srbija — dolazite kod nas ili pišite online",
+    // Slide menu
+    menuBooking: "Zakaži Termin",
+    menuLabelSvc: "Usluge", menuLabelInfo: "Korisne informacije", menuLabelPages: "Stranice",
+    menuSvcCarplay: "CarPlay & Android Auto", menuSvcAktivacija: "Aktivacija Funkcija",
+    menuSvcNavi: "Ažuriranje Navigacije", menuSvcErrors: "Brisanje Grešaka",
+    menuSvcObd: "OBD Kodiranje", menuSvcRemote: "Online / Udaljeno",
+    menuSvcChip: "Chiptuning", menuSvcDpf: "Softverska Rješenja (DPF, EGR, AdBlue)",
+    menuSvcAdapter: "CarPlay Adapteri",
+    menuBadgePopular: "POPULARNO", menuBadgeStock: "NA STANJU",
+    menuInfoCarplay: "CarPlay & Android Auto", menuInfoHidden: "Skrivene Funkcije",
+    menuInfoChip: "Chiptuning", menuInfoNavi: "Ažuriranje Navigacije",
+    menuInfoDpf: "DPF / EGR / AdBlue", menuInfoObd: "OBD Kodiranje",
+    menuPageUsluge: "Naše Usluge", menuPageBlog: "Blog", menuPageKontakt: "Kontakt",
+    menuFooterPhone: "📞 060 077 9443", menuFooterWa: "💬 WhatsApp", menuFooterInsta: "📸 @hadzalic.coding",
+    // Contact
+    contactH2: "Kontaktirajte Nas", contactDesc: "Imate pitanje ili ste spremni za booking? Pišite nam!",
+    contactInfoTitle: "Hadzalic Coding 🌐",
+    contactInfoDesc: "Stručni servis kodiranja vozila u Prijepolju. Kontaktirajte nas putem telefona, e-maila ili društvenih mreža.",
+    contactLblLoc: "Lokacija", contactValLoc: "Prijepolje, Srbija",
+    contactLblPhone: "Telefon / WhatsApp", contactLblEmail: "Email", contactLblInsta: "Instagram",
+    contactFormTitle: "Pošaljite Upit",
+    contactLblName: "Ime i Prezime", contactPhName: "Vaše ime...",
+    contactLblTel: "Telefon / WhatsApp", contactPhTel: "+381...",
+    contactPhEmail: "vaš@email.com",
+    contactLblService: "Usluga",
+    contactOpt1: "CarPlay / Android Auto", contactOpt2: "CarPlay Adapter (kupovina)",
+    contactOpt3: "Skrivene Funkcije", contactOpt4: "Ažuriranje Navigacije",
+    contactOpt5: "Brisanje Grešaka", contactOpt6: "OBD Kodiranje",
+    contactOpt7: "Chiptuning", contactOpt8: "DPF / EGR / AdBlue",
+    contactOpt9: "Vulkanizer", contactOpt10: "Auspuh Servis", contactOpt11: "Ostalo",
+    contactLblMsg: "Poruka", contactPhMsg: "Opišite vozilo i šta vas zanima...",
+    contactNewsletter: "Prihvatam primanje promotivnih emailova od Hadzalic Coding 🌐",
+    contactSubmit: "Pošalji Upit →",
+    // Map
+    mapTag: "Gdje nas naći", mapH2: "Lokacija",
+    mapDesc: "Nalazimo se u Prijepolju, Srbija. Kliknite na mapu za navigaciju!",
+    mapLblAddr: "Adresa", mapValAddr: "Prijepolje, Srbija",
+    mapLblHours: "Radno vrijeme", mapValHours: "Pon–Pet 09–18h | Sub 09–14h",
+    mapLblPhone: "Telefon / WhatsApp", mapLblNav: "Navigacija", mapValNav: "Otvori u Google Maps →",
+    // Blog
+    blogPageDesc: "Savjeti, novosti i trikovi iz svijeta auto kodiranja",
+    blogTitle: "Kodiramo Blog", blogSub: "Savjeti, novosti i trikovi iz svijeta auto kodiranja",
+    blogSearchPh: "Pretraži blog...",
+    blogTagAll: "Sve", blogTagAkt: "Aktivacija", blogTagNav: "Navigacija",
+    blogTagDiag: "Dijagnostika", blogTagTips: "Savjeti", blogTagNews: "Novosti",
+    blogLoading: "Učitavanje...", blogComments: "Komentari",
+    blogRead: "Čitaj →", blogNoPosts: "Nema objava u ovoj kategoriji još. Uskoro! 🚀",
+    blogNoComments: "Još nema komentara. Budi prvi!", blogCommentPh: "Napiši komentar...",
+    blogCommentSend: "Pošalji", blogCommentLogin: "Prijavi se da ostaviš komentar",
+    blogLoadingComments: "Učitavam komentare...",
+    // Service detail
+    spBack: "← Sve usluge", spAbout: "O usluzi", spModels: "Podržana vozila",
+    spBenefits: "Šta dobijate", spGallery: "📸 Naši radovi",
+    // Booking
+    bookTitle: "Zakaži Termin",
+    bookSub: "Odaberi vozilo, označi usluge koje te zanimaju i pošalji nam upit — odgovaramo brzo na WhatsApp.",
+    bookStep1: "Odaberi vozilo", bookStep1Sub: "Marka → Model → Godište → Motor",
+    bookBrand: "Marka", bookBrandPh: "— Odaberi marku —",
+    bookModel: "Model", bookModelPh: "npr. Golf, Octavia, A4...",
+    bookYear: "Godište", bookYearPh: "— Godište —",
+    bookEngine: "Motor", bookEnginePh: "npr. 2.0 TDI, 1.5 TSI...",
+    bookOther: "Ostalo",
+    bookChange: "Izmijeni", bookConfirmVehicle: "Potvrdi vozilo →",
+    bookStep2: "Odaberi usluge", bookStep2Sub: "Označi sve što te zanima",
+    bsvcHidden: "Skrivene Funkcije", bsvcNavi: "Ažuriranje Navigacije", bsvcErrors: "Brisanje Grešaka",
+    bsvcObd: "OBD Kodiranje", bsvcDpf: "DPF Softversko rješenje", bsvcEgr: "EGR Softversko rješenje",
+    bsvcAdblue: "AdBlue Softversko rješenje", bsvcKat: "Katalizator Softversko rješenje",
+    bsvcLambda: "LAMBDA Softversko rješenje", bsvcImmo: "Immobilizator Off",
+    bsvcDtc: "DTC Brisanje", bsvcClone: "Kloniranje ECU",
+    bsvcRemote: "Online / Udaljeno", bsvcVideo: "Video u vožnji",
+    bookCarplayNotice: "⚠️ CarPlay & Android Auto nije dostupan softverski za vozila starija od 2015.",
+    bookContinue: "Nastavi →",
+    bookStep3: "Kontakt i napomena", bookStep3Sub: "Unesite email i dodajte napomenu",
+    bookNotePh: "npr. Imam active greške na tabli, zanima me i cijena za chiptuning Stage 1...",
+    bookSummary: "Pregled upita", bookSumVehicle: "🚗 Vozilo:", bookSumServices: "🔧 Usluge:",
+    bookReserve: "Rezerviši termin na WhatsApp",
+    // Mobile sticky
+    msbWa: "WhatsApp upit", msbBook: "📅 Zakaži termin",
+    // Cookie
+    cookieText: "🍪 Koristimo kolačiće za analitiku (Google Analytics) i poboljšanje korisničkog iskustva.",
+    cookiePolicy: "Politika privatnosti", cookieReject: "Odbij", cookieAccept: "✓ Prihvati",
+    // Power checker
+    ccTitle: "⚡ Provjeri snagu svog auta",
+    ccDesc: "Odaberi svoje vozilo i pogledaj koliko KS i Nm možeš dobiti sa Stage 1 chiptuningom.",
+    ccLblBrand: "Marka", ccLblModel: "Model", ccLblEngine: "Motor",
+    ccPhBrand: "— Odaberi marku —", ccPhModel: "— Odaberi model —", ccPhEngine: "— Odaberi motor —",
+    ccPower: "Snaga (KS)", ccTorque: "Obrtni moment (Nm)",
+    ccOriginal: "Originalno", ccStage1: "Stage 1", ccCta: "Zakaži chiptuning",
+    // OBD modal
+    obdTitle: "🔧 OBD Kodiranje — Odaberi opcije",
+    obdDesc: "Označi šta te zanima — šaljemo ti ponudu na WhatsApp",
+    obdCatLight: "💡 Svjetla & Osvjetljenje",
+    obdCatComfort: "🪟 Komfor & Zatvaranje",
+    obdCatDash: "🚗 Instrument tabla & Displej",
+    obdCatOther: "⚙️ Ostale funkcije",
+    obdCancel: "Otkaži", obdConfirm: "✔ Potvrdi odabir",
+    obdComingHome: "Coming / Leaving Home", obdDrl: "DRL podešavanje",
+    obdCornering: "Cornering lights", obdAmbient: "Ambijentalno osvjetljenje",
+    obdEmergBrake: "Emergency brake lights", obdRearLights: "Zadnja svjetla uvijek upaljena",
+    obdMirrorFold: "Auto-sklapanje retrovizora", obdWindowsKey: "Prozori ključem",
+    obdAutoLock: "Auto-zaključavanje u vožnji", obdDriverDoor: "Otključavanje samo vozačkih vrata",
+    obdRainSensor: "Kišni senzor osjetljivost",
+    obdNeedleSweep: "Needle sweep", obdServiceMenu: "Skriveni servisni meni",
+    obdOilTemp: "Prikaz temperature ulja", obdSeatbelt: "Isključenje upozorenja za pojas",
+    obdBattVolt: "Prikaz napona baterije",
+    obdAutoHold: "Auto-Hold aktivacija", obdLaunchCtrl: "Launch Control",
+    obdStartStop: "Start-Stop isključenje", obdExhaust: "Sportski zvuk ispuha",
+    obdServiceInt: "Intervali servisiranja",
+    // Auth modal
+    authTitle: "MOJ NALOG", authHint: "Napravi nalog da bi zakazao termin 👆",
+    authLogin: "Prijava", authRegister: "Registracija",
+    authPhEmail: "Email adresa", authPhPass: "Lozinka", authLoginBtn: "Prijavi se",
+    authNoAccount: "Nemas nalog?", authSignUp: "Registruj se",
+    authPhName: "Ime i prezime", authPhPhone: "Broj telefona (opciono)",
+    authPhPassMin: "Lozinka (min. 6 znakova)", authPhPassConfirm: "Potvrdi lozinku",
+    authNewsletter: "Zelim da primam obavijesti o akcijama, popustima i novostima od Hadzalic Coding",
+    authCreateBtn: "Kreiraj nalog",
+    authHasAccount: "Vec imas nalog?", authSignIn: "Prijavi se",
+    authChangePhoto: "Promijeni sliku", authDefaultName: "Korisnik",
+    // Instagram toast
+    igText: "Pratite nas na Instagramu za najnovije radove i savjete.",
+    igFollow: "Zapratite",
+    // Online status
+    statusOnline: "🟢 Trenutno dostupan — pišite na WhatsApp 060 077 9443",
+    statusOffline: "💬 Brz odgovor na WhatsApp — 060 077 9443",
+    // Alerts & status messages
+    alertSelectService: "Molimo odaberi najmanje jednu uslugu.",
+    alertSelectVehicle: "Molimo odaberi marku, upiši model i odaberi godište.",
+    alertStepsIncomplete: "⚠️ Popunite korake 1 i 2.",
+    alertSending: "Šalje se...",
+    alertSentOk: "✅ Upit poslan! Odgovaramo uskoro.",
+    alertSentBtn: "✅ Poslano!",
+    alertSendError: "❌ Greška. Koristite WhatsApp ispod.",
+    alertContactError: "❌ Greška. Pokušajte ponovo ili pišite na WhatsApp.",
+    alertNameEmail: "⚠️ Unesite ime i ispravnu email adresu.",
+    alertSendInquiry: "Pošalji Upit →",
+    alertEmailBtn: "📧 Pošalji upit na email",
+    // Booking WA message
+    waMsgHello: "Zdravo! Zelim da zakazem termin.",
+    waMsgVehicle: "--- VOZILO ---",
+    waMsgBrand: "Marka: ", waMsgModel: "Model: ", waMsgYear: "Godiste: ", waMsgEngine: "Motor: ",
+    waMsgServices: "--- TRAZENE USLUGE ---",
+    waMsgNone: "Nije odabrano",
+    waMsgNote: "--- NAPOMENA ---",
+    waMsgReferral: "--- REFERRAL KOD ---",
+    waMsgThanks: "Hvala!",
+    // Booking service detail labels (WA)
+    svcDetailCarplay: "CarPlay & Android Auto — softverska aktivacija",
+    svcDetailAkt: "Aktivacija funkcija (Skrivene funkcije & OBD kodiranje)",
+    svcDetailNavi: "Ažuriranje navigacionih mapa",
+    svcDetailErrors: "Brisanje softverskih grešaka",
+    svcDetailChip: "Chiptuning (ECU remapiranje) — custom mapa, powered by ASFerrari",
+    svcDetailDpf: "DPF Softversko rješenje", svcDetailEgr: "EGR Softversko rješenje",
+    svcDetailAdblue: "AdBlue Softversko rješenje", svcDetailKat: "Katalizator Softversko rješenje",
+    svcDetailNox: "NOX Off", svcDetailLambda: "LAMBDA Softversko rješenje",
+    svcDetailPops: "Pops & Bangs", svcDetailHardcut: "Hardcut Limiter",
+    svcDetailSpeed: "Speed Limiter Off", svcDetailImmo: "Immobilizator Off",
+    svcDetailStartStop: "Start Stop MIB3 Off", svcDetailTuningCheck: "Tuning Check File",
+    svcDetailDtc: "DTC Brisanje", svcDetailClone: "Kloniranje ECU",
+    svcDetailAdapter: "CarPlay Adapter (ugradnja)",
+    svcDetailVulk: "Vulkanizer (montaža/balansiranje guma)",
+    svcDetailAuspuh: "Auspuh Servis (popravka/zamjena)",
+    svcDetailRemote: "Online / Udaljeno savjetovanje",
+    svcDetailVideo: "Video u vožnji (YouTube/Netflix na ekranu)",
+    // CarPlay eligibility
+    carplayNotSupported: "CarPlay nije podržan za vozila starija od 2015",
+    // Auth errors
+    authFillFields: "Popuni obavezna polja.",
+    authPassMin: "Lozinka mora imati min. 6 znakova.",
+    authPassMismatch: "Lozinke se ne podudaraju.",
+    authTooMany: "Previse pokusaja. Sacekaj ",
+    authCreating: "Kreiranje...",
+    authConnError: "Greska konekcije.",
+    authCreated: "Nalog kreiran! Provjeri email za potvrdu.",
+    authAccountLabel: "Nalog",
+    // Review
+    reviewSelectRating: "Odaberi ocjenu",
+    reviewEnterText: "Unesi tekst recenzije",
+    reviewSent: "Recenzija poslana na odobrenje! Hvala ✓",
+    reviewError: "Greska. Pokusaj ponovo.",
+    // Profile
+    profileSaved: "Snimljeno! ✓",
+    profileSaveError: "Greska pri snimanju",
+    profileAvatarOk: "Profilna slika azurirana! ✓",
+    profileAvatarError: "Greska pri uploadu slike",
+    // Gallery
+    gallerySelectImage: "Odaberi sliku prvo",
+    galleryUploading: "Uploaduje se...",
+    gallerySent: "Poslano na odobrenje! ✓",
+    galleryUploadError: "Greska pri uploadu. Pokusaj ponovo.",
+    gallerySubmitBtn: "Posalji na odobrenje",
+    // Validation
+    valEmail: "Unesite ispravnu email adresu",
+    valPhone: "Unesite ispravan broj telefona",
+    valRateLimit: "Sacekajte ",
+    valRateLimitSuffix: " sekundi prije ponovnog slanja.",
+    // Push notifications
+    pushText: "Zelite li primati obaviještenja o akcijama i novostima?",
+    pushAllow: "Dozvoli", pushDismiss: "Ne hvala",
+    // Fuel calculator
+    fcTitle: "Kalkulator uštede goriva",
+    fcSubtitle: "Izračunajte koliko možete uštedjeti sa chiptuningom",
+    fcConsumption: "Trenutna potrošnja", fcKm: "Godišnja kilometraža",
+    fcPrice: "Cijena goriva", fcEngine: "Tip motora",
+    fcDiesel: "Dizel", fcPetrol: "Benzin", fcTurboPetrol: "Turbo benzin",
+    fcCalculate: "Izračunaj uštedu",
+    fcReduction: "Smanjenje potrošnje", fcNewConsumption: "Nova potrošnja",
+    fcFuelSaved: "Ušteda goriva godišnje", fcAnnualSavings: "Godišnja ušteda",
+    fcRoi: "ROI period (chiptuning ~35.000 RSD)",
+    fcFillAll: "Molimo popunite sva polja.",
+    fcMonths: "mj.",
+    // Breadcrumbs
+    bcHome: "Pocetna", bcServices: "Usluge", bcBooking: "Rezervacija",
+    // Dropdown defaults
+    ddSelectBrand: "— Odaberi marku —", ddSelectModel: "— Odaberi model —",
+    ddSelectEngine: "— Odaberi motor —",
+    ddFirstBrand: "— Prvo odaberi marku —", ddFirstModel: "— Prvo odaberi model —"
+  }
+};
+
 // Route on initial page load
 (function() {
   var path = window.location.pathname;
@@ -2501,7 +2546,7 @@ function handleRoute(pushState) {
 var _currentServiceKey = null;
 
 function showService(key) {
-  var s = services[key];
+  var s = _activeServices[key];
   if (!s) return;
   _currentServiceKey = key;
 
@@ -2638,9 +2683,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var span = document.getElementById('tickerStatusSpan');
     if (!span) return;
     if (isOnline) {
-      span.textContent = '🟢 Trenutno dostupan — pišite na WhatsApp 060 077 9443';
+      span.textContent = _t('statusOnline');
     } else {
-      span.textContent = '💬 Brz odgovor na WhatsApp — 060 077 9443';
+      span.textContent = _t('statusOffline');
     }
   }
   updateOnlineBadge();
@@ -2761,6 +2806,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
 
+
   function showInfoPage(key) {
     var info = infoData[key];
     if (!info) return;
@@ -2778,7 +2824,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }).join('');
     document.getElementById('infoContent').innerHTML = html;
 
-    var waMsg = encodeURIComponent('Zdravo, zanima me više o usluzi: ' + info.title);
+    var waPrefix = lang === 'en' ? 'Hello, I would like to know more about: ' : 'Zdravo, zanima me više o usluzi: ';
+    var waMsg = encodeURIComponent(waPrefix + info.title);
     document.getElementById('infoWaBtn').href = 'https://wa.me/381600779443?text=' + waMsg;
 
     showPage('page-info');
@@ -2939,7 +2986,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var model = document.getElementById('bModel').value;
     var year = document.getElementById('bYear').value;
     if (!brand || !model || !year) {
-      alert('Molimo odaberi marku, upiši model i odaberi godište.');
+      alert(_t('alertSelectVehicle'));
       return;
     }
     var txt = getVehicleText();
@@ -2971,31 +3018,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Collect full service details
     var svcDetails = {
-      'carplay':     'CarPlay & Android Auto — softverska aktivacija',
-      'aktivacija':  'Aktivacija funkcija (Skrivene funkcije & OBD kodiranje)',
-      'navi':        'Ažuriranje navigacionih mapa',
-      'errors':      'Brisanje softverskih grešaka',
-      
-      'chiptuning':  'Chiptuning (ECU remapiranje) — custom mapa, powered by ASFerrari',
-      'dpf':         'DPF Softversko rješenje',
-      'egr':         'EGR Softversko rješenje',
-      'adblue':      'AdBlue Softversko rješenje',
-      'kat':         'Katalizator Softversko rješenje',
-      'nox':         'NOX Off',
-      'lambda':      'LAMBDA Softversko rješenje',
-      'pops':        'Pops & Bangs',
-      'hardcut':     'Hardcut Limiter',
-      'speedlimiter':'Speed Limiter Off',
-      'immobilizer': 'Immobilizator Off',
-      'startstop':   'Start Stop MIB3 Off',
-      'tuningcheck': 'Tuning Check File',
-      'dtc':         'DTC Brisanje',
-      'kloniranje':  'Kloniranje ECU',
-      'adapter':     'CarPlay Adapter (ugradnja)',
-      'vulkanizer':  'Vulkanizer (montaža/balansiranje guma)',
-      'auspuh':      'Auspuh Servis (popravka/zamjena)',
-      'remote':      'Online / Udaljeno savjetovanje',
-      'video':       'Video u vožnji (YouTube/Netflix na ekranu)'
+      'carplay':     _t('svcDetailCarplay'),
+      'aktivacija':  _t('svcDetailAkt'),
+      'navi':        _t('svcDetailNavi'),
+      'errors':      _t('svcDetailErrors'),
+
+      'chiptuning':  _t('svcDetailChip'),
+      'dpf':         _t('svcDetailDpf'),
+      'egr':         _t('svcDetailEgr'),
+      'adblue':      _t('svcDetailAdblue'),
+      'kat':         _t('svcDetailKat'),
+      'nox':         _t('svcDetailNox'),
+      'lambda':      _t('svcDetailLambda'),
+      'pops':        _t('svcDetailPops'),
+      'hardcut':     _t('svcDetailHardcut'),
+      'speedlimiter':_t('svcDetailSpeed'),
+      'immobilizer': _t('svcDetailImmo'),
+      'startstop':   _t('svcDetailStartStop'),
+      'tuningcheck': _t('svcDetailTuningCheck'),
+      'dtc':         _t('svcDetailDtc'),
+      'kloniranje':  _t('svcDetailClone'),
+      'adapter':     _t('svcDetailAdapter'),
+      'vulkanizer':  _t('svcDetailVulk'),
+      'auspuh':      _t('svcDetailAuspuh'),
+      'remote':      _t('svcDetailRemote'),
+      'video':       _t('svcDetailVideo')
     };
 
     var checkedItems = [];
@@ -3010,15 +3057,15 @@ document.addEventListener('DOMContentLoaded', function() {
     var engine = document.getElementById('bEngine').value;
 
     var lines = [];
-    lines.push('Zdravo! Zelim da zakazem termin.');
+    lines.push(_t('waMsgHello'));
     lines.push('');
-    lines.push('--- VOZILO ---');
-    if (brand)  lines.push('Marka: '   + brand);
-    if (model)  lines.push('Model: '   + model);
-    if (year)   lines.push('Godiste: ' + year);
-    if (engine) lines.push('Motor: '   + engine);
+    lines.push(_t('waMsgVehicle'));
+    if (brand)  lines.push(_t('waMsgBrand')  + brand);
+    if (model)  lines.push(_t('waMsgModel')  + model);
+    if (year)   lines.push(_t('waMsgYear')   + year);
+    if (engine) lines.push(_t('waMsgEngine') + engine);
     lines.push('');
-    lines.push('--- TRAZENE USLUGE ---');
+    lines.push(_t('waMsgServices'));
     if (window.obdSelected && window.obdSelected.length > 0) {
       checkedItems.push('   ↳ OBD detalji:');
       window.obdSelected.forEach(function(opt) { checkedItems.push('      · ' + opt); });
@@ -3026,20 +3073,20 @@ document.addEventListener('DOMContentLoaded', function() {
     if (checkedItems.length) {
       checkedItems.forEach(function(s) { lines.push('- ' + s); });
     } else {
-      lines.push('Nije odabrano');
+      lines.push(_t('waMsgNone'));
     }
     if (note) {
       lines.push('');
-      lines.push('--- NAPOMENA ---');
+      lines.push(_t('waMsgNote'));
       lines.push(note);
     }
     lines.push('');
     if (window.appliedRefCode) {
       lines.push('');
-      lines.push('--- REFERRAL KOD ---');
+      lines.push(_t('waMsgReferral'));
       lines.push(window.appliedRefCode);
     }
-    lines.push('Hvala!');
+    lines.push(_t('waMsgThanks'));
     document.getElementById('bReserveBtn').href = 'https://wa.me/381600779443?text=' + encodeURIComponent(lines.join('\n'));
   }
 
@@ -3054,7 +3101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (oldYears.indexOf(year) !== -1) {
       carplayItem.classList.remove('checked');
       carplayItem.classList.add('bsvc-disabled');
-      carplayItem.title = 'CarPlay nije podržan za vozila starija od 2015';
+      carplayItem.title = _t('carplayNotSupported');
     } else {
       carplayItem.classList.remove('bsvc-disabled');
       carplayItem.title = '';
@@ -3237,7 +3284,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Step2 Next
   document.getElementById('bStep2Next').addEventListener('click', function() {
     if (!document.querySelectorAll('.bsvc-item.checked').length) {
-      alert('Molimo odaberi najmanje jednu uslugu.'); return;
+      alert(_t('alertSelectService')); return;
     }
     document.getElementById('bStep2').classList.add('active');
     updateBookingSummary();
@@ -3252,20 +3299,20 @@ document.addEventListener('DOMContentLoaded', function() {
     var note = document.getElementById('bNote').value.trim();
     if (!vehicle || vehicle==='—') {
       statEl.style.display='block'; statEl.style.background='rgba(255,69,58,0.1)'; statEl.style.color='#ff453a';
-      statEl.textContent='⚠️ Popunite korake 1 i 2.'; return;
+      statEl.textContent=_t('alertStepsIncomplete'); return;
     }
-    var btn=this; btn.disabled=true; btn.textContent='Šalje se...';
+    var btn=this; btn.disabled=true; btn.textContent=_t('alertSending');
     emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
       from_email: 'booking-form', vozilo: vehicle, usluge: services,
       napomena: note||'—', newsletter: 'Ne', datum: new Date().toLocaleString('bs-BA')
     }).then(function() {
       statEl.style.display='block'; statEl.style.background='rgba(48,209,88,0.1)'; statEl.style.color='#30d158';
-      statEl.textContent='✅ Upit poslan! Odgovaramo uskoro.';
-      btn.textContent='✅ Poslano!'; btn.style.background='linear-gradient(135deg,#30d158,#1a9e3e)';
+      statEl.textContent=_t('alertSentOk');
+      btn.textContent=_t('alertSentBtn'); btn.style.background='linear-gradient(135deg,#30d158,#1a9e3e)';
     }, function() {
       statEl.style.display='block'; statEl.style.background='rgba(255,69,58,0.1)'; statEl.style.color='#ff453a';
-      statEl.textContent='❌ Greška. Koristite WhatsApp ispod.';
-      btn.disabled=false; btn.textContent='📧 Pošalji upit na email';
+      statEl.textContent=_t('alertSendError');
+      btn.disabled=false; btn.textContent=_t('alertEmailBtn');
     });
   });
 
@@ -3279,9 +3326,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var statEl=document.getElementById('cStatus');
     if (!name || !email || !/^[^@]+@[^@]+\.[^@]+$/.test(email)) {
       statEl.style.display='block'; statEl.style.background='rgba(255,69,58,0.1)'; statEl.style.color='#ff453a';
-      statEl.textContent='⚠️ Unesite ime i ispravnu email adresu.'; return;
+      statEl.textContent=_t('alertNameEmail'); return;
     }
-    var btn=this; btn.disabled=true; btn.textContent='Šalje se...';
+    var btn=this; btn.disabled=true; btn.textContent=_t('alertSending');
     emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
       from_email: email, vozilo: name+' | Tel: '+(phone||'—'), usluge: service,
       napomena: message||'—',
@@ -3289,13 +3336,13 @@ document.addEventListener('DOMContentLoaded', function() {
       datum: new Date().toLocaleString('bs-BA')
     }).then(function() {
       statEl.style.display='block'; statEl.style.background='rgba(48,209,88,0.1)'; statEl.style.color='#30d158';
-      statEl.textContent='✅ Upit poslan! Odgovaramo uskoro.';
-      btn.textContent='✅ Poslano!'; btn.style.background='#30d158';
+      statEl.textContent=_t('alertSentOk');
+      btn.textContent=_t('alertSentBtn'); btn.style.background='#30d158';
       ['cName','cPhone','cEmail','cMessage'].forEach(function(id){document.getElementById(id).value='';});
     }, function() {
       statEl.style.display='block'; statEl.style.background='rgba(255,69,58,0.1)';
-      statEl.textContent='❌ Greška. Pokušajte ponovo ili pišite na WhatsApp.';
-      btn.disabled=false; btn.textContent='Pošalji Upit →';
+      statEl.textContent=_t('alertContactError');
+      btn.disabled=false; btn.textContent=_t('alertSendInquiry');
     });
   });
 
@@ -3307,49 +3354,49 @@ document.addEventListener('DOMContentLoaded', function() {
   <div style="max-width:680px;margin:0 auto;background:#0d1b2e;border:1px solid rgba(10,132,255,0.25);border-radius:12px;padding:28px 24px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
       <div>
-        <div style="font-size:1.1rem;font-weight:700;color:#fff;">🔧 OBD Kodiranje — Odaberi opcije</div>
-        <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:4px;">Označi šta te zanima — šaljemo ti ponudu na WhatsApp</div>
+        <div style="font-size:1.1rem;font-weight:700;color:#fff;" data-i18n="obdTitle">🔧 OBD Kodiranje — Odaberi opcije</div>
+        <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:4px;" data-i18n="obdDesc">Označi šta te zanima — šaljemo ti ponudu na WhatsApp</div>
       </div>
       <button onclick="document.getElementById('obdModal').style.display='none';document.body.style.overflow='';" style="background:none;border:none;color:#fff;font-size:1.6rem;cursor:pointer;line-height:1;padding:4px 8px;">✕</button>
     </div>
     <div id="obdOptionsList">
-      <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:#0a84ff;margin:0 0 10px;">💡 Svjetla &amp; Osvjetljenje</div>
+      <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:#0a84ff;margin:0 0 10px;" data-i18n="obdCatLight">💡 Svjetla &amp; Osvjetljenje</div>
       <div class="obd-grid">
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Coming/Leaving Home svjetla"><span>Coming / Leaving Home</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="DRL podešavanje"><span>DRL podešavanje</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Cornering lights (skretna svjetla)"><span>Cornering lights</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Ambijentalno osvjetljenje aktivacija"><span>Ambijentalno osvjetljenje</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Emergency brake lights (jaka kočnica)"><span>Emergency brake lights</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Zadnja svjetla uvijek upaljena"><span>Zadnja svjetla uvijek upaljena</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Coming/Leaving Home svjetla"><span data-i18n="obdComingHome">Coming / Leaving Home</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="DRL podešavanje"><span data-i18n="obdDrl">DRL podešavanje</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Cornering lights (skretna svjetla)"><span data-i18n="obdCornering">Cornering lights</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Ambijentalno osvjetljenje aktivacija"><span data-i18n="obdAmbient">Ambijentalno osvjetljenje</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Emergency brake lights (jaka kočnica)"><span data-i18n="obdEmergBrake">Emergency brake lights</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Zadnja svjetla uvijek upaljena"><span data-i18n="obdRearLights">Zadnja svjetla uvijek upaljena</span></label>
       </div>
-      <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:#0a84ff;margin:16px 0 10px;">🪟 Komfor &amp; Zatvaranje</div>
+      <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:#0a84ff;margin:16px 0 10px;" data-i18n="obdCatComfort">🪟 Komfor &amp; Zatvaranje</div>
       <div class="obd-grid">
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Auto-sklapanje retrovizora pri zaključavanju"><span>Auto-sklapanje retrovizora</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Otvaranje/zatvaranje prozora ključem"><span>Prozori ključem</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Auto-zaključavanje pri vožnji"><span>Auto-zaključavanje u vožnji</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Otključavanje samo vozačkih vrata"><span>Otključavanje samo vozačkih vrata</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Kišni senzor — podešavanje osjetljivosti"><span>Kišni senzor osjetljivost</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Auto-sklapanje retrovizora pri zaključavanju"><span data-i18n="obdMirrorFold">Auto-sklapanje retrovizora</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Otvaranje/zatvaranje prozora ključem"><span data-i18n="obdWindowsKey">Prozori ključem</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Auto-zaključavanje pri vožnji"><span data-i18n="obdAutoLock">Auto-zaključavanje u vožnji</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Otključavanje samo vozačkih vrata"><span data-i18n="obdDriverDoor">Otključavanje samo vozačkih vrata</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Kišni senzor — podešavanje osjetljivosti"><span data-i18n="obdRainSensor">Kišni senzor osjetljivost</span></label>
       </div>
-      <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:#0a84ff;margin:16px 0 10px;">🚗 Instrument tabla &amp; Displej</div>
+      <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:#0a84ff;margin:16px 0 10px;" data-i18n="obdCatDash">🚗 Instrument tabla &amp; Displej</div>
       <div class="obd-grid">
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Needle sweep (kazaljke pri paljenju)"><span>Needle sweep</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Skriveni servisni meni"><span>Skriveni servisni meni</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Prikaz temperature ulja na tabli"><span>Prikaz temperature ulja</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Isključenje upozorenja za pojas"><span>Isključenje upozorenja za pojas</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Prikaz napona baterije"><span>Prikaz napona baterije</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Needle sweep (kazaljke pri paljenju)"><span data-i18n="obdNeedleSweep">Needle sweep</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Skriveni servisni meni"><span data-i18n="obdServiceMenu">Skriveni servisni meni</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Prikaz temperature ulja na tabli"><span data-i18n="obdOilTemp">Prikaz temperature ulja</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Isključenje upozorenja za pojas"><span data-i18n="obdSeatbelt">Isključenje upozorenja za pojas</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Prikaz napona baterije"><span data-i18n="obdBattVolt">Prikaz napona baterije</span></label>
       </div>
-      <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:#0a84ff;margin:16px 0 10px;">⚙️ Ostale funkcije</div>
+      <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:#0a84ff;margin:16px 0 10px;" data-i18n="obdCatOther">⚙️ Ostale funkcije</div>
       <div class="obd-grid">
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Auto-Hold aktivacija"><span>Auto-Hold aktivacija</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Launch Control aktivacija"><span>Launch Control</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Isključenje Start-Stop sistema"><span>Start-Stop isključenje</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Sportski zvuk ispuha (flap aktivacija)"><span>Sportski zvuk ispuha</span></label>
-        <label class="obd-item"><input type="checkbox" class="obd-check" value="Prilagođeni intervali servisiranja"><span>Intervali servisiranja</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Auto-Hold aktivacija"><span data-i18n="obdAutoHold">Auto-Hold aktivacija</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Launch Control aktivacija"><span data-i18n="obdLaunchCtrl">Launch Control</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Isključenje Start-Stop sistema"><span data-i18n="obdStartStop">Start-Stop isključenje</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Sportski zvuk ispuha (flap aktivacija)"><span data-i18n="obdExhaust">Sportski zvuk ispuha</span></label>
+        <label class="obd-item"><input type="checkbox" class="obd-check" value="Prilagođeni intervali servisiranja"><span data-i18n="obdServiceInt">Intervali servisiranja</span></label>
       </div>
     </div>
     <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.1);display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;">
-      <button onclick="document.getElementById('obdModal').style.display='none';document.body.style.overflow='';" style="padding:10px 20px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:8px;color:#fff;cursor:pointer;font-size:0.9rem;">Otkaži</button>
-      <button onclick="obdConfirm()" style="padding:10px 20px;background:linear-gradient(135deg,#0a84ff,#0060cc);border:none;border-radius:8px;color:#fff;cursor:pointer;font-weight:600;font-size:0.9rem;">✔ Potvrdi odabir</button>
+      <button onclick="document.getElementById('obdModal').style.display='none';document.body.style.overflow='';" style="padding:10px 20px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:8px;color:#fff;cursor:pointer;font-size:0.9rem;" data-i18n="obdCancel">Otkaži</button>
+      <button onclick="obdConfirm()" style="padding:10px 20px;background:linear-gradient(135deg,#0a84ff,#0060cc);border:none;border-radius:8px;color:#fff;cursor:pointer;font-weight:600;font-size:0.9rem;" data-i18n="obdConfirm">✔ Potvrdi odabir</button>
     </div>
   </div>
 </div>
@@ -3364,8 +3411,8 @@ document.addEventListener('DOMContentLoaded', function() {
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ig" x1="0" y1="24" x2="24" y2="0"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig)" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="url(#ig)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="url(#ig)"/></svg>
     <div style="font-size:0.72rem;font-weight:700;color:rgba(255,255,255,0.8);">Hadzalic Coding</div>
   </div>
-  <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);line-height:1.5;margin-bottom:12px;">Pratite nas na Instagramu za najnovije radove i savjete.</div>
-  <a href="https://www.instagram.com/hadzalic.coding" target="_blank" onclick="closeIgToast()" style="display:inline-block;padding:8px 16px;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);border:none;border-radius:7px;color:#fff;font-size:0.75rem;font-weight:700;text-decoration:none;cursor:pointer;">Zapratite &#8594;</a>
+  <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);line-height:1.5;margin-bottom:12px;" data-i18n="igText">Pratite nas na Instagramu za najnovije radove i savjete.</div>
+  <a href="https://www.instagram.com/hadzalic.coding" target="_blank" onclick="closeIgToast()" style="display:inline-block;padding:8px 16px;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);border:none;border-radius:7px;color:#fff;font-size:0.75rem;font-weight:700;text-decoration:none;cursor:pointer;" data-i18n="igFollow">Zapratite &#8594;</a>
 </div>
 
 <script>
@@ -3392,12 +3439,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:100000;background:#0d1b2e;border-top:1px solid rgba(10,132,255,0.25);padding:14px 20px 18px;">
   <div style="max-width:700px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
     <div style="font-size:0.82rem;color:rgba(255,255,255,0.6);line-height:1.6;flex:1;min-width:200px;">
-      🍪 Koristimo kolačiće za analitiku (Google Analytics) i poboljšanje korisničkog iskustva.
-      <a href="https://policies.google.com/privacy" target="_blank" style="color:#0a84ff;text-decoration:none;white-space:nowrap;">Politika privatnosti</a>
+      <span data-i18n="cookieText">🍪 Koristimo kolačiće za analitiku (Google Analytics) i poboljšanje korisničkog iskustva.</span>
+      <a href="https://policies.google.com/privacy" target="_blank" style="color:#0a84ff;text-decoration:none;white-space:nowrap;" data-i18n="cookiePolicy">Politika privatnosti</a>
     </div>
     <div style="display:flex;gap:10px;flex-shrink:0;pointer-events:all;">
-      <button id="cookieRejectBtn" style="padding:10px 20px;background:none;border:1px solid rgba(255,255,255,0.2);border-radius:6px;color:rgba(255,255,255,0.5);font-size:0.82rem;cursor:pointer;pointer-events:all;">Odbij</button>
-      <button id="cookieAcceptBtn" style="padding:10px 22px;background:linear-gradient(135deg,#0a84ff,#0060cc);border:none;border-radius:6px;color:#fff;font-weight:700;font-size:0.82rem;cursor:pointer;pointer-events:all;">✓ Prihvati</button>
+      <button id="cookieRejectBtn" style="padding:10px 20px;background:none;border:1px solid rgba(255,255,255,0.2);border-radius:6px;color:rgba(255,255,255,0.5);font-size:0.82rem;cursor:pointer;pointer-events:all;" data-i18n="cookieReject">Odbij</button>
+      <button id="cookieAcceptBtn" style="padding:10px 22px;background:linear-gradient(135deg,#0a84ff,#0060cc);border:none;border-radius:6px;color:#fff;font-weight:700;font-size:0.82rem;cursor:pointer;pointer-events:all;" data-i18n="cookieAccept">✓ Prihvati</button>
     </div>
   </div>
 </div>
@@ -4049,7 +4096,7 @@ function mergeCustomDB() {
   var markSel = document.getElementById('ccMark');
   if (markSel && markSel.options.length > 1) {
     var current = markSel.value;
-    markSel.innerHTML = '<option value="">— Odaberi marku —</option>';
+    markSel.innerHTML = '<option value="">' + _t('ccPhBrand') + '</option>';
     Object.keys(DB).sort().forEach(function(k) {
       var o = document.createElement('option'); o.value = k; o.textContent = k; markSel.appendChild(o);
     });
@@ -4699,47 +4746,47 @@ window.addEventListener('load', function() {
 <div id="authModal" style="display:none;position:fixed;inset:0;z-index:999998;background:rgba(0,0,0,0.88);align-items:center;justify-content:center;padding:20px;">
   <div class="auth-box">
     <div class="auth-header">
-      <span class="auth-title">MOJ NALOG</span>
+      <span class="auth-title" data-i18n="authTitle">MOJ NALOG</span>
       <button class="auth-close" onclick="closeAuthModal()">x</button>
     </div>
 
     <!-- Login/Register tabs -->
     <div id="authFormWrap">
       <!-- Booking hint -->
-      <div id="authLoginHint" style="display:none;background:rgba(255,159,10,0.1);border-bottom:1px solid rgba(255,159,10,0.2);padding:10px 16px;font-size:0.8rem;color:#ff9f0a;text-align:center;">
+      <div id="authLoginHint" style="display:none;background:rgba(255,159,10,0.1);border-bottom:1px solid rgba(255,159,10,0.2);padding:10px 16px;font-size:0.8rem;color:#ff9f0a;text-align:center;" data-i18n="authHint">
         Napravi nalog da bi zakazao termin 👆
       </div>
       <div class="auth-tabs">
-        <button class="auth-tab active" id="authTabLogin" onclick="switchAuthTab('login')">Prijava</button>
-        <button class="auth-tab" id="authTabRegister" onclick="switchAuthTab('register')">Registracija</button>
+        <button class="auth-tab active" id="authTabLogin" onclick="switchAuthTab('login')" data-i18n="authLogin">Prijava</button>
+        <button class="auth-tab" id="authTabRegister" onclick="switchAuthTab('register')" data-i18n="authRegister">Registracija</button>
       </div>
 
       <!-- Login form -->
       <div class="auth-body" id="authLoginForm">
-        <input type="email" class="auth-input" id="loginEmail" placeholder="Email adresa">
-        <input type="password" class="auth-input" id="loginPass" placeholder="Lozinka">
-        <button class="auth-submit" id="loginBtn" onclick="doLogin()">Prijavi se</button>
+        <input type="email" class="auth-input" id="loginEmail" placeholder="Email adresa" data-i18n-ph="authPhEmail">
+        <input type="password" class="auth-input" id="loginPass" placeholder="Lozinka" data-i18n-ph="authPhPass">
+        <button class="auth-submit" id="loginBtn" onclick="doLogin()" data-i18n="authLoginBtn">Prijavi se</button>
         <div class="auth-msg" id="loginMsg"></div>
         <p style="text-align:center;margin-top:14px;font-size:0.78rem;color:rgba(255,255,255,0.3);">
-          Nemas nalog? <span onclick="switchAuthTab('register')" style="color:#0a84ff;cursor:pointer;">Registruj se</span>
+          <span data-i18n="authNoAccount">Nemas nalog?</span> <span onclick="switchAuthTab('register')" style="color:#0a84ff;cursor:pointer;" data-i18n="authSignUp">Registruj se</span>
         </p>
       </div>
 
       <!-- Register form -->
       <div class="auth-body" id="authRegisterForm" style="display:none;">
-        <input type="text" class="auth-input" id="regName" placeholder="Ime i prezime">
-        <input type="email" class="auth-input" id="regEmail" placeholder="Email adresa">
-        <input type="text" class="auth-input" id="regPhone" placeholder="Broj telefona (opciono)">
-        <input type="password" class="auth-input" id="regPass" placeholder="Lozinka (min. 6 znakova)">
-        <input type="password" class="auth-input" id="regPass2" placeholder="Potvrdi lozinku">
+        <input type="text" class="auth-input" id="regName" placeholder="Ime i prezime" data-i18n-ph="authPhName">
+        <input type="email" class="auth-input" id="regEmail" placeholder="Email adresa" data-i18n-ph="authPhEmail">
+        <input type="text" class="auth-input" id="regPhone" placeholder="Broj telefona (opciono)" data-i18n-ph="authPhPhone">
+        <input type="password" class="auth-input" id="regPass" placeholder="Lozinka (min. 6 znakova)" data-i18n-ph="authPhPassMin">
+        <input type="password" class="auth-input" id="regPass2" placeholder="Potvrdi lozinku" data-i18n-ph="authPhPassConfirm">
         <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;margin-bottom:4px;padding:10px 12px;background:rgba(10,132,255,0.06);border:1px solid rgba(10,132,255,0.15);border-radius:8px;">
           <input type="checkbox" id="regNewsletter" checked style="margin-top:2px;accent-color:#0a84ff;width:15px;height:15px;flex-shrink:0;">
-          <span style="font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.5;">Zelim da primam obavijesti o akcijama, popustima i novostima od Hadzalic Coding</span>
+          <span style="font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.5;" data-i18n="authNewsletter">Zelim da primam obavijesti o akcijama, popustima i novostima od Hadzalic Coding</span>
         </label>
-        <button class="auth-submit" id="registerBtn" onclick="doRegister()">Kreiraj nalog</button>
+        <button class="auth-submit" id="registerBtn" onclick="doRegister()" data-i18n="authCreateBtn">Kreiraj nalog</button>
         <div class="auth-msg" id="registerMsg"></div>
         <p style="text-align:center;margin-top:14px;font-size:0.78rem;color:rgba(255,255,255,0.3);">
-          Vec imas nalog? <span onclick="switchAuthTab('login')" style="color:#0a84ff;cursor:pointer;">Prijavi se</span>
+          <span data-i18n="authHasAccount">Vec imas nalog?</span> <span onclick="switchAuthTab('login')" style="color:#0a84ff;cursor:pointer;" data-i18n="authSignIn">Prijavi se</span>
         </p>
       </div>
     </div>
@@ -4758,7 +4805,7 @@ window.addEventListener('load', function() {
           </button>
           <input type="file" id="avatarFileInput" accept="image/*" style="display:none;" onchange="uploadAvatar(this)">
         </div>
-        <div style="font-size:1rem;font-weight:700;color:#fff;margin-bottom:2px;" id="authUserName">Korisnik</div>
+        <div style="font-size:1rem;font-weight:700;color:#fff;margin-bottom:2px;" id="authUserName" data-i18n="authDefaultName">Korisnik</div>
         <div style="font-size:0.78rem;color:rgba(255,255,255,0.4);" id="authUserEmail"></div>
       </div>
 
@@ -4980,30 +5027,32 @@ async function doLogin() {
   var pass = document.getElementById('loginPass').value;
   var msg = document.getElementById('loginMsg');
   var btn = document.getElementById('loginBtn');
-  if (!email || !pass) { msg.className='auth-msg error'; msg.textContent='Unesi email i lozinku.'; return; }
+  if (!email || !pass) { msg.className='auth-msg error'; msg.textContent=_t('authFillFields'); return; }
   // Rate limit check
   var rl = checkAuthRate('login');
-  if (!rl.allowed) { msg.className='auth-msg error'; msg.textContent='Previse pokusaja. Sacekaj ' + rl.remaining + 's.'; return; }
+  if (!rl.allowed) { msg.className='auth-msg error'; msg.textContent=_t('authTooMany') + rl.remaining + 's.'; return; }
   btn.disabled = true;
-  btn.textContent = 'Prijava...';
+  btn.textContent = _t('alertSending');
   msg.textContent = '';
   var auth = getAuth();
-  if (!auth) { msg.className='auth-msg error'; msg.textContent='Greska konekcije.'; btn.disabled=false; btn.textContent='Prijavi se'; return; }
+  if (!auth) { msg.className='auth-msg error'; msg.textContent=_t('authConnError'); btn.disabled=false; btn.textContent=_t('authLoginBtn'); return; }
   var result = await auth.signInWithPassword({ email: email, password: pass });
   if (result.error) {
     recordAuthAttempt('login', false);
     var rl2 = checkAuthRate('login');
     msg.className = 'auth-msg error';
-    var errText = result.error.message.includes('Invalid') ? 'Pogresna email adresa ili lozinka.' : result.error.message;
-    if (!rl2.allowed) errText += ' Sacekaj ' + rl2.remaining + 's.';
-    else if (rl2.attempts >= 2) errText += ' (pokusaj ' + rl2.attempts + ')';
+    var lang = document.documentElement.getAttribute('data-lang') || 'sr';
+    var errText = result.error.message.includes('Invalid') ? (lang === 'en' ? 'Incorrect email or password.' : 'Pogresna email adresa ili lozinka.') : result.error.message;
+    if (!rl2.allowed) errText += ' ' + _t('authTooMany') + rl2.remaining + 's.';
+    else if (rl2.attempts >= 2) errText += ' (' + (lang === 'en' ? 'attempt' : 'pokusaj') + ' ' + rl2.attempts + ')';
     msg.textContent = errText;
     btn.disabled = false;
-    btn.textContent = 'Prijavi se';
+    btn.textContent = _t('authLoginBtn');
   } else {
     recordAuthAttempt('login', true);
     msg.className = 'auth-msg success';
-    msg.textContent = 'Uspjesna prijava!';
+    var lang2 = document.documentElement.getAttribute('data-lang') || 'sr';
+    msg.textContent = lang2 === 'en' ? 'Login successful!' : 'Uspjesna prijava!';
     setTimeout(function() {
       showUserPanel(result.data.user);
       // Continue to booking if they came from booking button
@@ -5014,7 +5063,7 @@ async function doLogin() {
       }, 800);
     }, 500);
     btn.disabled = false;
-    btn.textContent = 'Prijavi se';
+    btn.textContent = _t('authLoginBtn');
   }
 }
 
@@ -5027,19 +5076,19 @@ async function doRegister() {
   var msg = document.getElementById('registerMsg');
   var btn = document.getElementById('registerBtn');
 
-  if (!name || !email || !pass) { msg.className='auth-msg error'; msg.textContent='Popuni obavezna polja.'; return; }
-  if (pass.length < 6) { msg.className='auth-msg error'; msg.textContent='Lozinka mora imati min. 6 znakova.'; return; }
-  if (pass !== pass2) { msg.className='auth-msg error'; msg.textContent='Lozinke se ne podudaraju.'; return; }
+  if (!name || !email || !pass) { msg.className='auth-msg error'; msg.textContent=_t('authFillFields'); return; }
+  if (pass.length < 6) { msg.className='auth-msg error'; msg.textContent=_t('authPassMin'); return; }
+  if (pass !== pass2) { msg.className='auth-msg error'; msg.textContent=_t('authPassMismatch'); return; }
   // Rate limit check
   var rl = checkAuthRate('register');
-  if (!rl.allowed) { msg.className='auth-msg error'; msg.textContent='Previse pokusaja. Sacekaj ' + rl.remaining + 's.'; return; }
+  if (!rl.allowed) { msg.className='auth-msg error'; msg.textContent=_t('authTooMany') + rl.remaining + 's.'; return; }
 
   btn.disabled = true;
-  btn.textContent = 'Kreiranje...';
+  btn.textContent = _t('authCreating');
   msg.textContent = '';
 
   var auth = getAuth();
-  if (!auth) { msg.className='auth-msg error'; msg.textContent='Greska konekcije.'; btn.disabled=false; btn.textContent='Kreiraj nalog'; return; }
+  if (!auth) { msg.className='auth-msg error'; msg.textContent=_t('authConnError'); btn.disabled=false; btn.textContent=_t('authCreateBtn'); return; }
 
   var newsletter = document.getElementById('regNewsletter') ? document.getElementById('regNewsletter').checked : true;
   var result = await auth.signUp({
@@ -5060,10 +5109,10 @@ async function doRegister() {
   } else {
     recordAuthAttempt('register', true);
     msg.className = 'auth-msg success';
-    msg.textContent = 'Nalog kreiran! Provjeri email za potvrdu.';
+    msg.textContent = _t('authCreated');
   }
   btn.disabled = false;
-  btn.textContent = 'Kreiraj nalog';
+  btn.textContent = _t('authCreateBtn');
 }
 
 async function doLogout() {
@@ -5091,7 +5140,7 @@ window.addEventListener('load', function() {
         var navBtn = document.getElementById('navAccount');
         var navLabel = document.getElementById('navAccountLabel');
         if (navBtn) navBtn.className = 'nav-account logged-in';
-        if (navLabel) navLabel.textContent = name ? name.split(' ')[0] : 'Nalog';
+        if (navLabel) navLabel.textContent = name ? name.split(' ')[0] : _t('authAccountLabel');
         _authUser = user;
       }
     });
@@ -5593,9 +5642,9 @@ async function saveProfile() {
   }).eq('id', _profileUser.id);
 
   if (r.error) {
-    if (msg) { msg.style.color = '#ff453a'; msg.textContent = 'Greska pri snimanju'; }
+    if (msg) { msg.style.color = '#ff453a'; msg.textContent = _t('profileSaveError'); }
   } else {
-    if (msg) { msg.style.color = '#30d158'; msg.textContent = 'Snimljeno! ✓'; }
+    if (msg) { msg.style.color = '#30d158'; msg.textContent = _t('profileSaved'); }
     // Update display name
     var pname = document.getElementById('authUserName');
     if (pname) pname.textContent = name;
@@ -5621,8 +5670,8 @@ async function submitReview() {
   if (!db) return;
   var msg = document.getElementById('reviewMsg');
   var text = document.getElementById('reviewText').value.trim();
-  if (_profileStars === 0) { if (msg) { msg.style.color='#ff453a'; msg.textContent='Odaberi ocjenu'; } return; }
-  if (!text) { if (msg) { msg.style.color='#ff453a'; msg.textContent='Unesi tekst recenzije'; } return; }
+  if (_profileStars === 0) { if (msg) { msg.style.color='#ff453a'; msg.textContent=_t('reviewSelectRating'); } return; }
+  if (!text) { if (msg) { msg.style.color='#ff453a'; msg.textContent=_t('reviewEnterText'); } return; }
 
   var meta = _profileUser.user_metadata || {};
   var name = meta.full_name || meta.name || 'Korisnik';
@@ -5636,9 +5685,9 @@ async function submitReview() {
   });
 
   if (r.error) {
-    if (msg) { msg.style.color='#ff453a'; msg.textContent='Greska. Pokusaj ponovo.'; }
+    if (msg) { msg.style.color='#ff453a'; msg.textContent=_t('reviewError'); }
   } else {
-    if (msg) { msg.style.color='#30d158'; msg.textContent='Recenzija poslana na odobrenje! Hvala ✓'; }
+    if (msg) { msg.style.color='#30d158'; msg.textContent=_t('reviewSent'); }
     document.getElementById('reviewText').value = '';
     setStars(0);
     setTimeout(function() { if (msg) msg.textContent=''; }, 5000);
@@ -5661,14 +5710,14 @@ function previewGalleryImage(input) {
 async function uploadGalleryImage() {
   if (!_profileUser || !_galleryFile) {
     var gm = document.getElementById('galleryMsg');
-    if (gm) { gm.style.color='#ff453a'; gm.textContent='Odaberi sliku prvo'; }
+    if (gm) { gm.style.color='#ff453a'; gm.textContent=_t('gallerySelectImage'); }
     return;
   }
   var db = getSupa();
   if (!db) return;
   var btn = document.getElementById('galleryUploadBtn');
   var gm = document.getElementById('galleryMsg');
-  if (btn) btn.textContent = 'Uploaduje se...';
+  if (btn) btn.textContent = _t('galleryUploading');
 
   // Upload to Cloudinary
   var fd = new FormData();
@@ -5695,16 +5744,16 @@ async function uploadGalleryImage() {
 
     if (r.error) throw new Error(r.error.message);
 
-    if (gm) { gm.style.color='#30d158'; gm.textContent='Poslano na odobrenje! ✓'; }
+    if (gm) { gm.style.color='#30d158'; gm.textContent=_t('gallerySent'); }
     document.getElementById('galleryCaption').value = '';
     document.getElementById('galleryPreview').style.display = 'none';
     _galleryFile = null;
     document.getElementById('galleryFileInput').value = '';
     loadMyUploads();
   } catch(err) {
-    if (gm) { gm.style.color='#ff453a'; gm.textContent='Greska pri uploadu. Pokusaj ponovo.'; }
+    if (gm) { gm.style.color='#ff453a'; gm.textContent=_t('galleryUploadError'); }
   }
-  if (btn) btn.textContent = 'Posalji na odobrenje';
+  if (btn) btn.textContent = _t('gallerySubmitBtn');
   setTimeout(function() { if (gm) gm.textContent=''; }, 5000);
 }
 
@@ -5885,11 +5934,11 @@ async function uploadAvatar(input) {
     updateNavAvatar(data.secure_url, null);
 
     var msg = document.getElementById('profileMsg');
-    if (msg) { msg.style.color='#30d158'; msg.textContent='Profilna slika azurirana! ✓'; setTimeout(function(){msg.textContent='';},3000); }
+    if (msg) { msg.style.color='#30d158'; msg.textContent=_t('profileAvatarOk'); setTimeout(function(){msg.textContent='';},3000); }
   } catch(e) {
     if (av) av.style.opacity = '1';
     var msg = document.getElementById('profileMsg');
-    if (msg) { msg.style.color='#ff453a'; msg.textContent='Greska pri uploadu slike'; }
+    if (msg) { msg.style.color='#ff453a'; msg.textContent=_t('profileAvatarError'); }
   }
 }
 
@@ -5987,7 +6036,7 @@ function renderBlog() {
   }
 
   if (posts.length === 0) {
-    grid.innerHTML = '<div class="blog-empty" style="grid-column:1/-1;">Nema objava u ovoj kategoriji jos. Uskoro! 🚀</div>';
+    grid.innerHTML = '<div class="blog-empty" style="grid-column:1/-1;">' + _t('blogNoPosts') + '</div>';
     return;
   }
 
@@ -6008,7 +6057,7 @@ function renderBlog() {
       + '<div class="blog-card-footer">'
       + '<span class="blog-card-date">'+date+'</span>'
       + '<span class="blog-reading-time">'+readTime+' min</span>'
-      + '<span class="blog-card-read">Citaj →</span>'
+      + '<span class="blog-card-read">' + _t('blogRead') + '</span>'
       + '</div>'
       + '</div>'
       + '</div>';
@@ -6057,13 +6106,13 @@ async function loadBlogComments(postId) {
   var listEl = document.getElementById('blogCommentsList');
   var formEl = document.getElementById('blogCommentForm');
   if (!listEl) return;
-  listEl.innerHTML = '<div style="color:rgba(255,255,255,0.2);font-size:0.78rem;padding:4px 0;">Ucitavam komentare...</div>';
+  listEl.innerHTML = '<div style="color:rgba(255,255,255,0.2);font-size:0.78rem;padding:4px 0;">' + _t('blogLoadingComments') + '</div>';
   var db = getSupa();
   if (!db) return;
   var r = await db.from('blog_comments').select('*').eq('post_id', postId).order('created_at', {ascending:true});
   var comments = r.data || [];
   if (comments.length === 0) {
-    listEl.innerHTML = '<div style="color:rgba(255,255,255,0.2);font-size:0.78rem;padding:4px 0;margin-bottom:12px;">Jos nema komentara. Budi prvi!</div>';
+    listEl.innerHTML = '<div style="color:rgba(255,255,255,0.2);font-size:0.78rem;padding:4px 0;margin-bottom:12px;">' + _t('blogNoComments') + '</div>';
   } else {
     listEl.innerHTML = comments.map(function(c) {
       var name = c.full_name || 'Korisnik';
@@ -6081,12 +6130,12 @@ async function loadBlogComments(postId) {
   if (formEl) {
     if (_profileUser) {
       formEl.innerHTML = '<div class="blog-comment-form">'
-        + '<input class="blog-comment-input" id="blogCommentInput" placeholder="Napisi komentar..." maxlength="500">'
-        + '<button class="blog-comment-send" onclick="submitBlogComment()">Posalji</button>'
+        + '<input class="blog-comment-input" id="blogCommentInput" placeholder="' + _t('blogCommentPh') + '" maxlength="500">'
+        + '<button class="blog-comment-send" onclick="submitBlogComment()">' + _t('blogCommentSend') + '</button>'
         + '</div>'
         + '<div id="blogCommentMsg" style="font-size:0.72rem;min-height:16px;margin-top:4px;"></div>';
     } else {
-      formEl.innerHTML = '<div class="blog-comment-login">Prijavi se da ostaves komentar</div>';
+      formEl.innerHTML = '<div class="blog-comment-login">' + _t('blogCommentLogin') + '</div>';
     }
   }
 }
@@ -6471,9 +6520,32 @@ document.addEventListener('click', function(e) {
   });
 
   resize();
-  draw();
+  var canvasRunning = false;
+  var heroObs = new IntersectionObserver(function(entries){
+    if (entries[0].isIntersecting) {
+      if (!canvasRunning) { canvasRunning = true; draw(); }
+    } else {
+      canvasRunning = false;
+      if (raf) { cancelAnimationFrame(raf); raf = null; }
+    }
+  }, { threshold: 0.05 });
+  heroObs.observe(c.parentElement);
   window.addEventListener('resize', function(){ resize(); });
 })();
+
+// ── CLEANUP FINISHED ANIMATIONS (free GPU layers) ──
+setTimeout(function(){
+  document.getAnimations().forEach(function(a){
+    if (a.playState === 'finished' && a.effect && a.effect.target) {
+      var el = a.effect.target;
+      // Bake final styles before cancelling
+      var computed = getComputedStyle(el);
+      el.style.opacity = computed.opacity;
+      el.style.transform = computed.transform;
+      a.cancel();
+    }
+  });
+}, 3000);
 
 // ── GOOGLE ADS CONVERSION TRACKING ──
 document.addEventListener('click', function(e){

@@ -48,48 +48,37 @@
       lastFrameTime = timestamp;
       ctx.clearRect(0, 0, W, H);
 
-      // Draw subtle connection lines (optimized — skip sqrt)
+      // Draw connection lines — batched into single path (1 stroke call total)
+      ctx.beginPath();
+      ctx.strokeStyle = 'rgba(10,132,255,0.04)';
+      ctx.lineWidth = 0.5;
       for (var i = 0; i < particles.length; i++) {
         for (var j = i + 1; j < particles.length; j++) {
           var dx = particles[i].x - particles[j].x;
           var dy = particles[i].y - particles[j].y;
-          var distSq = dx * dx + dy * dy;
-          if (distSq < maxDistSq) {
-            var lineAlpha = (1 - Math.sqrt(distSq) / maxDist) * 0.06;
-            ctx.beginPath();
-            ctx.strokeStyle = 'rgba(10,132,255,' + lineAlpha + ')';
-            ctx.lineWidth = 0.5;
+          if (dx * dx + dy * dy < maxDistSq) {
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
           }
         }
       }
+      ctx.stroke();
 
-      // Draw particles (simple circles, no gradient per frame)
+      // Draw particles — batched by single fill (1 fill call total)
+      ctx.beginPath();
+      ctx.fillStyle = 'rgba(10,132,255,0.55)';
       particles.forEach(function(p) {
-        p.pulse += 0.01;
+        p.pulse += 0.012;
         p.x += p.vx;
         p.y += p.vy;
         if (p.x < 0) p.x = W;
         if (p.x > W) p.x = 0;
         if (p.y < 0) p.y = H;
         if (p.y > H) p.y = 0;
-
-        var a = p.alpha * (0.6 + 0.4 * Math.sin(p.pulse));
-
-        // Simple filled circle instead of radialGradient (much faster)
-        ctx.beginPath();
-        ctx.fillStyle = 'rgba(10,132,255,' + a + ')';
-        ctx.arc(p.x, p.y, p.r * 2.5, 0, Math.PI * 2);
-        ctx.fill();
-
-        // Outer glow — single larger circle with low alpha
-        ctx.beginPath();
-        ctx.fillStyle = 'rgba(0,212,255,' + (a * 0.15) + ')';
-        ctx.arc(p.x, p.y, p.r * 5, 0, Math.PI * 2);
-        ctx.fill();
+        ctx.moveTo(p.x + p.r * 2.2, p.y);
+        ctx.arc(p.x, p.y, p.r * 2.2, 0, Math.PI * 2);
       });
+      ctx.fill();
 
       animFrameId = requestAnimationFrame(drawParticles);
     }

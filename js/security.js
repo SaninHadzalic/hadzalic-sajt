@@ -2,6 +2,8 @@
 (function() {
   'use strict';
 
+  function _t(key) { return window._t ? window._t(key) : key; }
+
   function isValidEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
@@ -44,10 +46,10 @@
   document.addEventListener('DOMContentLoaded', function() {
     // Blur validation for booking form
     var fields = [
-      { id: 'bEmail', validator: isValidEmail, msg: 'Unesite ispravnu email adresu' },
-      { id: 'bPhone', validator: isValidPhone, msg: 'Unesite ispravan broj telefona' },
-      { id: 'cEmail', validator: isValidEmail, msg: 'Unesite ispravnu email adresu' },
-      { id: 'cPhone', validator: isValidPhone, msg: 'Unesite ispravan broj telefona' }
+      { id: 'bEmail', validator: isValidEmail, key: 'valEmail' },
+      { id: 'bPhone', validator: isValidPhone, key: 'valPhone' },
+      { id: 'cEmail', validator: isValidEmail, key: 'valEmail' },
+      { id: 'cPhone', validator: isValidPhone, key: 'valPhone' }
     ];
 
     fields.forEach(function(f) {
@@ -55,7 +57,7 @@
       if (el) {
         el.addEventListener('blur', function() {
           if (this.value && !f.validator(this.value)) {
-            showFieldError(this, f.msg);
+            showFieldError(this, _t(f.key));
           } else {
             clearFieldError(this);
           }
@@ -75,7 +77,7 @@
             statEl.style.display = 'block';
             statEl.style.background = 'rgba(255,159,10,0.1)';
             statEl.style.color = '#ff9f0a';
-            statEl.textContent = 'Sacekajte ' + limit.remaining + ' sekundi prije ponovnog slanja.';
+            statEl.textContent = _t('valRateLimit') + limit.remaining + _t('valRateLimitSuffix');
           }
           return false;
         }
@@ -95,7 +97,7 @@
             statEl.style.display = 'block';
             statEl.style.background = 'rgba(255,159,10,0.1)';
             statEl.style.color = '#ff9f0a';
-            statEl.textContent = 'Sacekajte ' + limit.remaining + ' sekundi prije ponovnog slanja.';
+            statEl.textContent = _t('valRateLimit') + limit.remaining + _t('valRateLimitSuffix');
           }
           return false;
         }
