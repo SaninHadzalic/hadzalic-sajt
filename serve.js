@@ -21,9 +21,10 @@ const TYPES = {
 http.createServer((req, res) => {
   let url = decodeURIComponent(req.url.split('?')[0]);
   if (url === '/') url = '/index.html';
-  const filePath = path.join(__dirname, url);
+  const rootDir = path.resolve(__dirname);
+  const filePath = path.resolve(rootDir, '.' + url);
   // Prevent path traversal — ensure filePath stays within __dirname
-  if (!filePath.startsWith(__dirname)) {
+  if (filePath !== rootDir && !filePath.startsWith(rootDir + path.sep)) {
     res.writeHead(403, { 'Content-Type': 'text/plain' });
     res.end('Forbidden');
     return;

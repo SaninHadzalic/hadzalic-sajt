@@ -4,17 +4,83 @@
 
   <url>
     <loc>https://hadzalic.co/</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://res.cloudinary.com/dgsgohodv/image/upload/v1772754875/466D130D-4755-4963-8564-7C5253815DFA_tsqtyy.jpg</image:loc>
-      <image:title>Hadzalic Coding — Ažuriranje navigacije</image:title>
+      <image:loc>https://hadzalic.co/images/hero-desktop-final.png</image:loc>
+      <image:title>Hadzalic Coding - chiptuning i kodiranje vozila</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://res.cloudinary.com/dgsgohodv/image/upload/v1772751295/IMG_0861_hfx9e9.jpg</image:loc>
-      <image:title>Hadzalic Coding — CarPlay aktivacija</image:title>
-    </image:image>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/usluge</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/usluge/chiptuning</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/usluge/aktivacija</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/usluge/carplay</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/usluge/dpf</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/usluge/errors</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/blog</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/radovi</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/kontakt</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hadzalic.co/zakazi</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 
 </urlset>
