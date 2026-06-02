@@ -2645,6 +2645,26 @@ function handleRoute(pushState) {
   var path = window.location.pathname.replace(/\/+$/, '') || '/';
   if (path === '/admin') { showHome(false); setTimeout(function(){ if(typeof openAdmin==='function') openAdmin(); }, 300); return; }
 
+  // Soro "View on website" can arrive as /?post=article-slug.
+  // Any URL with a post query belongs on the blog page.
+  var query = new URLSearchParams(window.location.search);
+  if (query.has('post')) {
+    showPage('page-blog');
+    if (typeof window.loadSoroBlogWidget === 'function') {
+      window.loadSoroBlogWidget();
+    }
+    if (path !== '/blog' && path.indexOf('/blog/') !== 0) {
+      history.replaceState(
+        {page:'/blog', soro:true},
+        '',
+        '/blog' + window.location.search + window.location.hash
+      );
+    } else if (pushState !== false) {
+      history.pushState({page:'/blog', soro:true}, '', window.location.pathname + window.location.search + window.location.hash);
+    }
+    return;
+  }
+
   // Keep every /blog URL on the blog page. Query params such as
   // /blog?post=article-slug are handled by the embedded blog widget.
   if (path === '/blog' || path.indexOf('/blog/') === 0) {
