@@ -987,7 +987,7 @@
       <button class="blog-tag-btn" onclick="filterBlog('savjeti', this)" data-i18n="blogTagTips">Savjeti</button>
       <button class="blog-tag-btn" onclick="filterBlog('novosti', this)" data-i18n="blogTagNews">Novosti</button>
     </div>
-    <div id="soro-blog"></div>
+    <div id="soro-blog" data-url="https://hadzalic.co/blog"></div>
     <script>
       (function() {
         if (window.__soroBlogNavigationIntercepted) return;
@@ -2984,7 +2984,8 @@ var TRANSLATIONS = {
 // Route on initial page load
 (function() {
   var path = window.location.pathname;
-  if (path !== '/' && path !== '/index.html' && path !== '') {
+  var query = new URLSearchParams(window.location.search);
+  if ((path !== '/' && path !== '/index.html' && path !== '') || query.has('post')) {
     // Replace current history entry instead of pushing
     document.addEventListener('DOMContentLoaded', function() {
       setTimeout(function() { handleRoute(false); }, 100);
