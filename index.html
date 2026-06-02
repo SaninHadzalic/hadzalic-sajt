@@ -2645,10 +2645,18 @@ function handleRoute(pushState) {
   var path = window.location.pathname.replace(/\/+$/, '') || '/';
   if (path === '/admin') { showHome(false); setTimeout(function(){ if(typeof openAdmin==='function') openAdmin(); }, 300); return; }
 
-  // Soro "View on website" can arrive as /?post=article-slug.
-  // Any URL with a post query belongs on the blog page.
-  var query = new URLSearchParams(window.location.search);
-  if (query.has('post')) {
+  function hasSoroArticleSignal() {
+    var query = new URLSearchParams(window.location.search);
+    var keys = ['post', 'slug', 'article', 'article_slug', 'articleSlug', 'blog', 'id', 'soro_post', 'soroPost'];
+    var hasKnownParam = keys.some(function(key) { return query.has(key); });
+    var hashLooksLikePost = /(?:post|slug|article|blog|soro)/i.test(window.location.hash || '');
+    var referrerLooksLikeSoro = /trysoro\.com/i.test(document.referrer || '');
+    return hasKnownParam || hashLooksLikePost || (path === '/' && window.location.search && referrerLooksLikeSoro);
+  }
+
+  // Soro "View on website" can arrive on root with a post/slug/article query.
+  // Any Soro-style article signal belongs on the blog page.
+  if (hasSoroArticleSignal()) {
     showPage('page-blog');
     if (typeof window.loadSoroBlogWidget === 'function') {
       window.loadSoroBlogWidget();
