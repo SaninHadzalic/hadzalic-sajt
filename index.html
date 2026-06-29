@@ -234,6 +234,7 @@
       <span></span><span></span><span></span>
     </button>
     <button class="nav-logo" id="navLogo">
+      <img src="images/logo-badge-circle.png" alt="Hadzalic Coding" class="nav-logo-img">
       <span class="logo-h">Hadzalic</span><span class="logo-sep"></span><span class="logo-c">Coding</span>
     </button>
     <div class="nav-tagline">
@@ -242,9 +243,18 @@
     </div>
   </div>
   <div class="nav-links" id="navLinks">
+    <a href="/" class="nav-link active" data-route="/">
+      <span>Početna</span>
+    </a>
     <a href="/usluge" class="nav-link" data-route="/usluge">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
       <span data-i18n="navUsluge">Usluge</span>
+    </a>
+    <a href="/radovi" class="nav-link" data-route="/radovi">
+      <span>Radovi</span>
+    </a>
+    <a href="/o-nama" class="nav-link" data-route="/o-nama">
+      <span>O nama</span>
     </a>
     <a href="/blog" class="nav-link" data-route="/blog">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
@@ -341,57 +351,62 @@
     <div class="hero-vignette"></div>
   </div>
     <div class="hero-glow-ring"></div>
-    <div class="hero-eyebrow"><span class="hero-dot"></span><span data-i18n="eyebrow">Prijepolje, Srbija</span></div>
+    <div class="hero-eyebrow"><span class="hero-dot"></span><span>Kodiranje automobila</span></div>
     <h1 class="hero-title">
-      <span class="ht-white"><span class="hl" style="--i:0">H</span><span class="hl" style="--i:1">A</span><span class="hl" style="--i:2">D</span><span class="hl" style="--i:3">Z</span><span class="hl" style="--i:4">A</span><span class="hl" style="--i:5">L</span><span class="hl" style="--i:6">I</span><span class="hl" style="--i:7">C</span></span>
-      <span class="ht-blue"><span class="hl" style="--i:8">C</span><span class="hl" style="--i:9">O</span><span class="hl" style="--i:10">D</span><span class="hl" style="--i:11">I</span><span class="hl" style="--i:12">N</span><span class="hl" style="--i:13">G</span></span>
+      <span class="ht-white"><span class="hl" style="--i:0">Više od vožnje.</span></span>
+      <span class="ht-blue"><span class="hl" style="--i:1">Potpuna kontrola.</span></span>
     </h1>
-    <p class="hero-sub" data-i18n="heroSub">Profesionalni ECU remap, kodiranje i CarPlay aktivacije uz dijagnostiku, originalni backup i garanciju na softverski rad.</p>
+    <p class="hero-sub" data-i18n="heroSub">Otključavamo skrivene mogućnosti vašeg vozila. Pametnije. Sigurnije. Po vašim pravilima.</p>
     <div class="hero-divider"></div>
     <div class="hero-car-label">HADZALIC<span>CHIPTUNING</span></div>
     <div class="hero-actions">
       <a href="/zakazi" class="hero-action hero-action-primary" data-route="/zakazi">
-        <span class="ha-icon">CAL</span>
         <span>ZAKAŽI TERMIN</span>
+        <span class="ha-icon">→</span>
       </a>
       <a href="/usluge" class="hero-action hero-action-secondary" data-route="/usluge">
-        <span class="ha-icon">GRID</span>
-        <span>POGLEDAJ USLUGE</span>
+        <span>SAZNAJ VIŠE</span>
+        <span class="ha-icon">→</span>
       </a>
     </div>
     <div class="hero-benefits">
-      <div class="hero-benefit"><span class="hb-icon">CAR</span><span>Sve marke vozila</span></div>
-      <div class="hero-benefit"><span class="hb-icon">24</span><span>Online podrska</span></div>
-      <div class="hero-benefit"><span class="hb-icon">OK</span><span>Dozivotna garancija<br>na softverski rad</span></div>
-      <div class="hero-benefit"><span class="hb-icon">ECU</span><span>Sertifikovana oprema</span></div>
+      <div class="hero-benefit"><span class="hb-icon">★</span><span><strong>5+ god.</strong><br>iskustva</span></div>
+      <div class="hero-benefit"><span class="hb-icon">👥</span><span><strong>1000+</strong><br>zadovoljnih klijenata</span></div>
+      <div class="hero-benefit"><span class="hb-icon">✓</span><span><strong>Bezbedno</strong><br>bez rizika za vozilo</span></div>
     </div>
     <div class="hero-service-grid">
-      <a href="/usluge/chiptuning" class="hero-service-card" data-route="/usluge/chiptuning">
-        <span class="hsc-icon">ECU</span>
-        <span class="hsc-title">CHIPTUNING</span>
-        <span class="hsc-line"></span>
-        <span class="hsc-desc">Povećanje snage i obrtnog momenta, optimizacija performansi motora.</span>
-        <span class="hsc-more">SAZNAJ VIŠE -></span>
-      </a>
+      <div class="home-services-intro">
+        <span class="home-services-kicker">USLUGE</span>
+        <h2>Šta možemo<br>za vaš <span>automobil?</span></h2>
+        <span class="home-services-line"></span>
+        <a href="/usluge" data-route="/usluge">PREGLEDAJ SVE USLUGE <span>→</span></a>
+      </div>
       <a href="/usluge/aktivacija" class="hero-service-card" data-route="/usluge/aktivacija">
         <span class="hsc-icon">&lt;/&gt;</span>
-        <span class="hsc-title">KODIRANJE</span>
+        <span class="hsc-title">Kodiranje</span>
         <span class="hsc-line"></span>
-        <span class="hsc-desc">Aktiviranje skrivenih funkcija i prilagođavanje vozila po vašim željama.</span>
+        <span class="hsc-desc">Aktiviranje i deaktiviranje funkcija prema vašim željama.</span>
         <span class="hsc-more">SAZNAJ VIŠE -></span>
       </a>
       <a href="/usluge/carplay" class="hero-service-card" data-route="/usluge/carplay">
-        <span class="hsc-icon">PLAY</span>
-        <span class="hsc-title">CARPLAY / ANDROID AUTO</span>
+        <span class="hsc-icon">▯</span>
+        <span class="hsc-title">CarPlay / Android Auto</span>
         <span class="hsc-line"></span>
-        <span class="hsc-desc">Bežične CarPlay i Android Auto aktivacije za vaše vozilo.</span>
+        <span class="hsc-desc">Ugradnja i aktivacija CarPlay i Android Auto sistema.</span>
         <span class="hsc-more">SAZNAJ VIŠE -></span>
       </a>
-      <a href="/usluge/errors" class="hero-service-card" data-route="/usluge/errors">
-        <span class="hsc-icon">OBD</span>
-        <span class="hsc-title">DIJAGNOSTIKA</span>
+      <a href="/usluge/chiptuning" class="hero-service-card" data-route="/usluge/chiptuning">
+        <span class="hsc-icon">⌁</span>
+        <span class="hsc-title">Chiptuning</span>
         <span class="hsc-line"></span>
-        <span class="hsc-desc">Čitanje i brisanje grešaka, detaljna provera sistema vozila.</span>
+        <span class="hsc-desc">Povećanje snage i obrtnog momenta uz sigurno podešavanje.</span>
+        <span class="hsc-more">SAZNAJ VIŠE -></span>
+      </a>
+      <a href="/usluge/navi" class="hero-service-card" data-route="/usluge/navi">
+        <span class="hsc-icon">⌖</span>
+        <span class="hsc-title">Mapa i Navigacija</span>
+        <span class="hsc-line"></span>
+        <span class="hsc-desc">Ažuriranje navigacija i ugradnja najnovijih mapa.</span>
         <span class="hsc-more">SAZNAJ VIŠE -></span>
       </a>
     </div>
@@ -408,33 +423,59 @@
   </div>
   </section>
 
-  <section class="why-section sr">
+  <section class="why-section sr" id="o-nama">
     <div class="why-head">
-      <p class="sec-label">Zašto baš mi</p>
-      <h2>Siguran softverski rad, bez improvizacije.</h2>
-      <p>Svako vozilo prvo proveravamo dijagnostikom, čuvamo originalni softver i radimo samo ono što ima smisla za konkretan motor i stanje vozila.</p>
+      <h2><span>Jednostavan proces,</span> vrhunski <em>rezultati.</em></h2>
     </div>
     <div class="why-grid">
       <div class="why-card">
-        <span class="why-icon">01</span>
-        <h3>Originalni backup</h3>
-        <p>Pre svake intervencije čuva se fabrički softver, tako da se vozilo može vratiti na originalno stanje.</p>
+        <span class="why-num">01</span>
+        <span class="why-icon why-calendar"></span>
+        <h3>Zakažite termin</h3>
+        <p>Kontaktirajte nas i izaberite vreme koje vam odgovara.</p>
       </div>
       <div class="why-card">
-        <span class="why-icon">02</span>
-        <h3>Dijagnostika pre rada</h3>
-        <p>Ne radimo mapu naslepo. Prvo proveravamo greške, stanje sistema i da li je vozilo spremno za optimizaciju.</p>
+        <span class="why-num">02</span>
+        <span class="why-icon why-phone"></span>
+        <h3>Dijagnostika i kodiranje</h3>
+        <p>Brzo, sigurno i precizno kodiranje vašeg vozila.</p>
       </div>
       <div class="why-card">
-        <span class="why-icon">03</span>
-        <h3>Sertifikovana oprema</h3>
-        <p>Radimo sa profesionalnim alatima i znanjem potvrđenim kroz HPTuners, ASFerrari i Magic Motorsport obuke.</p>
+        <span class="why-num">03</span>
+        <span class="why-icon why-car"></span>
+        <h3>Uživajte u vožnji</h3>
+        <p>Iskoristite sve mogućnosti svog automobila.</p>
       </div>
-      <div class="why-card">
-        <span class="why-icon">04</span>
-        <h3>Podrška posle rada</h3>
-        <p>Klijent dobija objašnjenje urađenog posla i podršku nakon intervencije, bez nestajanja posle zakazanog termina.</p>
-      </div>
+    </div>
+  </section>
+
+  <section class="home-works-section sr">
+    <div class="home-works-head">
+      <p class="sec-label">Naši radovi</p>
+      <h2>Stvarna vozila.<br>Stvarni <span>rezultati.</span></h2>
+      <a href="/radovi" data-route="/radovi">Pogledaj sve radove →</a>
+    </div>
+    <div class="home-works-grid">
+      <a href="/radovi" class="home-work-card" data-route="/radovi">
+        <img src="https://res.cloudinary.com/dgsgohodv/image/upload/v1772751295/IMG_0861_hfx9e9.jpg" alt="CarPlay aktivacija" loading="lazy">
+        <strong>CarPlay aktivacija</strong>
+        <span>VW Golf 7</span>
+      </a>
+      <a href="/radovi" class="home-work-card" data-route="/radovi">
+        <img src="https://res.cloudinary.com/dgsgohodv/image/upload/v1772751297/IMG_1250_pare7z.jpg" alt="Digitalna instrument tabla" loading="lazy">
+        <strong>Digitalna instrument tabla</strong>
+        <span>Audi A4 B9</span>
+      </a>
+      <a href="/radovi" class="home-work-card" data-route="/radovi">
+        <img src="https://res.cloudinary.com/dgsgohodv/image/upload/v1772751299/IMG_1235_ek60s9.jpg" alt="Dodatne funkcije" loading="lazy">
+        <strong>Dodatne funkcije</strong>
+        <span>BMW 5 F10</span>
+      </a>
+      <a href="/radovi" class="home-work-card" data-route="/radovi">
+        <img src="https://res.cloudinary.com/dgsgohodv/image/upload/v1772754875/466D130D-4755-4963-8564-7C5253815DFA_tsqtyy.jpg" alt="Mapa update" loading="lazy">
+        <strong>Mapa update</strong>
+        <span>Mercedes C W205</span>
+      </a>
     </div>
   </section>
 
@@ -835,6 +876,68 @@
 
     </div>
   </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     O NAMA PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-o-nama">
+  <div class="page-header about-page-header">
+    <span class="about-kicker">O nama</span>
+    <h1>Hadzalic Coding</h1>
+    <p>Automotive coding, CarPlay aktivacije, navigacione mape i profesionalna softverska rješenja za vaše vozilo.</p>
+  </div>
+
+  <section class="about-page-wrap">
+    <div class="about-story-card">
+      <div>
+        <span class="about-mini-label">Ko smo mi</span>
+        <h2>Specijalizovani smo za pametnije, sigurnije i modernije vozilo.</h2>
+      </div>
+      <p>
+        Hadzalic Coding je servis iz Prijepolja fokusiran na kodiranje automobila, aktivaciju skrivenih funkcija,
+        CarPlay / Android Auto sisteme, ažuriranje navigacija, dijagnostiku i ECU remap. Svaki posao radimo
+        pažljivo, uz prethodnu provjeru vozila i jasnu komunikaciju prije intervencije.
+      </p>
+    </div>
+
+    <div class="about-info-grid">
+      <div class="about-info-card">
+        <span class="about-info-icon">01</span>
+        <h3>Profesionalan pristup</h3>
+        <p>Prije svake intervencije provjeravamo vozilo, objašnjavamo šta se radi i čuvamo originalne podatke kada je potrebno.</p>
+      </div>
+      <div class="about-info-card">
+        <span class="about-info-icon">02</span>
+        <h3>Provjerena oprema</h3>
+        <p>Koristimo profesionalne alate za dijagnostiku, kodiranje, aktivacije i softverski rad na vozilima.</p>
+      </div>
+      <div class="about-info-card">
+        <span class="about-info-icon">03</span>
+        <h3>Podrška nakon rada</h3>
+        <p>Nakon završene usluge dobijate objašnjenje urađenog posla i podršku ako imate dodatna pitanja.</p>
+      </div>
+    </div>
+
+    <div class="about-stats-row">
+      <div><strong>5+ god.</strong><span>iskustva</span></div>
+      <div><strong>1000+</strong><span>zadovoljnih klijenata</span></div>
+      <div><strong>2h</strong><span>brz odgovor</span></div>
+      <div><strong>Garancija</strong><span>na softverski rad</span></div>
+    </div>
+
+    <div class="about-values">
+      <div class="about-values-copy">
+        <span class="about-mini-label">Naš cilj</span>
+        <h2>Da vaše vozilo radi bolje, izgleda modernije i bude prijatnije za svakodnevnu vožnju.</h2>
+        <p>
+          Bilo da želite CarPlay, nove mape, aktivaciju fabričkih funkcija ili chiptuning, cilj je isti:
+          siguran rezultat, uredan proces i vozilo podešeno prema vašim potrebama.
+        </p>
+      </div>
+      <a href="/zakazi" class="about-cta" data-route="/zakazi">Zakaži termin →</a>
+    </div>
+  </section>
 </div>
 
 <!-- ══════════════════════════════════════════
@@ -2591,7 +2694,7 @@ function showPage(pageId, skipScroll) {
   }
   // Update active nav link
   if (navLinks) {
-    var routeMap = {'page-usluge':'/usluge','page-blog':'/blog','page-kontakt':'/kontakt','page-radovi':'/radovi'};
+    var routeMap = {'page-home':'/','page-usluge':'/usluge','page-blog':'/blog','page-kontakt':'/kontakt','page-radovi':'/radovi','page-o-nama':'/o-nama'};
     navLinks.querySelectorAll('.nav-link').forEach(function(l) {
       l.classList.toggle('active', l.getAttribute('data-route') === (routeMap[pageId] || ''));
     });
@@ -2614,6 +2717,7 @@ function navigateTo(route, pushState) {
     '/blog': 'page-blog',
     '/kontakt': 'page-kontakt',
     '/radovi': 'page-radovi',
+    '/o-nama': 'page-o-nama',
     '/zakazi': 'page-booking',
     '/booking': 'page-booking'
   };
@@ -2704,6 +2808,7 @@ function handleRoute(pushState) {
   // Main pages
   if (path === '/usluge') { navigateTo('/usluge', pushState); return; }
   if (path === '/radovi') { navigateTo('/radovi', pushState); return; }
+  if (path === '/o-nama') { navigateTo('/o-nama', pushState); return; }
   if (path === '/kontakt') { navigateTo('/kontakt', pushState); return; }
   if (path === '/zakazi' || path === '/booking') {
     if (typeof showBooking === 'function') {
